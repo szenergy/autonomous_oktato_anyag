@@ -1,12 +1,12 @@
-site_name: Autonóm járművek és robotok programozása
-site_description: 'A course at Széchenyi István University, Győr, Hungary'
-site_author: 'sze'
-site_url: 'https://sze-info.github.io/szenergy-autonom/' # Uncomment to set a canonical URL
+site_name: Autonóm tananyag
+site_description: 'A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga.'
+site_author: 'szenergy_team'
+site_url: 'https://szenergy.github.io/autonomous_oktato_anyag/' # Uncomment to set a canonical URL
 copyright: |
-  &copy; Széchenyi István Egyetem 
+  &copy; SZEnergy Team, 2024. Minden jog fenntartva.
 docs_dir: docs
 
-repo_url: https://github.com/sze-info/szenergy-autonom/
+repo_url: https://github.com/szenergy/autonomous_oktato_anyag
 nav:
   - Kezdőlap: index.md
   - Tananyag:
