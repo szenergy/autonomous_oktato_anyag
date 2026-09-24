@@ -57,10 +57,10 @@ nav:
       - mesterseges_intelligencia/practice.md
       - mesterseges_intelligencia/kaggle_notebook.md
       - mesterseges_intelligencia/slides/slides_nn.md
-  - Nagy féléves, kis beadandó:
-    - feleves_beadando/README.md
-    - feleves_beadando/kisbeadando.md
-    - feleves_beadando/nagyfeleves.md
+  # - Nagy féléves, kis beadandó:
+  #   - feleves_beadando/README.md
+  #   - feleves_beadando/kisbeadando.md
+  #   - feleves_beadando/nagyfeleves.md
   - Önálló:
     - ros2halado/py_cpp.md    
     - onallo/ros2git.md
