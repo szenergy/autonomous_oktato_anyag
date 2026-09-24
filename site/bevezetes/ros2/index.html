@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A course at Széchenyi István University, Győr, Hungary">
+        <meta name="description" content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga.">
       
       
-        <meta name="author" content="sze">
+        <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://sze-info.github.io/szenergy-autonom/bevezetes/ros2/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/bevezetes/ros2/">
       
       
         <link rel="prev" href="../linux/">
@@ -22,15 +22,15 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.23">
     
     
       
-        <title>Elmélet - ROS 2 alapfogalmak - Autonóm járművek és robotok programozása</title>
+        <title>Elmélet - ROS 2 alapfogalmak - Autonóm tananyag</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -54,6 +54,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../assets/slides/css/slides.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -63,11 +65,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Elmélet - ROS 2 alapfogalmak - Autonóm járművek és robotok programozása" >
+        <meta  property="og:title"  content="Elmélet - ROS 2 alapfogalmak - Autonóm tananyag" >
       
-        <meta  property="og:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/bevezetes/ros2.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/bevezetes/ros2.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +77,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://sze-info.github.io/szenergy-autonom/bevezetes/ros2/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/bevezetes/ros2/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Elmélet - ROS 2 alapfogalmak - Autonóm járművek és robotok programozása" >
+        <meta  name="twitter:title"  content="Elmélet - ROS 2 alapfogalmak - Autonóm tananyag" >
       
-        <meta  name="twitter:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/bevezetes/ros2.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/bevezetes/ros2.png" >
       
     
     
@@ -120,7 +122,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-header__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-header__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
@@ -134,7 +136,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Autonóm járművek és robotok programozása
+            Autonóm tananyag
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -245,7 +247,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -371,23 +373,6 @@
   
 
       
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-tabs__link">
-        
-  
-    
-  
-  Moodle
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -410,17 +395,17 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-nav__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-nav__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
 
     </a>
-    Autonóm járművek és robotok programozása
+    Autonóm tananyag
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -571,29 +556,6 @@
   
   <span class="md-ellipsis">
     Gyakorlat
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gepterem/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    Gépterem
   </span>
   
 
@@ -1076,6 +1038,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../../ros2halado/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-3.1 3.9s-.7-.3-1-.3c-.6-.1-1 .1-1.2 1.1L12 16.8c-.2.8-.5 1.4-1 1.8-.4.3-.8.4-1.3.4-.8 0-2-.5-2-.5l.5-1.4s.8.3 1 .3c.3.1.5 0 .7-.1.2-.1.3-.4.4-.7l1.6-9.2c.1-.8.5-1.4 1-1.9.6-.4 1.3-.5 2.1-.4.7.1 1.5.5 1.5.5l-.6 1.3Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 haladó
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ros2halado/ros2launch/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 launch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../feleves_beadando/" class="md-nav__link">
         
   
@@ -1129,29 +1137,6 @@
   
   <span class="md-ellipsis">
     Nagy féléves
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ros2halado/ros2launch/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    ROS 2 launch
   </span>
   
 
@@ -1536,13 +1521,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../../szimulacio/gyakorlat/" class="md-nav__link">
+      <a href="../../szimulacio/f1tenth_sim_a/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo saját robotszimuláció készítése
+    Gyakorlat - Gazebo versenypálya
   </span>
   
 
@@ -1559,13 +1544,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../../szimulacio/f1tenth_sim_a/" class="md-nav__link">
+      <a href="../../szimulacio/gyakorlat/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo Fortress ROS 2 Wheeltec
+    Gyakorlat - Gazebo saját robotszimuláció készítése
   </span>
   
 
@@ -1842,6 +1827,52 @@
   
   <span class="md-ellipsis">
     Gyakorlat - Mesterséges intelligencia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/kaggle_notebook/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Kaggle Notebook - Előkészítés (gyakorlat)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/slides/slides_nn/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h8a2 2 0 0 1 2-2 2 2 0 0 1 2 2h8v2h-1v11h-5.75L17 22h-2l-1.75-6h-2.5L9 22H7l1.75-6H3V5H2V3m3 2v9h14V5H5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    NN slides
   </span>
   
 
@@ -2151,6 +2182,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../onallo/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../ros2halado/rqt/" class="md-nav__link">
         
   
@@ -2333,6 +2385,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onallo/troubleshoot/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Hibák
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2352,26 +2427,6 @@
   
   <span class="md-ellipsis">
     Linkek
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Moodle
   </span>
   
 
@@ -2479,24 +2534,28 @@
 
 
 <h1 id="ros-2-alapfoglamak"><code>ROS 2</code> alapfoglamak<a class="headerlink" href="#ros-2-alapfoglamak" title="Permanent link">&para;</a></h1>
-<p><a href="https://sze-info.github.io/szenergy-autonom/telepites/">ROS verziók és telepítés</a></p>
+<ul>
+<li><a href="https://sze-info.github.io/szenergy-autonom/telepites/win10">Ajánlott ROS 2 telepítés</a></li>
+<li><a href="https://sze-info.github.io/szenergy-autonom/telepites/">Alternatív ROS 2 verziók és telepítés</a></li>
+</ul>
 <p>Az <code>ROS 2</code>, a <code>ROS</code> legújabb kiadása, olyan szoftverkönyvtárak és eszközök készlete (middleware), amelyek segítenek robotalkalmazások fejlesztésében. Definíció szerint a middleware egy szoftver komponenseket összekötő szoftver. Ez egy olyan réteg, amely az operációs rendszer és az alkalmazások között helyezkedik el az elosztott számítógépes hálózat mindkét oldalán. Az <code>ROS 2</code> megengedő, nyílt forráskódú, <a href="https://choosealicense.com/licenses/apache-2.0/">Apache 2.0</a> licenszelést használ. </p>
 <figure>
-  <img alt="Image title" src="../ros_overview01.svg" width="100%" />
-  <figcaption>ROS 2 áttekintés</figcaption>
+  <a href="/szenergy-autonom/assets/images_common/ros_overview01.svg"><img alt="Image title" src="/szenergy-autonom/assets/images_common/ros_overview01.svg" width="100%" /></a>
+<br />
+<figcaption>ROS 2 áttekintés</figcaption>
 </figure>
 <p>A <code>ROS</code> 2007-es kiadása óta inkrementális frissítéseken esett át, tehát fundamentális változások nem, nagyobb fejlesztések viszont folyamatosan történtek. 2017-ben jött rá a robotikai közösség, hogy olyan alapvető limitációi vannak az eredeti 2007-es elképzelésnek, amit ilyen inkrementális módon sajnos nem lehet javítani. Így végül a Noetic Ninjemis (2025-ig támogatva) az <code>ROS 1</code> utolsó kiadása, helyette párhuzamosan elkezdték fejleszteni az <code>ROS 2</code>-t. Ez egyben azt is jelenteti, hogy a korábbi forráskódokat nehezebben lehet portolni az új verzióra, cserébe rengeteg újdonságot, javítást, támogatást kaphatunk a fejlesztendő robotok, járművek számára.</p>
 <p>A fentiek hatására tehát az <code>ROS 2</code> átlépett az akadémiai kutatások világából az ipari fehasználásra. Érdekesség, hogy a NASA VIPER nevű holdjárója is <code>ROS 2</code>-t futtat. Emellett olyan autóipari óriások is használják, mint a Bosch, a BMW vagy a Volvo. Robotikai cégek közül pedig számos további példát lehetne hozni. Linkek: <a href="https://www.nasa.gov/viper/lunar-operations">www.nasa.gov/viper/lunar-operations</a>, <a href="https://rosindustrial.org/ric/current-members/">rosindustrial.org/ric/current-members</a>, <a href="https://www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers/">www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers</a>. ROS felhasználók a világban: <a href="http://metrorobots.com/rosmap.html">metrorobots.com/rosmap.html</a>.</p>
-<p><img alt="ROS 2 in space" src="../ros2space01.png" /></p>
+<p><img alt="ROS 2 in space" src="/szenergy-autonom/assets/images_common/ros2space01.png" /></p>
 <p>Kép forrása: <a href="https://arxiv.org/pdf/2211.07752.pdf">Robot Operating System 2: Design, Architecture, and Uses In The Wild:
 Steve Macenski et al.</a></p>
 <h2 id="miert-hasznaljak-framework-ot-robotikai-projektemhez">Miért használjak framework-öt robotikai projektemhez?<a class="headerlink" href="#miert-hasznaljak-framework-ot-robotikai-projektemhez" title="Permanent link">&para;</a></h2>
 <p>Első robotikai projektünknél választhatjuk azt az utat, hogy framework nélkül teljesen saját megoldásként feljesztünk. Nyilván ennek is vannak előnyei (tanulás, futási gyorsaság, stb.). De hamarosan kelleni fog olyan algoritmus, amit akár mások implementáltak is, csak nem kompatibilis az eredeti elképzeléssel. Itt már célszerű meggondolni egy framework (pl a <code>ROS 2</code>) használatát. <em>Megjegyzés</em>, hogy nem a <code>ROS 2</code> az egyetlen lehetőség számos hasonló, kisebb framework létezik: <a class="http" href="http://playerstage.sf.net">Player</a>, <a class="http" href="http://eris.liralab.it/yarp/">YARP</a>, <a class="http" href="http://www.orocos.org/">Orocos</a>, <a class="http" href="http://carmen.sourceforge.net">CARMEN</a>, <a class="http" href="http://orca-robotics.sourceforge.net">Orca</a>, <a class="http" href="http://www.robots.ox.ac.uk/~pnewman/TheMOOS/index.html">MOOS</a>, and <a class="http" href="http://msdn.microsoft.com/en-us/robotics/default.aspx">Microsoft Robotics Studio</a>. Niylván mindegyiknek van előnye, ebben a tárgyban a támogatottság miatt mégis az <code>ROS 2</code>-re szoríthozunk.</p>
-<p><img alt="" src="https://www.ros.org/imgs/ros-equation.png" /></p>
-<p>Kép forrása: <a href="https://www.ros.org/blog/ecosystem/">ros.org/blog/ecosystem</a></p>
+<p><a href="/szenergy-autonom/assets/images_common/ros_components02.svg"><img alt="" src="/szenergy-autonom/assets/images_common/ros_components01.svg" /></a></p>
+<p>Kép inspiráció: <a href="https://www.ros.org/blog/ecosystem/">ros.org/blog/ecosystem</a></p>
 <ul>
-<li>Plumbing: A ROS alapvetően egy üzenetküldő rendszert biztosít, amelyet gyakran "middleware"-nek vagy "plumbing"-nek neveznek. A kommunikáció az egyik első igény, amely felmerül egy új robotikai alkalmazás vagy bármilyen olyan szoftverrendszer implementálásakor, amelyhez hardverrel is csatlakozik. A ROS beépített és jól tesztelt üzenetküldő rendszere időt takaríthat meg, hiszen kezeli a kommunikáció részleteit a decentralizált csomópontok között, ezt nem kell külön implementálni. Sőt lehetőség van egy gépen Intra-process kommunikáció segítségével direkt memória elérésre is.</li>
-<li>Eszközök: A hatékony alkalmazások fejlesztéséhez jó fejlesztői eszközökre van szükség. A ROS rendelkezik ilyen az eszközökkel, beleértve: a hibakeresést (<code>rqt_console</code>), a vizualizációt (<code>Rviz2</code>, <code>Foxglove Studio</code>), a diagramokat (<code>rqt_plot</code>, <code>Foxglove Studio</code>), a logolást (<code>mcap</code>) és a visszajátszást. </li>
+<li>Adatáramlás(Plumbing): A ROS alapvetően egy üzenetküldő rendszert biztosít, amelyet gyakran "middleware"-nek vagy "plumbing"-nek neveznek. A kommunikáció az egyik első igény, amely felmerül egy új robotikai alkalmazás vagy bármilyen olyan szoftverrendszer implementálásakor, amelyhez hardverrel is csatlakozik. A ROS beépített és jól tesztelt üzenetküldő rendszere időt takaríthat meg, hiszen kezeli a kommunikáció részleteit a decentralizált csomópontok között, ezt nem kell külön implementálni. Sőt lehetőség van egy gépen Intra-process kommunikáció segítségével direkt memória elérésre is.</li>
+<li>Eszközök: A hatékony alkalmazások fejlesztéséhez jó fejlesztői eszközökre van szükség. A ROS rendelkezik ilyen az eszközökkel, beleértve: a hibakeresést (<code>rqt_console</code>), a vizualizációt (<code>Rviz2</code>, <code>Foxglove Studio</code>, <code>Lichtblick Suite</code>), a diagramokat (<code>rqt_plot</code>, <code>Foxglove Studio</code>), a logolást (<code>mcap</code>) és a visszajátszást. </li>
 <li>Képességek: Legyen szó GPS-eszköz-illesztőprogramról, négylábú robothoz való járás- és egyensúlyszabályozóról, vagy mobil robothoz való térképezőrendszerről, a ROS-nak vannak megoldásai a problémára. A driverektől az algoritmusokig, a felhasználói felületekig a ROS biztosítja azokat az építőelemeket, amelyek lehetővé teszik, hogy a saját alkalmazására koncentráljon.</li>
 <li>Közösség: A ROS mögött egy nagy, globális és változatos közösség áll. Diákoktól és hobbiból űzőktől kezdve multinacionális vállalatokig és kormányzati ügynökségekig, az emberek és szervezetek minden szegmense működteti az <code>ROS 2</code> projektet. Ez azért is fontos, mert a fejlesztés során rengeteg kérdés fog felmerülni. Ezek nagy részét már meg is válaszolta aközösség, az új kérdésekre pedig szívesen válaszolnak. </li>
 </ul>
@@ -2591,7 +2650,10 @@ build<span class="w">  </span>install<span class="w">  </span>log<span class="w"
 <h2 id="kulonbsegek-az-ros-1-es-ros-2-kozott">Különbségek az <code>ROS 1</code> és <code>ROS 2</code> között<a class="headerlink" href="#kulonbsegek-az-ros-1-es-ros-2-kozott" title="Permanent link">&para;</a></h2>
 <ul>
 <li><em>Változások a Middleware-ben</em><br />
-  A <code>ROS 1</code> a Master-Slave architektúrát és az XML-RPC middleware-t használja. A <code>ROS 2</code> ezzel szemben a  Data Distribution Service (DDS) használ, amely nagyobb hatékonyságot és megbízhatóságot, alacsony késleltetést és skálázhatóságot, valamint konfigurálható szolgáltatásminőségi (QoS) paramétereket biztosít. Többek között így nem kell <code>roscore</code>-t indítani. Az XML-RPC jobb az egyszerű távoli eljáráshívásokhoz, míg a DDS hozzáadott komplexitása lehetővé teszi, hogy jobban támogassa a valós idejű rendszereket.</li>
+  A <code>ROS 1</code> a Master-Slave architektúrát és az XML-RPC middleware-t használja. A <code>ROS 2</code> ezzel szemben a  Data Distribution Service (DDS) vagy Zenoh hálózati protokollt használ, amely nagyobb hatékonyságot és megbízhatóságot, alacsony késleltetést és skálázhatóságot, valamint konfigurálható szolgáltatásminőségi (QoS) paramétereket biztosít. Többek között így nem kell <code>roscore</code>-t indítani. Az XML-RPC jobb az egyszerű távoli eljáráshívásokhoz, míg a DDS hozzáadott komplexitása lehetővé teszi, hogy jobban támogassa a valós idejű rendszereket.</li>
+</ul>
+<p><img alt="dds_zenoh" src="/szenergy-autonom/assets/images_common/abstraction_dds_zenoh01.svg" /></p>
+<ul>
 <li>
 <p><em>Változások a ROS API-ban</em><br />
   A <code>ROS 1</code> két különálló könyvtárral rendelkezik: a C++ nyelvhez készült <code>roscpp</code> és a Pythonhoz készült <code>rospy</code>. Ezek nem teljesen azonosak egymással a funkciók tekintetében. Ezzel szemben a <code>ROS 2</code> egy C nyelven írt alapkönyvtárral - <code>rcl</code> (ROS klienskönyvtár) - rendelkezik, amelyre könyvtárak épülnek. Ez biztosítja, hogy az alapvető funkciók hamarabb elérhetők legyenek a különböző API-kban. Ez az egyik fő oka annak, hogy a <code>ROS 2</code> a korábbi Pythonon és a C++-on kívül több nyelvi támogatást is képes nyújtani: például  <a href="https://github.com/ada-ros/rclada">rclada</a> Ada, <a href="https://github.com/ros2/rclcpp">rclcpp</a> C++, <a href="https://github.com/juaruipav/rclgo">rclgo</a> Go,  <a href="https://github.com/ros2/rclpy">rclpy</a> Python, <a href="https://github.com/esteve/ros2_java/tree/master/rcljava">rcljava</a>  Java, <a href="https://github.com/RobotWebTools/rclnodejs">rclnodejs</a> Node.js,  <a href="https://github.com/esteve/ros2_objc">rclobjc</a> Objective C (iOS),  <a href="https://github.com/ros2/rclc">rclc</a> C, <a href="https://github.com/ros2-rust/ros2_rust">ros2_rust</a> Rust, <a href="https://github.com/esteve/ros2_dotnet">ros2_dotnet</a> .NET, <a href="https://github.com/RobotecAI/ros2cs">ros2cs</a> ros2_dotnet alternatíva C# nyelven.</p>
@@ -2610,7 +2672,7 @@ build<span class="w">  </span>install<span class="w">  </span>log<span class="w"
 <li><em>Többszálú végrehajtás</em><br />
   A <code>ROS 2</code> támogatja a több csomópont valóban párhuzamos futtatását, így a modern többmagos processzorok sokkal jobban kihasználhatók, mint a <code>ROS 1</code> esetében. </li>
 </ul>
-<p><img alt="áttekintés" src="../ros_overview02.svg" />
+<p><img alt="áttekintés" src="/szenergy-autonom/assets/images_common/ros_overview02.svg" />
 Forrás: <a href="https://husarnet.com/blog/ros2-docker">husarnet.com/blog/ros2-docker</a></p>
 <h2 id="egyeb-valtozasok">Egyéb változások<a class="headerlink" href="#egyeb-valtozasok" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2638,7 +2700,7 @@ gantt
     Humble  :active, r009, 2022-05-23, 5y
     .       :active, r011, 2021-01-01, 0d %% placeholder
     Galactic:active, r008, 2021-05-23, 1y</code></pre>
-<p><img alt="Alt text" src="../ros2distros.svg" /></p>
+<p><img alt="Alt text" src="/szenergy-autonom/assets/images_common/ros2distros.svg" /></p>
 <p>Distrok százalékos megoszlása az időben: <a href="https://metrics.ros.org/rosdistro_rosdistro.html">metrics.ros.org/rosdistro_rosdistro.html</a></p>
 <p><a href="https://docs.ros.org/en/humble/"><img alt="Static Badge" src="https://img.shields.io/badge/ROS_2-Humble-34aec5" /></a></p>
 <p>A <code>Humble Hawksbill</code> vagy röviden <code>Humble</code> egy long term support (LTS) release, 5 évig támogatott (2022 májusától 2027 májusáig)</p>
@@ -2709,8 +2771,8 @@ geometry_msgs/Pose<span class="w"> </span>pose
 <span class="w">    </span>float64<span class="w"> </span>w
 </code></pre></div></p>
 <ol>
-<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> Ez már ismerős lehet: a <code>geometry_msgs/msg/Point</code>-ről már beszéltünk.</li>
-<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> <code>geometry_msgs/Quaternion</code> egyfajta 3D orientáció reprezentáció, erről később részletesen.</li>
+<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> Ez már ismerős lehet: a <code>geometry_msgs/msg/Point</code>-ről már beszéltünk.</li>
+<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> <code>geometry_msgs/Quaternion</code> egyfajta 3D orientáció reprezentáció, erről később részletesen.</li>
 </ol>
 <h2 id="publishing-subscribing">Publishing / Subscribing<a class="headerlink" href="#publishing-subscribing" title="Permanent link">&para;</a></h2>
 <p>A következőkben az <code>urban_road_filt</code> nevű node a <code>points</code> adatokra iratkozik fel, ami <code>PointCloud2</code> típusú, és hirdet <code>PointCloud2</code>, <code>MarkerArray</code> típusú üzeneteket:</p>
@@ -2793,7 +2855,7 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; Széchenyi István Egyetem 
+      &copy; SZEnergy Team, 2024. Minden jog fenntartva.
 
     </div>
   
@@ -2833,7 +2895,7 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
     <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -2846,6 +2908,8 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
         <script src="../../pymdownx.snippets"></script>
       
         <script src="../../pymdownx.superfences"></script>
+      
+        <script src="../../assets/slides/js/slides.js"></script>
       
     
   </body>

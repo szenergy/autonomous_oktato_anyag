@@ -143,14 +143,7 @@ extra_css:
 extra:
   social:
     - icon: 'fontawesome/brands/github'
-      link: 'https://jkk-research/jkk-research.github.io'
-  alternate:
-    - name: Magyar
-      link: https://sze-info.github.io/szenergy-autonom/ 
-      lang: hu
-    - name: English
-      link: https://sze-info.github.io/avr/ 
-      lang: en
+      link: 'https://github.com/szenergy'
 markdown_extensions:
   - attr_list
   - md_in_html

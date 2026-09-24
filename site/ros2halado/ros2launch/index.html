@@ -6,31 +6,31 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A course at Széchenyi István University, Győr, Hungary">
+        <meta name="description" content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga.">
       
       
-        <meta name="author" content="sze">
+        <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://sze-info.github.io/szenergy-autonom/ros2halado/ros2launch/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/ros2halado/ros2launch/">
       
       
-        <link rel="prev" href="../../feleves_beadando/nagyfeleves/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../transzformaciok/">
+        <link rel="next" href="../../feleves_beadando/">
       
       
       <link rel="icon" href="../../assets/images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.23">
     
     
       
-        <title>ROS 2 launch - Autonóm járművek és robotok programozása</title>
+        <title>ROS 2 launch - Autonóm tananyag</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -54,6 +54,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../assets/slides/css/slides.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -63,11 +65,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="ROS 2 launch - Autonóm járművek és robotok programozása" >
+        <meta  property="og:title"  content="ROS 2 launch - Autonóm tananyag" >
       
-        <meta  property="og:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/ros2halado/ros2launch.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/ros2halado/ros2launch.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +77,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://sze-info.github.io/szenergy-autonom/ros2halado/ros2launch/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/ros2halado/ros2launch/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="ROS 2 launch - Autonóm járművek és robotok programozása" >
+        <meta  name="twitter:title"  content="ROS 2 launch - Autonóm tananyag" >
       
-        <meta  name="twitter:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/ros2halado/ros2launch.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/ros2halado/ros2launch.png" >
       
     
     
@@ -120,7 +122,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-header__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-header__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
@@ -134,7 +136,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Autonóm járművek és robotok programozása
+            Autonóm tananyag
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -245,7 +247,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -371,23 +373,6 @@
   
 
       
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-tabs__link">
-        
-  
-    
-  
-  Moodle
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -410,17 +395,17 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-nav__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-nav__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
 
     </a>
-    Autonóm járművek és robotok programozása
+    Autonóm tananyag
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -571,29 +556,6 @@
   
   <span class="md-ellipsis">
     Gyakorlat
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../bevezetes/gepterem/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    Gépterem
   </span>
   
 
@@ -980,59 +942,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../../feleves_beadando/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-3.1 3.9s-.7-.3-1-.3c-.6-.1-1 .1-1.2 1.1L12 16.8c-.2.8-.5 1.4-1 1.8-.4.3-.8.4-1.3.4-.8 0-2-.5-2-.5l.5-1.4s.8.3 1 .3c.3.1.5 0 .7-.1.2-.1.3-.4.4-.7l1.6-9.2c.1-.8.5-1.4 1-1.9.6-.4 1.3-.5 2.1-.4.7.1 1.5.5 1.5.5l-.6 1.3Z"/></svg>
   
   <span class="md-ellipsis">
-    Kis beadandó és nagy féléves
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../feleves_beadando/kisbeadando/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19.88V22l-1.8-1.17-4.79-9c.66-.21 1.26-.55 1.78-1L20 19.88M15 7a3 3 0 0 1-3 3h-.44L5.8 20.83 4 22v-2.12L9.79 9c-1.1-1.23-1-3.13.24-4.24C10.57 4.28 11.27 4 12 4V2a1 1 0 0 1 1 1v1.18c1.2.42 2 1.55 2 2.82m-2 0a1 1 0 0 0-1-1 1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1Z"/></svg>
-  
-  <span class="md-ellipsis">
-    Kis beadandó
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../feleves_beadando/nagyfeleves/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-  
-  <span class="md-ellipsis">
-    Nagy féléves
+    ROS 2 haladó
   </span>
   
 
@@ -1118,9 +1034,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hozzuk-letre-a-example_launch-package-t" class="md-nav__link">
+  <a href="#hozzuk-letre-a-example_launch_cpp-package-t" class="md-nav__link">
     <span class="md-ellipsis">
-      Hozzuk létre a example_launch package-t
+      Hozzuk létre a example_launch_cpp package-t
     </span>
   </a>
   
@@ -1191,10 +1107,97 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#hazi-feladat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Házi feladat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#megjegyzes-python-csomagok-eseten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Megjegyzés python csomagok esetén
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feleves_beadando/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Kis beadandó és nagy féléves
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feleves_beadando/kisbeadando/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19.88V22l-1.8-1.17-4.79-9c.66-.21 1.26-.55 1.78-1L20 19.88M15 7a3 3 0 0 1-3 3h-.44L5.8 20.83 4 22v-2.12L9.79 9c-1.1-1.23-1-3.13.24-4.24C10.57 4.28 11.27 4 12 4V2a1 1 0 0 1 1 1v1.18c1.2.42 2 1.55 2 2.82m-2 0a1 1 0 0 0-1-1 1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Kis beadandó
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feleves_beadando/nagyfeleves/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Nagy féléves
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1575,13 +1578,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../../szimulacio/gyakorlat/" class="md-nav__link">
+      <a href="../../szimulacio/f1tenth_sim_a/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo saját robotszimuláció készítése
+    Gyakorlat - Gazebo versenypálya
   </span>
   
 
@@ -1598,13 +1601,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../../szimulacio/f1tenth_sim_a/" class="md-nav__link">
+      <a href="../../szimulacio/gyakorlat/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo Fortress ROS 2 Wheeltec
+    Gyakorlat - Gazebo saját robotszimuláció készítése
   </span>
   
 
@@ -1881,6 +1884,52 @@
   
   <span class="md-ellipsis">
     Gyakorlat - Mesterséges intelligencia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/kaggle_notebook/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Kaggle Notebook - Előkészítés (gyakorlat)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/slides/slides_nn/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h8a2 2 0 0 1 2-2 2 2 0 0 1 2 2h8v2h-1v11h-5.75L17 22h-2l-1.75-6h-2.5L9 22H7l1.75-6H3V5H2V3m3 2v9h14V5H5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    NN slides
   </span>
   
 
@@ -2190,6 +2239,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../onallo/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../rqt/" class="md-nav__link">
         
   
@@ -2372,6 +2442,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onallo/troubleshoot/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Hibák
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2391,26 +2484,6 @@
   
   <span class="md-ellipsis">
     Linkek
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Moodle
   </span>
   
 
@@ -2465,9 +2538,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hozzuk-letre-a-example_launch-package-t" class="md-nav__link">
+  <a href="#hozzuk-letre-a-example_launch_cpp-package-t" class="md-nav__link">
     <span class="md-ellipsis">
-      Hozzuk létre a example_launch package-t
+      Hozzuk létre a example_launch_cpp package-t
     </span>
   </a>
   
@@ -2538,6 +2611,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#hazi-feladat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Házi feladat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#megjegyzes-python-csomagok-eseten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Megjegyzés python csomagok esetén
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2558,110 +2649,196 @@
 
 <h1 id="ros-2-launch-es-ros-2-egyeb-halado-koncepciok"><code>ROS 2</code> launch és <code>ROS 2</code> egyéb haladó koncepciók<a class="headerlink" href="#ros-2-launch-es-ros-2-egyeb-halado-koncepciok" title="Permanent link">&para;</a></h1>
 <h2 id="bevezeto">Bevezető<a class="headerlink" href="#bevezeto" title="Permanent link">&para;</a></h2>
-<p>Az ROS 2 launch rendszere segíti a felhasználó által definiált rendszer konfigurációjának megadását, majd a konfiguráció szerinti végrehajtását. A konfigurációs lépés a következőket tartalmazza:
-  - mely programok kerüljenek futtatásra,
-  - milyen argumentumokat kapjanak a futtatott programok,
-  - ROS-specifikus konvencióknak megfelelő összetevők, amelyek a komponensek könnyű újrahasznosíthatóságát teszik lehetővé.</p>
+<p>Az ROS 2 launch rendszere segíti a felhasználó által definiált rendszer konfigurációjának megadását, majd a konfiguráció szerinti végrehajtását. A konfigurációs lépés a következőket tartalmazza:</p>
+<ul>
+<li>mely programok kerüljenek futtatásra,</li>
+<li>milyen argumentumokat kapjanak a futtatott programok,</li>
+<li>ROS-specifikus konvencióknak megfelelő összetevők, amelyek a komponensek könnyű újrahasznosíthatóságát teszik lehetővé.</li>
+</ul>
 <p>Fontos megemlíteni továbbá, hogy a megoldás felügyeli az elindított folyamatokat, és képes reagálni a folyamatok futási állapotában bekövetkező változásokra.</p>
 <p>Launch fájlok készítése történhet Python, XML, vagy YAML segítségével.</p>
 <h2 id="elokeszuletek">Előkészületek<a class="headerlink" href="#elokeszuletek" title="Permanent link">&para;</a></h2>
-<h3 id="hozzuk-letre-a-example_launch-package-t">Hozzuk létre a <code>example_launch</code> package-t<a class="headerlink" href="#hozzuk-letre-a-example_launch-package-t" title="Permanent link">&para;</a></h3>
-<p>Ha esetleg már létezne a <code>example_launch</code> package akkor töröljük. (Gépteremben elképzelehető, hogy előző félévben valaki létrehozta.)</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">test</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;ros2_ws/src/example_launch&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Letezik<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Nem<span class="w"> </span>letezik
+<h3 id="hozzuk-letre-a-example_launch_cpp-package-t">Hozzuk létre a <code>example_launch_cpp</code> package-t<a class="headerlink" href="#hozzuk-letre-a-example_launch_cpp-package-t" title="Permanent link">&para;</a></h3>
+<p>Ha esetleg már létezne a <code>example_launch_cpp</code> package akkor töröljük. (Gépteremben elképzelehető, hogy előző félévben valaki létrehozta.)</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">test</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">"ros2_ws/src/example_launch_cpp"</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Letezik<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span>Nem<span class="w"> </span>letezik
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>-r<span class="w">  </span>~/ros2_ws/src/example_launch
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>-r<span class="w">  </span>~/ros2_ws/src/example_launch_cpp
 </code></pre></div>
 <p>Nyissunk egy új terminált, és source-oljuk a telepítést (ha nincs <code>bashrc</code>-ben), hogy a <code>ros2</code> parancsok működjenek.</p>
 <p>Navigáljunk az már létrehozott <code>ros2_ws</code> könyvtárba.</p>
 <p>Fontos, hogy a csomagokat az <code>src</code> könyvtárban kell létrehozni, nem a munkaterület gyökerében. Tehát navigáljunk a <code>ros2_ws/src</code> mappába, és futtassuk a package létrehozó parancsot:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>pkg<span class="w"> </span>create<span class="w"> </span>--build-type<span class="w"> </span>ament_cmake<span class="w"> </span>example_launch
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>pkg<span class="w"> </span>create<span class="w"> </span>--build-type<span class="w"> </span>ament_cmake<span class="w"> </span>example_launch_cpp
 </code></pre></div>
-<p>A terminál egy üzenetet küld vissza, amely megerősíti a <code>example_launch</code> csomag és az összes szükséges fájl és mappa létrehozását.</p>
+<p>A terminál egy üzenetet küld vissza, amely megerősíti a <code>example_launch_cpp</code> csomag és az összes szükséges fájl és mappa létrehozását.</p>
 <h3 id="launch-mappa">Launch mappa<a class="headerlink" href="#launch-mappa" title="Permanent link">&para;</a></h3>
 <p>Hozzunk létre egy mappát a launch fájlok részére:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/example_launch
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/example_launch_cpp
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>launch
 </code></pre></div>
 <h2 id="launch-fajl-letrehozasa">Launch fájl létrehozása<a class="headerlink" href="#launch-fajl-letrehozasa" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>launch
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>code<span class="w"> </span>turtlesim_mimc_launch.py
+<div class="highlight"><pre><span></span><code>code<span class="w"> </span>turtlesim_mimic_launch.py
 </code></pre></div>
 <p>Állítsunk össze egy launch fájlt a <code>turtlesim</code> csomag elemeivel, Python nyelv alkalmazásával.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">launch</span> <span class="kn">import</span> <span class="n">LaunchDescription</span>
-<span class="kn">from</span> <span class="nn">launch_ros.actions</span> <span class="kn">import</span> <span class="n">Node</span>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">XML</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">launch</span><span class="w"> </span><span class="kn">import</span> <span class="n">LaunchDescription</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">launch_ros.actions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Node</span>
 
-<span class="k">def</span> <span class="nf">generate_launch_description</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_launch_description</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">LaunchDescription</span><span class="p">([</span>
         <span class="n">Node</span><span class="p">(</span>
-            <span class="n">package</span><span class="o">=</span><span class="s1">&#39;turtlesim&#39;</span><span class="p">,</span>
-            <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;turtlesim1&#39;</span><span class="p">,</span>
-            <span class="n">executable</span><span class="o">=</span><span class="s1">&#39;turtlesim_node&#39;</span><span class="p">,</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sim&#39;</span>
+            <span class="n">package</span><span class="o">=</span><span class="s1">'turtlesim'</span><span class="p">,</span>
+            <span class="n">namespace</span><span class="o">=</span><span class="s1">'turtlesim1'</span><span class="p">,</span>
+            <span class="n">executable</span><span class="o">=</span><span class="s1">'turtlesim_node'</span><span class="p">,</span>
         <span class="p">),</span>
         <span class="n">Node</span><span class="p">(</span>
-            <span class="n">package</span><span class="o">=</span><span class="s1">&#39;turtlesim&#39;</span><span class="p">,</span>
-            <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;turtlesim2&#39;</span><span class="p">,</span>
-            <span class="n">executable</span><span class="o">=</span><span class="s1">&#39;turtlesim_node&#39;</span><span class="p">,</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sim&#39;</span>
+            <span class="n">package</span><span class="o">=</span><span class="s1">'turtlesim'</span><span class="p">,</span>
+            <span class="n">namespace</span><span class="o">=</span><span class="s1">'turtlesim2'</span><span class="p">,</span>
+            <span class="n">executable</span><span class="o">=</span><span class="s1">'turtlesim_node'</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'turtle2_green'</span><span class="p">,</span>
+            <span class="n">parameters</span><span class="o">=</span><span class="p">[{</span><span class="s1">'background_b'</span><span class="p">:</span> <span class="mi">160</span><span class="p">,</span> <span class="s1">'background_g'</span><span class="p">:</span> <span class="mi">230</span><span class="p">,</span> <span class="s1">'background_r'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}],</span>
         <span class="p">),</span>
         <span class="n">Node</span><span class="p">(</span>
-            <span class="n">package</span><span class="o">=</span><span class="s1">&#39;turtlesim&#39;</span><span class="p">,</span>
-            <span class="n">executable</span><span class="o">=</span><span class="s1">&#39;mimic&#39;</span><span class="p">,</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;mimic&#39;</span><span class="p">,</span>
+            <span class="n">package</span><span class="o">=</span><span class="s1">'turtlesim'</span><span class="p">,</span>
+            <span class="n">executable</span><span class="o">=</span><span class="s1">'mimic'</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'mimic'</span><span class="p">,</span>
             <span class="n">remappings</span><span class="o">=</span><span class="p">[</span>
-                <span class="p">(</span><span class="s1">&#39;/input/pose&#39;</span><span class="p">,</span> <span class="s1">&#39;/turtlesim1/turtle1/pose&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="s1">&#39;/output/cmd_vel&#39;</span><span class="p">,</span> <span class="s1">&#39;/turtlesim2/turtle1/cmd_vel&#39;</span><span class="p">),</span>
+                <span class="p">(</span><span class="s1">'/input/pose'</span><span class="p">,</span> <span class="s1">'/turtlesim1/turtle1/pose'</span><span class="p">),</span>
+                <span class="p">(</span><span class="s1">'/output/cmd_vel'</span><span class="p">,</span> <span class="s1">'/turtlesim2/turtle1/cmd_vel'</span><span class="p">),</span>
             <span class="p">]</span>
         <span class="p">)</span>
     <span class="p">])</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;launch&gt;</span>
+<span class="w">    </span><span class="nt">&lt;node</span>
+<span class="w">        </span><span class="na">pkg=</span><span class="s">"turtlesim"</span>
+<span class="w">        </span><span class="na">ns=</span><span class="s">"turtlesim1"</span>
+<span class="w">        </span><span class="na">exec=</span><span class="s">"turtlesim_node"</span>
+<span class="w">        </span><span class="na">name=</span><span class="s">"turtle1"</span><span class="nt">/&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;node</span>
+<span class="w">        </span><span class="na">pkg=</span><span class="s">"turtlesim"</span>
+<span class="w">        </span><span class="na">ns=</span><span class="s">"turtlesim2"</span>
+<span class="w">        </span><span class="na">exec=</span><span class="s">"turtlesim_node"</span>
+<span class="w">        </span><span class="na">name=</span><span class="s">"turtle2_green"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">"background_b"</span><span class="w"> </span><span class="na">value=</span><span class="s">"160"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">"background_g"</span><span class="w"> </span><span class="na">value=</span><span class="s">"230"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">"background_r"</span><span class="w"> </span><span class="na">value=</span><span class="s">"0"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/node&gt;</span>
+
+<span class="w">    </span><span class="nt">&lt;node</span>
+<span class="w">        </span><span class="na">pkg=</span><span class="s">"turtlesim"</span>
+<span class="w">        </span><span class="na">exec=</span><span class="s">"mimic"</span>
+<span class="w">        </span><span class="na">name=</span><span class="s">"mimic"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;remap</span><span class="w"> </span><span class="na">from=</span><span class="s">"/input/pose"</span><span class="w"> </span><span class="na">to=</span><span class="s">"/turtlesim1/turtle1/pose"</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;remap</span><span class="w"> </span><span class="na">from=</span><span class="s">"/output/cmd_vel"</span><span class="w"> </span><span class="na">to=</span><span class="s">"/turtlesim2/turtle1/cmd_vel"</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/node&gt;</span>
+<span class="nt">&lt;/launch&gt;</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
 <p>A fent leírt módon létrehozott launch fájl a korábbiakban megismert <code>turtlesim</code> csomag három node-ját indítja el. A cél két turtlesim ablak megnyitása, majd az egyik teknős mozgásának megismétlése a másik teknőssel. A két turtlesim node indításában mindössze a névtér (namespace) tér el. Az egyedi névterek alkalmazása lehetővé teszi két azonos node egyidejű elindítását névkonfliktus nélkül. Így mindkét teknős ugyanazon a topicon fogad utasításokat, és ugyanazon a topicon közli a helyzetét. Az egyéni névterek lehetővé teszik a két teknős üzeneteinek megkülönböztetését.</p>
 <p>Az utolsó node szintén a <code>turtlesim</code> csomagból van, viszont a futtatható fájl eltér: <code>mimic</code>. Ez a csomópont ki van egészítve névmegfeleltetésekkel. Például az egyszerű <code>/input/pose</code> megfelelője ezesetben <code>/turtlesim1/turtle1/pose</code> és a korábban megismert <code>/output/cmd_vel</code> most <code>/turtlesim2/turtle1/cmd_vel</code>. Ez azt jelenti, hogy <code>mimic</code> feliratkozik a <code>/turtlesim1/sim</code> pose topic-ra, és újra publisholja úgy, hogy <code>/turtlesim2/sim</code> sebesség utasítása feliratkozzon rá. Tehát, <code>turtlesim2</code> utánozni fogja <code>turtlesim1</code> mozgását. </p>
 <h3 id="kod-reszleteinek-attekintese">Kód részleteinek áttekintése<a class="headerlink" href="#kod-reszleteinek-attekintese" title="Permanent link">&para;</a></h3>
 <p>Ezek a kifejezések Python <code>launch</code> modulokat importálnak.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">launch</span> <span class="kn">import</span> <span class="n">LaunchDescription</span>
-<span class="kn">from</span> <span class="nn">launch_ros.actions</span> <span class="kn">import</span> <span class="n">Node</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">launch</span><span class="w"> </span><span class="kn">import</span> <span class="n">LaunchDescription</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">launch_ros.actions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Node</span>
 </code></pre></div>
 <p>Ezt követően kezdődik a launch leírása:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">generate_launch_description</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">generate_launch_description</span><span class="p">():</span>
   <span class="k">return</span> <span class="n">LaunchDescription</span><span class="p">([</span>
 
   <span class="p">])</span>
 </code></pre></div>
 <p>A launch leírásban szereplő első két utasítás indítja a két turtlesim ablakot:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Node</span><span class="p">(</span>
-    <span class="n">package</span><span class="o">=</span><span class="s1">&#39;turtlesim&#39;</span><span class="p">,</span>
-    <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;turtlesim1&#39;</span><span class="p">,</span>
-    <span class="n">executable</span><span class="o">=</span><span class="s1">&#39;turtlesim_node&#39;</span><span class="p">,</span>
-    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sim&#39;</span>
+    <span class="n">package</span><span class="o">=</span><span class="s1">'turtlesim'</span><span class="p">,</span>
+    <span class="n">namespace</span><span class="o">=</span><span class="s1">'turtle1'</span><span class="p">,</span>
+    <span class="n">executable</span><span class="o">=</span><span class="s1">'turtlesim_node'</span><span class="p">,</span>
 <span class="p">),</span>
 <span class="n">Node</span><span class="p">(</span>
-    <span class="n">package</span><span class="o">=</span><span class="s1">&#39;turtlesim&#39;</span><span class="p">,</span>
-    <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;turtlesim2&#39;</span><span class="p">,</span>
-    <span class="n">executable</span><span class="o">=</span><span class="s1">&#39;turtlesim_node&#39;</span><span class="p">,</span>
-    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sim&#39;</span>
+    <span class="n">package</span><span class="o">=</span><span class="s1">'turtlesim'</span><span class="p">,</span>
+    <span class="n">namespace</span><span class="o">=</span><span class="s1">'turtle2'</span><span class="p">,</span>
+    <span class="n">executable</span><span class="o">=</span><span class="s1">'turtlesim_node'</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">'turtle2_green'</span><span class="p">,</span>
+    <span class="n">parameters</span><span class="o">=</span><span class="p">[{</span><span class="s1">'background_b'</span><span class="p">:</span> <span class="mi">160</span><span class="p">,</span> <span class="s1">'background_g'</span><span class="p">:</span> <span class="mi">230</span><span class="p">,</span> <span class="s1">'background_r'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}],</span>
 <span class="p">),</span>
 </code></pre></div>
 <p>Végül megtörténik a mozgás utánzását megvalósító node indítása is:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Node</span><span class="p">(</span>
-    <span class="n">package</span><span class="o">=</span><span class="s1">&#39;turtlesim&#39;</span><span class="p">,</span>
-    <span class="n">executable</span><span class="o">=</span><span class="s1">&#39;mimic&#39;</span><span class="p">,</span>
-    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;mimic&#39;</span><span class="p">,</span>
+    <span class="n">package</span><span class="o">=</span><span class="s1">'turtlesim'</span><span class="p">,</span>
+    <span class="n">executable</span><span class="o">=</span><span class="s1">'mimic'</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">'mimic'</span><span class="p">,</span>
     <span class="n">remappings</span><span class="o">=</span><span class="p">[</span>
-      <span class="p">(</span><span class="s1">&#39;/input/pose&#39;</span><span class="p">,</span> <span class="s1">&#39;/turtlesim1/turtle1/pose&#39;</span><span class="p">),</span>
-      <span class="p">(</span><span class="s1">&#39;/output/cmd_vel&#39;</span><span class="p">,</span> <span class="s1">&#39;/turtlesim2/turtle1/cmd_vel&#39;</span><span class="p">),</span>
+      <span class="p">(</span><span class="s1">'/input/pose'</span><span class="p">,</span> <span class="s1">'/turtlesim1/turtle1/pose'</span><span class="p">),</span>
+      <span class="p">(</span><span class="s1">'/output/cmd_vel'</span><span class="p">,</span> <span class="s1">'/turtlesim2/turtle1/cmd_vel'</span><span class="p">),</span>
     <span class="p">]</span>
 <span class="p">)</span>
 </code></pre></div>
 <h2 id="ros2-launch-hasznalata"><code>ROS2</code> launch használata<a class="headerlink" href="#ros2-launch-hasznalata" title="Permanent link">&para;</a></h2>
 <p>A létrehozott launch fájl elindítása az alábbi módon történik:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/example_launch/launch<span class="w"> </span><span class="c1"># belépünk a launch fájlt tartalmazó mappába</span>
+<p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/example_launch_cpp/launch<span class="w"> </span><span class="c1"># belépünk a launch fájlt tartalmazó mappába</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>turtlesim_mimc_launch.py
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>turtlesim_mimic_launch.py
 </code></pre></div></p>
 <p>Két turtlesim ablak fog megnyílni, és a következő <code>[INFO]</code> kimenet lesz látható, felsorolva az indított node-okat:
 <div class="highlight"><pre><span></span><code><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span><span class="o">[</span>launch<span class="o">]</span>:<span class="w"> </span>Default<span class="w"> </span>logging<span class="w"> </span>verbosity<span class="w"> </span>is<span class="w"> </span><span class="nb">set</span><span class="w"> </span>to<span class="w"> </span>INFO
@@ -2670,8 +2847,9 @@
 <span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span><span class="o">[</span>mimic-3<span class="o">]</span>:<span class="w"> </span>process<span class="w"> </span>started<span class="w"> </span>with<span class="w"> </span>pid<span class="w"> </span><span class="o">[</span><span class="m">11716</span><span class="o">]</span>
 </code></pre></div></p>
 <p>Hogy kipróbáljuk az elindított rendszer működését, egy új terminálban hirdessünk olyan üzenetet, amellyel a <code>turtle1</code> mozgatható:</p>
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>-r<span class="w"> </span><span class="m">1</span><span class="w"> </span>/turtlesim1/turtle1/cmd_vel<span class="w"> </span>geometry_msgs/msg/Twist<span class="w"> </span><span class="s2">&quot;{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -1.8}}&quot;</span>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>-r<span class="w"> </span><span class="m">1</span><span class="w"> </span>/turtlesim1/turtle1/cmd_vel<span class="w"> </span>geometry_msgs/msg/Twist<span class="w"> </span><span class="s2">"{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -1.8}}"</span>
 </code></pre></div>
+<p><img alt="Turtlesim" src="/szenergy-autonom/assets/images_common/turtlesim03.gif" /></p>
 <p>A fent bemutatott direkt módon kívül egy launch fájl futtatható csomag által is:</p>
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>&lt;csomag_megnevezése&gt;<span class="w"> </span>&lt;launch_fájl_neve&gt;
 </code></pre></div>
@@ -2683,14 +2861,32 @@
 <p>Úgy, hogy minden eddig elindított node fut, egy újabb terminálban futtassuk az <code>rqt_graph</code> eszközt, amely grafikusan szemlélteti a launch fájl segítségével kialakított rendszert:</p>
 <div class="highlight"><pre><span></span><code>rqt_graph
 </code></pre></div>
+<p>vagy a <code>ros2 run</code> paranccsal:</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>rqt_graph<span class="w"> </span>rqt_graph
+</code></pre></div>
+<pre class="mermaid"><code>graph TD
+    T1([turtlesim1/turtlesim]):::red --&gt; P1[ /turtlesim1/turtle1/pose]:::light --&gt; M1([mimic]):::red
+    M1 --&gt; C2[ /turtlesim2/turtle1/cmd_vel]:::light 
+    C2 --&gt; T2([turtlesim2/turtle2_green]):::red 
+
+    n1([ /node]):::white -- publishes --&gt; t[ /topic]:::white
+    t -- subscribes --&gt; n2([ /node]):::white
+
+
+    classDef light fill:#34aec5,stroke:#152742,stroke-width:2px,color:#152742  
+    classDef dark fill:#152742,stroke:#34aec5,stroke-width:2px,color:#34aec5
+    classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
+    classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
+</code></pre>
 <h2 id="adjuk-hozza-a-package-hez-hogy-barhonnan-indithassuk">Adjuk hozzá a package-hez, hogy bárhonnan indíthassuk<a class="headerlink" href="#adjuk-hozza-a-package-hez-hogy-barhonnan-indithassuk" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/example_launch
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/example_launch_cpp
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>code<span class="w"> </span>.
 </code></pre></div>
 <figure>
-  <img alt="Image title" src="../vscode06.png" width="80%" />
-  <figcaption>Lexus</figcaption>
+  <img alt="Image title" src="/szenergy-autonom/assets/images_common/vscode06.png" width="90%" />
+<br />
+<figcaption>VS code fájlok</figcaption>
 </figure>
 <p>A package.xml-hez a <code>&lt;test_depend&gt;</code> elé szúrjuk be következő sort:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;exec_depend&gt;</span>ros2launch<span class="nt">&lt;/exec_depend&gt;</span>
@@ -2699,15 +2895,28 @@
 <div class="highlight"><pre><span></span><code><span class="nb">install</span><span class="p">(</span><span class="s">DIRECTORY</span><span class="w"> </span><span class="s">launch</span>
 <span class="w">  </span><span class="s">DESTINATION</span><span class="w"> </span><span class="s">share/</span><span class="o">${</span><span class="nv">PROJECT_NAME</span><span class="o">}</span><span class="p">)</span>
 </code></pre></div>
-<p>Buildeljük a szokáso módon:</p>
+<p>Buildeljük a szokásos módon:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--packages-select<span class="w"> </span>example_launch
+<div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--packages-select<span class="w"> </span>example_launch_cpp<span class="w"> </span>--symlink-install
 </code></pre></div>
+<p>A buildelés után source-oljuk a telepítést:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
 </code></pre></div>
 <p>Ez a parancs most már <strong>bárhonnan</strong> kiadható:</p>
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>example_launch<span class="w"> </span>turtlesim_mimc_launch.py
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>example_launch_cpp<span class="w"> </span>turtlesim_mimic_launch.py
+</code></pre></div>
+<h2 id="hazi-feladat">Házi feladat<a class="headerlink" href="#hazi-feladat" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Házi feladat</p>
+<p>Készíts egy launch fájlt, amely a <code>turtlesim</code> csomagból elindít egy turtlesim ablakot, és egy <code>teleop_turtle</code> csomagból egy <code>teleop_turtle_keyboard</code> node-ot. A <code>teleop_turtle_keyboard</code> node segítségével a turtlesim ablakban mozgatható a teknős a billentyűzetről. A turtlesim háttere legyen piros. Készítsünk hozzá egy <code>example_launch_py</code> python csomagot, és indítsuk el a launch fájlt a csomagból.</p>
+</div>
+<h2 id="megjegyzes-python-csomagok-eseten">Megjegyzés python csomagok esetén<a class="headerlink" href="#megjegyzes-python-csomagok-eseten" title="Permanent link">&para;</a></h2>
+<p>Amennyiben <code>SetuptoolsDeprecationWarning: setup.py install is deprecated</code> hibaüzenetet kapunk, akkor a <code>setuptools</code> csomag downgrade-elése szükséges. Ellenőrizzük a <code>setuptools</code> csomag verzióját:</p>
+<div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>setuptools
+</code></pre></div>
+<p>Ha az eredmény <strong>újabb</strong>, mint <code>58.2.0</code>, akkor downgrade-elni kell a <code>setuptools</code> csomagot:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">setuptools</span><span class="o">==</span><span class="m">58</span>.2.0
 </code></pre></div>
 <h1 id="forrasok">Források<a class="headerlink" href="#forrasok" title="Permanent link">&para;</a></h1>
 <ul>
@@ -2758,7 +2967,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; Széchenyi István Egyetem 
+      &copy; SZEnergy Team, 2024. Minden jog fenntartva.
 
     </div>
   
@@ -2798,7 +3007,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -2811,6 +3020,8 @@
         <script src="../../pymdownx.snippets"></script>
       
         <script src="../../pymdownx.superfences"></script>
+      
+        <script src="../../assets/slides/js/slides.js"></script>
       
     
   </body>

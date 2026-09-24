@@ -6,31 +6,31 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A course at Széchenyi István University, Győr, Hungary">
+        <meta name="description" content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga.">
       
       
-        <meta name="author" content="sze">
+        <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://sze-info.github.io/szenergy-autonom/szimulacio/f1tenth_sim_a/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/szimulacio/f1tenth_sim_a/">
       
       
-        <link rel="prev" href="../gyakorlat/">
+        <link rel="prev" href="../gazebo_fortress/">
       
       
-        <link rel="next" href="../../tervezes/">
+        <link rel="next" href="../gyakorlat/">
       
       
       <link rel="icon" href="../../assets/images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.23">
     
     
       
-        <title>Gyakorlat - Gazebo Fortress ROS 2 Wheeltec - Autonóm járművek és robotok programozása</title>
+        <title>Gyakorlat - Gazebo versenypálya - Autonóm tananyag</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -54,6 +54,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../assets/slides/css/slides.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -63,11 +65,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Gyakorlat - Gazebo Fortress ROS 2 Wheeltec - Autonóm járművek és robotok programozása" >
+        <meta  property="og:title"  content="Gyakorlat - Gazebo versenypálya - Autonóm tananyag" >
       
-        <meta  property="og:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/szimulacio/f1tenth_sim_a.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/szimulacio/f1tenth_sim_a.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +77,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://sze-info.github.io/szenergy-autonom/szimulacio/f1tenth_sim_a/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/szimulacio/f1tenth_sim_a/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Gyakorlat - Gazebo Fortress ROS 2 Wheeltec - Autonóm járművek és robotok programozása" >
+        <meta  name="twitter:title"  content="Gyakorlat - Gazebo versenypálya - Autonóm tananyag" >
       
-        <meta  name="twitter:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/szimulacio/f1tenth_sim_a.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/szimulacio/f1tenth_sim_a.png" >
       
     
     
@@ -106,7 +108,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ros-2-f110-wheeltec-roboworks-gazebo-simulation-workshop" class="md-skip">
+        <a href="#ros-2-roboracer-korabbi-neven-f110-es-wheeltec-roboworks-gazebo-szimulacio" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +122,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-header__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-header__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
@@ -134,13 +136,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Autonóm járművek és robotok programozása
+            Autonóm tananyag
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gyakorlat - Gazebo Fortress ROS 2 Wheeltec
+              Gyakorlat - Gazebo versenypálya
             
           </span>
         </div>
@@ -245,7 +247,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -371,23 +373,6 @@
   
 
       
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-tabs__link">
-        
-  
-    
-  
-  Moodle
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -410,17 +395,17 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-nav__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-nav__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
 
     </a>
-    Autonóm járművek és robotok programozása
+    Autonóm tananyag
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -571,29 +556,6 @@
   
   <span class="md-ellipsis">
     Gyakorlat
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../bevezetes/gepterem/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    Gépterem
   </span>
   
 
@@ -978,6 +940,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../../ros2halado/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-3.1 3.9s-.7-.3-1-.3c-.6-.1-1 .1-1.2 1.1L12 16.8c-.2.8-.5 1.4-1 1.8-.4.3-.8.4-1.3.4-.8 0-2-.5-2-.5l.5-1.4s.8.3 1 .3c.3.1.5 0 .7-.1.2-.1.3-.4.4-.7l1.6-9.2c.1-.8.5-1.4 1-1.9.6-.4 1.3-.5 2.1-.4.7.1 1.5.5 1.5.5l-.6 1.3Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 haladó
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ros2halado/ros2launch/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 launch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../feleves_beadando/" class="md-nav__link">
         
   
@@ -1031,29 +1039,6 @@
   
   <span class="md-ellipsis">
     Nagy féléves
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ros2halado/ros2launch/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    ROS 2 launch
   </span>
   
 
@@ -1437,29 +1422,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../gyakorlat/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    Gyakorlat - Gazebo saját robotszimuláció készítése
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1478,7 +1440,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo Fortress ROS 2 Wheeltec
+    Gyakorlat - Gazebo versenypálya
   </span>
   
 
@@ -1491,7 +1453,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo Fortress ROS 2 Wheeltec
+    Gyakorlat - Gazebo versenypálya
   </span>
   
 
@@ -1515,67 +1477,59 @@
         <li class="md-nav__item">
   <a href="#video" class="md-nav__link">
     <span class="md-ellipsis">
-      Video
+      Videó
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-high-level" class="md-nav__link">
+  <a href="#elofeltetelek-attekintes" class="md-nav__link">
     <span class="md-ellipsis">
-      Requirements (high-level)
+      Előfeltételek (áttekintés)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#binary-installation-on-ubuntu" class="md-nav__link">
+  <a href="#megjegyzes-beallitasok-wsl2-hoz" class="md-nav__link">
     <span class="md-ellipsis">
-      Binary Installation on Ubuntu
+      Megjegyzés beállítások WSL2-höz
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gazebo-fortress-ros-2-integration" class="md-nav__link">
+  <a href="#opcionalis-rviz-2d-overlay-plugin-telepitese" class="md-nav__link">
     <span class="md-ellipsis">
-      Gazebo Fortress ROS 2 integration
+      Opcionális: rviz-2d-overlay plugin telepítése
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-settings-to-wsl2" class="md-nav__link">
+  <a href="#telepites-ellenorzese" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional settings to WSL2
+      Telepítés ellenőrzése
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-the-installation" class="md-nav__link">
+  <a href="#csomagok-es-buildeles" class="md-nav__link">
     <span class="md-ellipsis">
-      Check the installation
+      Csomagok és buildelés
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#packages-and-build" class="md-nav__link">
-    <span class="md-ellipsis">
-      Packages and build
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Csomagok és buildelés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#build" class="md-nav__link">
     <span class="md-ellipsis">
       Build
@@ -1583,20 +1537,52 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
+  <a href="#szimulacio-futtatasa" class="md-nav__link">
     <span class="md-ellipsis">
-      Run
+      Szimuláció futtatása
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#useful-commands" class="md-nav__link">
+  <a href="#vezerlok-futtatasa" class="md-nav__link">
     <span class="md-ellipsis">
-      Useful commands
+      Vezérlők futtatása
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasznos-parancsok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hasznos parancsok
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transzformaciok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transzformációk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teljesitmeny-problemak-megoldasa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teljesítmény-problémák megoldása
     </span>
   </a>
   
@@ -1615,6 +1601,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gyakorlat/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Gyakorlat - Gazebo saját robotszimuláció készítése
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1887,6 +1896,52 @@
   
   <span class="md-ellipsis">
     Gyakorlat - Mesterséges intelligencia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/kaggle_notebook/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Kaggle Notebook - Előkészítés (gyakorlat)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/slides/slides_nn/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h8a2 2 0 0 1 2-2 2 2 0 0 1 2 2h8v2h-1v11h-5.75L17 22h-2l-1.75-6h-2.5L9 22H7l1.75-6H3V5H2V3m3 2v9h14V5H5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    NN slides
   </span>
   
 
@@ -2196,6 +2251,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../onallo/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../ros2halado/rqt/" class="md-nav__link">
         
   
@@ -2378,6 +2454,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onallo/troubleshoot/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Hibák
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2397,26 +2496,6 @@
   
   <span class="md-ellipsis">
     Linkek
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Moodle
   </span>
   
 
@@ -2454,67 +2533,59 @@
         <li class="md-nav__item">
   <a href="#video" class="md-nav__link">
     <span class="md-ellipsis">
-      Video
+      Videó
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#requirements-high-level" class="md-nav__link">
+  <a href="#elofeltetelek-attekintes" class="md-nav__link">
     <span class="md-ellipsis">
-      Requirements (high-level)
+      Előfeltételek (áttekintés)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#binary-installation-on-ubuntu" class="md-nav__link">
+  <a href="#megjegyzes-beallitasok-wsl2-hoz" class="md-nav__link">
     <span class="md-ellipsis">
-      Binary Installation on Ubuntu
+      Megjegyzés beállítások WSL2-höz
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gazebo-fortress-ros-2-integration" class="md-nav__link">
+  <a href="#opcionalis-rviz-2d-overlay-plugin-telepitese" class="md-nav__link">
     <span class="md-ellipsis">
-      Gazebo Fortress ROS 2 integration
+      Opcionális: rviz-2d-overlay plugin telepítése
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-settings-to-wsl2" class="md-nav__link">
+  <a href="#telepites-ellenorzese" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional settings to WSL2
+      Telepítés ellenőrzése
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-the-installation" class="md-nav__link">
+  <a href="#csomagok-es-buildeles" class="md-nav__link">
     <span class="md-ellipsis">
-      Check the installation
+      Csomagok és buildelés
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#packages-and-build" class="md-nav__link">
-    <span class="md-ellipsis">
-      Packages and build
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Csomagok és buildelés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#build" class="md-nav__link">
     <span class="md-ellipsis">
       Build
@@ -2522,20 +2593,52 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
+  <a href="#szimulacio-futtatasa" class="md-nav__link">
     <span class="md-ellipsis">
-      Run
+      Szimuláció futtatása
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#useful-commands" class="md-nav__link">
+  <a href="#vezerlok-futtatasa" class="md-nav__link">
     <span class="md-ellipsis">
-      Useful commands
+      Vezérlők futtatása
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasznos-parancsok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hasznos parancsok
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transzformaciok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transzformációk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teljesitmeny-problemak-megoldasa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teljesítmény-problémák megoldása
     </span>
   </a>
   
@@ -2568,103 +2671,94 @@
   
 
 
-<h1 id="ros-2-f110-wheeltec-roboworks-gazebo-simulation-workshop"><code>ROS 2</code> F1/10 Wheeltec Roboworks Gazebo simulation workshop<a class="headerlink" href="#ros-2-f110-wheeltec-roboworks-gazebo-simulation-workshop" title="Permanent link">&para;</a></h1>
-<p>The workshop is ROS 2 compatible <a href="https://docs.ros.org/en/humble/"><img alt="Static Badge" src="https://img.shields.io/badge/ROS_2-Humble-34aec5" /></a></p>
-<h2 id="video">Video<a class="headerlink" href="#video" title="Permanent link">&para;</a></h2>
+<h1 id="ros-2-roboracer-korabbi-neven-f110-es-wheeltec-roboworks-gazebo-szimulacio"><code>ROS 2</code> Roboracer (korábbi nevén F1/10) és Wheeltec Roboworks Gazebo szimuláció<a class="headerlink" href="#ros-2-roboracer-korabbi-neven-f110-es-wheeltec-roboworks-gazebo-szimulacio" title="Permanent link">&para;</a></h1>
+<p>A szimuláció ROS 2 kompatibilis: 
+<a href="https://docs.ros.org/en/humble/"><img alt="Static Badge" src="https://img.shields.io/badge/ROS_2-Humble-34aec5" /></a>
+<a href="https://docs.ros.org/en/jazzy/"><img alt="Static Badge" src="https://img.shields.io/badge/ROS_2-Jazzy-34aec5" /></a>
+<a href="https://gazebosim.org/docs/fortress/"><img alt="Static Badge" src="https://img.shields.io/badge/Gazebo-Fortress-red" /></a></p>
+<h2 id="video">Videó<a class="headerlink" href="#video" title="Permanent link">&para;</a></h2>
+<p>A workshophoz tartozó videósorozat 1. része elérhető a YouTube-on:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/90cVRC2Hd7Y?si=GUiIyuXk71Bu1uGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<h2 id="requirements-high-level">Requirements (high-level)<a class="headerlink" href="#requirements-high-level" title="Permanent link">&para;</a></h2>
+<p>A videó 2. része:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZlNOnPJfS9c?si=Cj6xaboiXv5sCHvL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2 id="elofeltetelek-attekintes">Előfeltételek (áttekintés)<a class="headerlink" href="#elofeltetelek-attekintes" title="Permanent link">&para;</a></h2>
 <ol>
-<li>ROS 2 Humble: 🟠 see previous workshops or <a href="https://docs.ros.org/en/humble/Installation.html">docs.ros.org/en/humble/Installation.html</a> </li>
-<li>Gazebo Fortress: ✅ current workshop <a href="https://gazebosim.org/docs/fortress/install_ubuntu">gazebosim.org/docs/fortress/install_ubuntu</a></li>
-<li><code>ROS gz bridge</code>:  ✅ current workshop, ROS integration. Install with a single command: <code>sudo apt install ros-humble-ros-gz-bridge</code>, <a href="https://gazebosim.org/docs/fortress/ros2_integration">gazebosim.org/docs/fortress/ros2_integration</a></li>
-<li>Build and run custom worlds and models  ✅ current workshop (e.g. <code>F1/10</code> / <code>Wheeltec, Roboworks</code>) </li>
+<li><strong>ROS 2 Humble:</strong> 🟠 lásd korábbi órákat vagy <a href="https://docs.ros.org/en/humble/Installation.html">docs.ros.org/en/humble/Installation.html</a>  </li>
+<li><strong>Gazebo Fortress:</strong> 🟠 lásd korábbi órákat <a href="https://gazebosim.org/docs/fortress/install_ubuntu">gazebosim.org/docs/fortress/install_ubuntu</a>  </li>
+<li><strong><code>ROS gz bridge</code>:</strong> 🟠 lásd korábbi órákat, de a telepítés egyetlen paranccsal megtehető:<br />
+<code>sudo apt install ros-humble-ros-gz-bridge</code>, <a href="https://gazebosim.org/docs/fortress/ros2_integration">gazebosim.org/docs/fortress/ros2_integration</a>  </li>
+<li><strong>Egyedi világok és modellek építése, futtatása</strong> ✅ aktuális tananyag </li>
 </ol>
 <figure>
   <img alt="Image title" src="https://raw.githubusercontent.com/robotverseny/robotverseny.github.io/main/img/f1tenth_wheeltec_roboworks01.png" width="80%" />
-  <figcaption>Official F1/10 vehicle vs Wheeltec Roboworks Ackermann Rosbot mini vehicle</figcaption>
+<br />
+<figcaption>Official F1/10 vehicle vs Wheeltec Roboworks Ackermann Rosbot mini vehicle</figcaption>
 </figure>
-<h2 id="binary-installation-on-ubuntu">Binary Installation on Ubuntu<a class="headerlink" href="#binary-installation-on-ubuntu" title="Permanent link">&para;</a></h2>
-<p>Fortress binaries are provided for Ubuntu Bionic, Focal and Jammy. All of the Fortress
-binaries are hosted in the osrfoundation repository. To install all of them,
-the metapackage <code>ignition-fortress</code> can be installed. The following is based on <a href="https://gazebosim.org/docs/fortress/install_ubuntu">gazebosim.org/docs/fortress/install_ubuntu</a>.</p>
-<p>First install some necessary tools:</p>
-<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>lsb-release<span class="w"> </span>wget<span class="w"> </span>gnupg
-</code></pre></div></p>
-<p>Then install Ignition Fortress:</p>
-<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>wget<span class="w"> </span>https://packages.osrfoundation.org/gazebo.gpg<span class="w"> </span>-O<span class="w"> </span>/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [arch=</span><span class="k">$(</span>dpkg<span class="w"> </span>--print-architecture<span class="k">)</span><span class="s2"> signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable </span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> main&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/gazebo-stable.list<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>ignition-fortress
-</code></pre></div></p>
-<p>All libraries should be ready to use and the <code>ign gazebo</code> app ready to be executed.</p>
-<h2 id="gazebo-fortress-ros-2-integration">Gazebo Fortress ROS 2 integration<a class="headerlink" href="#gazebo-fortress-ros-2-integration" title="Permanent link">&para;</a></h2>
-<p>Issue the following command:</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-ros-gz-bridge
-</code></pre></div>
-<h2 id="additional-settings-to-wsl2">Additional settings to WSL2<a class="headerlink" href="#additional-settings-to-wsl2" title="Permanent link">&para;</a></h2>
-<div class="admonition danger">
-<p class="admonition-title">Warning - WSL2</p>
-<p>There is an <a href="https://github.com/gazebosim/gz-sim/issues/1841">issue</a>, which can be set even in <code>~/.bashrc</code>:</p>
-</div>
+<h2 id="megjegyzes-beallitasok-wsl2-hoz">Megjegyzés beállítások WSL2-höz<a class="headerlink" href="#megjegyzes-beallitasok-wsl2-hoz" title="Permanent link">&para;</a></h2>
+<p>Van egy <a href="https://github.com/gazebosim/gz-sim/issues/1841">ismert probléma</a>, amit így lehet orvosolni:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">LIBGL_ALWAYS_SOFTWARE</span><span class="o">=</span><span class="m">1</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"export LIBGL_ALWAYS_SOFTWARE=1"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+<span class="nb">source</span><span class="w"> </span>~/.bashrc
 </code></pre></div>
-<p>Set it in <code>~/.bashrc</code>:
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export LIBGL_ALWAYS_SOFTWARE=1&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
-</code></pre></div></p>
-<details>
-<summary> Don't forget to source bashrc.</summary>
-
-<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.bashrc
+<h2 id="opcionalis-rviz-2d-overlay-plugin-telepitese">Opcionális: <code>rviz-2d-overlay</code> plugin telepítése<a class="headerlink" href="#opcionalis-rviz-2d-overlay-plugin-telepitese" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Humble</label><label for="__tabbed_1_2">Jazzy</label><label for="__tabbed_1_3">Általános</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-rviz-2d-overlay*
 </code></pre></div>
-</details>
-
-<p>After new terminal or <code>source</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="nv">$LIBGL_ALWAYS_SOFTWARE</span>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-jazzy-rviz-2d-overlay*
 </code></pre></div>
-<p>should  print <code>1</code>. Alternatively </p>
-<p><div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/.bashrc<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>LIBGL
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-<span class="nv">$ROS_DISTRO</span>-rviz-2d-overlay*
 </code></pre></div>
-should print the line.</p>
-<h2 id="check-the-installation">Check the installation<a class="headerlink" href="#check-the-installation" title="Permanent link">&para;</a></h2>
+</div>
+</div>
+</div>
+<h2 id="telepites-ellenorzese">Telepítés ellenőrzése<a class="headerlink" href="#telepites-ellenorzese" title="Permanent link">&para;</a></h2>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
-<p>Now the <code>ign gazebo</code> should work and the <code>ros2</code> commands should be available.</p>
+<p>Ellenőrizzük, hogy az <code>ign gazebo</code> és a <code>ros2</code> parancsok működnek.</p>
 </div>
-<p><img alt="" src="https://sze-info.github.io/szenergy-autonom/szimulacio/ign_gazebo_02.png" /></p>
-<p>Try at least one of the following commands:</p>
+<p><img alt="" src="/szenergy-autonom/assets/images_common/ign_gazebo_02.png" /></p>
+<p>Legalább egyik parancsot próbáljuk ki, pl:</p>
 <div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo<span class="w"> </span>-v<span class="w"> </span><span class="m">4</span><span class="w"> </span>-r<span class="w"> </span>ackermann_steering.sdf
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo<span class="w"> </span>shapes.sdf
 </code></pre></div>
-<p><img alt="" src="https://api.gazebosim.org/1.0/images/fortress/img/snap.gif" /></p>
 <div class="highlight"><pre><span></span><code>ign<span class="w"> </span>param<span class="w"> </span>--versions
 </code></pre></div>
-<h2 id="packages-and-build">Packages and build<a class="headerlink" href="#packages-and-build" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="https://api.gazebosim.org/1.0/images/fortress/img/snap.gif" /></p>
+<h2 id="csomagok-es-buildeles">Csomagok és buildelés<a class="headerlink" href="#csomagok-es-buildeles" title="Permanent link">&para;</a></h2>
 <p>Detailed description of the packages and build process.</p>
 <p>It is assumed that the workspace is <code>~/ros2_ws/</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/robotverseny/robotverseny_gazebo24
 </code></pre></div>
-<h2 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/robotverseny/megoldas_sim24
+</code></pre></div>
+<h3 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--packages-select<span class="w"> </span>robotverseny_application<span class="w"> </span>robotverseny_description<span class="w"> </span>robotverseny_bringup<span class="w"> </span>robotverseny_gazebo<span class="w"> </span>
+<div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--packages-select<span class="w"> </span>robotverseny_application<span class="w"> </span>robotverseny_description<span class="w"> </span>robotverseny_bringup<span class="w"> </span>robotverseny_gazebo<span class="w"> </span>megoldas_sim24
 </code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Megjegyzés</p>
+<p>Ajánlott a <code>--cmake-args -DCMAKE_BUILD_TYPE=Release</code> opció használata a buildelésnél a jobb teljesítmény érdekében. Erről a <a href="#teljesitmeny-problemak-megoldasa">Teljesítmény-problémák megoldása</a> szekcióban olvashatsz bővebben.</p>
+</div>
 <p>Opcionális, de érdemes feltenni az RViz 2D Overlay csomagot, amivel a debug szövegeket lehet megjeleníteni a RViz2-ben:</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-rviz-2d-overlay*
 </code></pre></div>
-<h2 id="run">Run<a class="headerlink" href="#run" title="Permanent link">&para;</a></h2>
+<h2 id="szimulacio-futtatasa">Szimuláció futtatása<a class="headerlink" href="#szimulacio-futtatasa" title="Permanent link">&para;</a></h2>
 <details>
-<summary> Don't forget to source before ROS commands.</summary>
+<summary> Ne felejtsd el a source parancsot.</summary>
 
 <div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
 </code></pre></div>
@@ -2672,10 +2766,32 @@ should print the line.</p>
 
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>robotverseny_bringup<span class="w"> </span>roboworks.launch.py
 </code></pre></div>
-<p><img alt="" src="https://raw.githubusercontent.com/rudolfkrecht/robotverseny/main/img/gazebo_and_rviz01.png" /></p>
-<h2 id="useful-commands">Useful commands<a class="headerlink" href="#useful-commands" title="Permanent link">&para;</a></h2>
+<p>Ekkor a szimuláció elindul egy új ablakban, és a következőkhöz hasonló képet kell látnod:</p>
+<p><img alt="" src="https://raw.githubusercontent.com/robotverseny/robotverseny_gazebo24/refs/heads/main/img/sim03.gif" /></p>
+<p><img alt="" src="https://raw.githubusercontent.com/robotverseny/robotverseny_gazebo24/refs/heads/main/img/sim04.png" /></p>
+<h2 id="vezerlok-futtatasa">Vezérlők futtatása<a class="headerlink" href="#vezerlok-futtatasa" title="Permanent link">&para;</a></h2>
+<p>Két megoldást is kipróbálhatsz a jármű vezérlésére: az egyik a <code>simple_pursuit</code>, a másik a <code>follow_the_gap</code>. Ezeket launch fájlként vagy node-ként is elindíthatod.</p>
+<p>Nézd meg mindegyik megoldás forráskódját a következő linkeken:</p>
+<ul>
+<li><a href="https://github.com/robotverseny/megoldas_sim24/blob/main/megoldas_sim24/simple_pursuit.py">simple_pursuit</a></li>
+<li><a href="https://github.com/robotverseny/megoldas_sim24/blob/main/megoldas_sim24/follow_the_gap.py">follow_the_gap</a></li>
+<li><a href="https://github.com/robotverseny/megoldas_sim24/blob/main/launch/megoldas1.launch.py">megoldas1.launch.py</a></li>
+<li><a href="https://github.com/robotverseny/megoldas_sim24/blob/main/launch/megoldas2.launch.py">megoldas2.launch.py</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>megoldas_sim24<span class="w"> </span>megoldas1.launch.py<span class="w"> </span><span class="c1"># start simple_pursuit</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>megoldas_sim24<span class="w"> </span>simple_pursuit.py
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>megoldas_sim24<span class="w"> </span>megoldas2.launch.py<span class="w"> </span><span class="c1"># start follow_the_gap</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>megoldas_sim24<span class="w"> </span>follow_the_gap.py
+</code></pre></div>
+<p>Ekkor a jármű is mozogni kezd a szimulátorban, illetve a következőhöz hasonló képet kell látnod:</p>
+<p><img alt="" src="https://raw.githubusercontent.com/jkk-research/jkk-research.github.io/refs/heads/master/docs/img/sim02.gif" /></p>
+<p><img alt="" src="https://raw.githubusercontent.com/robotverseny/megoldas_sim24/refs/heads/main/img/sim01.png" /></p>
+<h2 id="hasznos-parancsok">Hasznos parancsok<a class="headerlink" href="#hasznos-parancsok" title="Permanent link">&para;</a></h2>
 <p>Publish command topic:
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>--once<span class="w"> </span>/roboworks/cmd_vel<span class="w"> </span>geometry_msgs/msg/Twist<span class="w"> </span><span class="s2">&quot;{linear: {x: 2.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -0.01}}&quot;</span>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>--once<span class="w"> </span>/roboworks/cmd_vel<span class="w"> </span>geometry_msgs/msg/Twist<span class="w"> </span><span class="s2">"{linear: {x: 2.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -0.01}}"</span>
 </code></pre></div></p>
 <p>Teleop twist keyboard:
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>--ros-args<span class="w"> </span>-r<span class="w"> </span>/cmd_vel:<span class="o">=</span>/roboworks/cmd_vel
@@ -2690,7 +2806,7 @@ Ignition echo topic:</p>
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>topic<span class="w"> </span>list
 </code></pre></div>
 <details>
-<summary> Here are the topics.</summary>
+<summary> A következők a topic-ok.</summary>
 
 <div class="highlight"><pre><span></span><code>/clicked_point
 /clock
@@ -2708,11 +2824,72 @@ Ignition echo topic:</p>
 </code></pre></div>
 </details>
 
+<h2 id="transzformaciok">Transzformációk<a class="headerlink" href="#transzformaciok" title="Permanent link">&para;</a></h2>
+<p>The frame <code>/odom_combined</code> is practically the same as <code>/map</code>, there is a static <code>0,0,0</code> transform between them. The only dynamic transform is between <code>/odom_combined</code> and <code>/base_link</code>.</p>
+<pre class="mermaid"><code>graph TD;
+
+    map([ map]):::light
+    odom_combined([ odom_combined]):::light
+    base_link([ base_link]):::light
+    chassis([ chassis]):::light
+    camera_link([ camera_link]):::light
+    imu_link([ imu_link]):::light
+    laser([ laser]):::light
+
+    odom_combined -.-&gt;|dynamic| base_link
+    base_link --&gt;|static| chassis
+    base_link --&gt;|static| camera_link
+    base_link --&gt;|static| imu_link
+    base_link --&gt;|static| laser
+    map ==&gt;|static - same| odom_combined
+
+classDef light fill:#34aec5,stroke:#152742,stroke-width:2px,color:#152742  
+classDef dark fill:#152742,stroke:#34aec5,stroke-width:2px,color:#34aec5
+classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
+classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff</code></pre>
+<p>You can visualize the frames with:</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>rqt_tf_tree<span class="w"> </span>rqt_tf_tree
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Vigyázat</p>
+<p>Van több frame is, de most számunkara csak az említettek a fontosak.</p>
+</div>
+<h2 id="teljesitmeny-problemak-megoldasa">Teljesítmény-problémák megoldása<a class="headerlink" href="#teljesitmeny-problemak-megoldasa" title="Permanent link">&para;</a></h2>
+<p>If the simulation is slow, try the following:</p>
+<p>Add <code>--cmake-args -DCMAKE_BUILD_TYPE=Release</code> to the build command. And or adjust <code>--parallel-workers N</code> to the number of CPU cores. Example: </p>
+<div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>--parallel-workers<span class="w"> </span><span class="m">4</span><span class="w"> </span>--packages-select<span class="w"> </span>robotverseny_application<span class="w"> </span>robotverseny_description<span class="w"> </span>robotverseny_bringup<span class="w"> </span>robotverseny_gazebo<span class="w"> </span>megoldas_sim24
+</code></pre></div>
+<p>As suggested by <a href="https://autowarefoundation.github.io/autoware-documentation/main/installation/additional-settings-for-developers/network-configuration/dds-settings/">DDS settings for ROS 2 and Autoware</a>: set the config file path and enlarge the Linux kernel maximum buffer size.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Increase the maximum receive buffer size for network packets</span>
+sudo<span class="w"> </span>sysctl<span class="w"> </span>-w<span class="w"> </span>net.core.rmem_max<span class="o">=</span><span class="m">2147483647</span><span class="w">  </span><span class="c1"># 2 GiB, default is 208 KiB</span>
+
+<span class="c1"># IP fragmentation settings</span>
+sudo<span class="w"> </span>sysctl<span class="w"> </span>-w<span class="w"> </span>net.ipv4.ipfrag_time<span class="o">=</span><span class="m">3</span><span class="w">  </span><span class="c1"># in seconds, default is 30 s</span>
+sudo<span class="w"> </span>sysctl<span class="w"> </span>-w<span class="w"> </span>net.ipv4.ipfrag_high_thresh<span class="o">=</span><span class="m">134217728</span><span class="w">  </span><span class="c1"># 128 MiB</span>
+</code></pre></div>
+<p>To make it permanent,</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/sysctl.d/10-cyclone-max.conf
+</code></pre></div>
+<p>Paste the following into the file:
+<div class="highlight"><pre><span></span><code><span class="c1"># Increase the maximum receive buffer size for network packets</span>
+net.core.rmem_max<span class="o">=</span><span class="m">2147483647</span><span class="w">  </span><span class="c1"># 2 GiB, default is 208 KiB</span>
+
+<span class="c1"># IP fragmentation settings</span>
+net.ipv4.ipfrag_time<span class="o">=</span><span class="m">3</span><span class="w">  </span><span class="c1"># in seconds, default is 30 s</span>
+net.ipv4.ipfrag_high_thresh<span class="o">=</span><span class="m">134217728</span><span class="w">  </span><span class="c1"># 128 MiB, default is 256 KiB</span>
+</code></pre></div>
+Save and exit (<code>CTRL+O</code>, <code>ENTER</code>, <code>CTRL+X</code>).</p>
+<p>Also have a look at <a href="https://autowarefoundation.github.io/autoware-documentation/main/installation/additional-settings-for-developers/network-configuration/">Network settings for ROS 2 and Autoware</a> and <a href="https://autowarefoundation.github.io/autoware-documentation/main/support/troubleshooting/performance-troubleshooting/">Performance Troubleshooting</a></p>
 <h2 id="linkek">Linkek<a class="headerlink" href="#linkek" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://jkk-research.github.io/workshops/f1tenth_sim_a/">Angol nyelvű leírás</a></li>
 <li><a href="https://robotverseny.github.io/">robotverseny.github.io</a></li>
 <li><a href="https://gazebosim.org/docs/fortress/install_ubuntu">Gazebo Fortress</a></li>
+<li><a href="https://github.com/robotverseny">github.com/robotverseny</a></li>
+<li><a href="https://github.com/robotverseny/robotverseny_gazebo24">robotverseny_gazebo24</a></li>
+<li><a href="https://github.com/robotverseny/megoldas_sim24">megoldas_sim24</a></li>
+<li><a href="https://robotverseny.github.io">robotverseny.github.io</a></li>
+<li><a href="https://jkk-research.github.io/workshops/f1tenth_sim_a/">jkk-research.github.io/workshops/f1tenth_sim_a/</a></li>
 </ul>
 
 
@@ -2754,7 +2931,7 @@ Ignition echo topic:</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; Széchenyi István Egyetem 
+      &copy; SZEnergy Team, 2024. Minden jog fenntartva.
 
     </div>
   
@@ -2794,7 +2971,7 @@ Ignition echo topic:</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -2807,6 +2984,8 @@ Ignition echo topic:</p>
         <script src="../../pymdownx.snippets"></script>
       
         <script src="../../pymdownx.superfences"></script>
+      
+        <script src="../../assets/slides/js/slides.js"></script>
       
     
   </body>

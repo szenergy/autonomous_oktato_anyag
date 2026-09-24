@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A course at Széchenyi István University, Győr, Hungary">
+        <meta name="description" content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga.">
       
       
-        <meta name="author" content="sze">
+        <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://sze-info.github.io/szenergy-autonom/szabalyozas/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/szabalyozas/">
       
       
         <link rel="prev" href="../tervezes/practice/">
@@ -22,15 +22,15 @@
       
       
       <link rel="icon" href="../assets/images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.23">
     
     
       
-        <title>Elmélet - szabályozás - Autonóm járművek és robotok programozása</title>
+        <title>Elmélet - szabályozás - Autonóm tananyag</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.732c4fb1.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -54,6 +54,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../assets/slides/css/slides.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -63,11 +65,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Elmélet - szabályozás - Autonóm járművek és robotok programozása" >
+        <meta  property="og:title"  content="Elmélet - szabályozás - Autonóm tananyag" >
       
-        <meta  property="og:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/szabalyozas/README.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/szabalyozas/README.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +77,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://sze-info.github.io/szenergy-autonom/szabalyozas/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/szabalyozas/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Elmélet - szabályozás - Autonóm járművek és robotok programozása" >
+        <meta  name="twitter:title"  content="Elmélet - szabályozás - Autonóm tananyag" >
       
-        <meta  name="twitter:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/szabalyozas/README.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/szabalyozas/README.png" >
       
     
     
@@ -120,7 +122,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Autonóm járművek és robotok programozása" class="md-header__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href=".." title="Autonóm tananyag" class="md-header__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
@@ -134,7 +136,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Autonóm járművek és robotok programozása
+            Autonóm tananyag
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -245,7 +247,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -371,23 +373,6 @@
   
 
       
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-tabs__link">
-        
-  
-    
-  
-  Moodle
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -410,17 +395,17 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Autonóm járművek és robotok programozása" class="md-nav__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href=".." title="Autonóm tananyag" class="md-nav__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
 
     </a>
-    Autonóm járművek és robotok programozása
+    Autonóm tananyag
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -571,29 +556,6 @@
   
   <span class="md-ellipsis">
     Gyakorlat
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bevezetes/gepterem/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    Gépterem
   </span>
   
 
@@ -978,6 +940,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../ros2halado/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-3.1 3.9s-.7-.3-1-.3c-.6-.1-1 .1-1.2 1.1L12 16.8c-.2.8-.5 1.4-1 1.8-.4.3-.8.4-1.3.4-.8 0-2-.5-2-.5l.5-1.4s.8.3 1 .3c.3.1.5 0 .7-.1.2-.1.3-.4.4-.7l1.6-9.2c.1-.8.5-1.4 1-1.9.6-.4 1.3-.5 2.1-.4.7.1 1.5.5 1.5.5l-.6 1.3Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 haladó
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ros2halado/ros2launch/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 launch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../feleves_beadando/" class="md-nav__link">
         
   
@@ -1031,29 +1039,6 @@
   
   <span class="md-ellipsis">
     Nagy féléves
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ros2halado/ros2launch/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    ROS 2 launch
   </span>
   
 
@@ -1438,13 +1423,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../szimulacio/gyakorlat/" class="md-nav__link">
+      <a href="../szimulacio/f1tenth_sim_a/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo saját robotszimuláció készítése
+    Gyakorlat - Gazebo versenypálya
   </span>
   
 
@@ -1461,13 +1446,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../szimulacio/f1tenth_sim_a/" class="md-nav__link">
+      <a href="../szimulacio/gyakorlat/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo Fortress ROS 2 Wheeltec
+    Gyakorlat - Gazebo saját robotszimuláció készítése
   </span>
   
 
@@ -1762,27 +1747,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#inverz-modellek" class="md-nav__link">
+  <a href="#inverz-modellek-pursuit" class="md-nav__link">
     <span class="md-ellipsis">
-      Inverz modellek
+      Inverz modellek (pursuit)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#prediktiv-modellek" class="md-nav__link">
+  <a href="#prediktiv-modellek-mpc" class="md-nav__link">
     <span class="md-ellipsis">
-      Prediktív modellek
+      Prediktív modellek (MPC)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#zarthurku-modellek" class="md-nav__link">
+  <a href="#zarthurku-modellek-pid" class="md-nav__link">
     <span class="md-ellipsis">
-      Zárthurkú modellek
+      Zárthurkú modellek (PID)
     </span>
   </a>
   
@@ -1935,6 +1920,52 @@
   
   <span class="md-ellipsis">
     Gyakorlat - Mesterséges intelligencia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mesterseges_intelligencia/kaggle_notebook/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Kaggle Notebook - Előkészítés (gyakorlat)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mesterseges_intelligencia/slides/slides_nn/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h8a2 2 0 0 1 2-2 2 2 0 0 1 2 2h8v2h-1v11h-5.75L17 22h-2l-1.75-6h-2.5L9 22H7l1.75-6H3V5H2V3m3 2v9h14V5H5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    NN slides
   </span>
   
 
@@ -2244,6 +2275,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../onallo/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../ros2halado/rqt/" class="md-nav__link">
         
   
@@ -2426,6 +2478,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../onallo/troubleshoot/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Hibák
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2445,26 +2520,6 @@
   
   <span class="md-ellipsis">
     Linkek
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Moodle
   </span>
   
 
@@ -2588,27 +2643,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#inverz-modellek" class="md-nav__link">
+  <a href="#inverz-modellek-pursuit" class="md-nav__link">
     <span class="md-ellipsis">
-      Inverz modellek
+      Inverz modellek (pursuit)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#prediktiv-modellek" class="md-nav__link">
+  <a href="#prediktiv-modellek-mpc" class="md-nav__link">
     <span class="md-ellipsis">
-      Prediktív modellek
+      Prediktív modellek (MPC)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#zarthurku-modellek" class="md-nav__link">
+  <a href="#zarthurku-modellek-pid" class="md-nav__link">
     <span class="md-ellipsis">
-      Zárthurkú modellek
+      Zárthurkú modellek (PID)
     </span>
   </a>
   
@@ -2666,14 +2721,25 @@
 
 <h1 id="szabalyozas">Szabályozás<a class="headerlink" href="#szabalyozas" title="Permanent link">&para;</a></h1>
 <p>A szabályozás célja a megtervezett trajektória kivitelezése.</p>
-<p><img alt="" src="https://raw.githubusercontent.com/sze-info/szenergy-autonom/main/docs/_images/overview14.svg" /></p>
+<p><img alt="" src="/szenergy-autonom/assets/images_common/overview14.svg" /></p>
+<div class="admonition question">
+<p class="admonition-title">Ellenőrző kérdések</p>
+<ul>
+<li>Mi a különbség az objektum detekció és a klasszifikáció között?</li>
+<li>Mi a különbség az objektum detekció és a predikció között?</li>
+<li>Mit értünk pose (vagy póz / helyzet) alatt? (robotikában)</li>
+<li>Milyen mennyiségeket szokás mérni / szabályozni egy járműirányítási rendszerben? Ugyanez a kérdés robotikai rendszerek esetén.</li>
+</ul>
+</div>
 <h2 id="1-motivacio-a-zarthurku-szabalyozas-mogott-bevezetes">1. Motiváció a zárthurkú szabályozás mögött - bevezetés<a class="headerlink" href="#1-motivacio-a-zarthurku-szabalyozas-mogott-bevezetes" title="Permanent link">&para;</a></h2>
 <p>Egy rendszer tervezett célállapotát úgy érhetjük el, ha célérték figyelembevételével a rendszerbe beavatkozunk. Például egy jármű esetén a célsebességet a gáz és fékpedál mozgatásával, közvetetten a motor nyomatékának és a fékerőnek a változtatásával érhetjük el. Kezdeti példának tekintsünk egy járművezetőt: a vezető általában tisztában van a megengedett legnagyobb sebességgel, ekörül alkalmaz egy számára megfelelő tűrési sávot. Ezen belül meghatároz egy számára biztonságos és kényelmes sebességet, amit tartani szeretne. A vezető addig gyorsít, amíg el nem éri a kívánt sebességet, majd a gázpedált kicsit visszábbengedve tartja a sebességet.
 Helyes az az állítás, hogy amennyiben elértük a kívánt sebességet, a pedált elengedhetjük, nincs több dolgunk? Természetesen nem. Miért nem? Hisz a jármű a veszteségekből adódóan lassulni fog, lejtő esetén akár gyorsulhat is. Ahhoz, hogy tartani tudjuk a sebességet a vezetőnek folyamatosan figyelnie kell a jármű mozgását illetve a környezetet, és ez alapján beavatkoznia a pedálokon keresztül.
-Ez az egyszerű példa legtöbb részét a tervezési és szabályzási komponenseknek lefedi. A szabályzás téren a következő megfigyeléseket tehetjük meg:
-- a vezető érzékeli a jármű akutális állapotát (valamilyen pontossággal)
-- a vezető tudja, hogyha beavatkozik a gáz- vagy fékpedállal, milyen hatást fog elérni, azaz mennyire lassul vagy gyorsul az autó (valamilyen pontossággal)
-- a vezető különösebb érzékeléstől függetlenül (tehát anélkül, hogy tudná, pl. milyen erő hat az autóra) nagyjából (!) meg tudja határozni a kívánt gázpedál állást (nagy hibával)</p>
+Ez az egyszerű példa legtöbb részét a tervezési és szabályzási komponenseknek lefedi. A szabályzás téren a következő megfigyeléseket tehetjük meg:</p>
+<ul>
+<li>a vezető érzékeli a jármű akutális állapotát (valamilyen pontossággal)</li>
+<li>a vezető tudja, hogyha beavatkozik a gáz- vagy fékpedállal, milyen hatást fog elérni, azaz mennyire lassul vagy gyorsul az autó (valamilyen pontossággal)</li>
+<li>a vezető különösebb érzékeléstől függetlenül (tehát anélkül, hogy tudná, pl. milyen erő hat az autóra) nagyjából (!) meg tudja határozni a kívánt gázpedál állást (nagy hibával)</li>
+</ul>
 <p>Az utolsó pontot szokás ún. <strong>előrecsatolt ágnak</strong> is hívni (lásd 3. alfejezet), avagy <strong>nyílthurkú szabályzásnak</strong> (amennyiben nincs semmilyen infónk az érzékelésről).
 Egy nagyon durva összehasonlítást tartalmaz az 1. Ábra. Képzeljünk el egy helyzetet, amikor nincs információnk arról, milyen gyorsan megy a jármű, csupán a pedált tudjuk kezelni. A feladat hogy álló helyből gyorsítva elérjük a 90 km/h sebességet, majd ezt a sebességet tartsuk. Ha nem tudjuk, épp mennyivel megyünk, honnan tudjuk, hogy kell-e még nyomni a pedált avagy nem? Ilyenkor arra tudunk alapozni, hogy ismerjük az útviszonyokat (pl. sík talaj, aszfaltos út), ismerjük az autónkat (milyen motor, milyen nyomatékviszonyok...stb.). Így <em>nagyjából</em> meg tudjuk határozni, milyen hosszan kell nyomni a gázpedált, majd amikor <em>nagyjából</em> elértük a sebességet, mennyire kell ott tartani a pedálon a lábunkat, hogy ne lassuljunk, ne gyorsuljunk. Az eredmény valószínűleg hasonlítani fog a kívánt sebességgörbéhez, de messze nem lesz pontos. Hiszen pontatlanul ismerjük az utat, a saját autónkat, befolyásolja a gyorsulást a hőmérséklet, emelkedő/lejtő, szembeszél...stb. Ezért általában nem, vagy nem csak ezt a <strong>nyílthurkú</strong> megközelítést használjuk, hanem minél pontosabb érzékelők segítségével <em>korrigáljuk</em> az általunk előre meghatározott pedál állásokat, és ezzel bármilyen <strong>zavar</strong> hatását le tudjuk kezelni. Ez utóbbi megközelítést nevezzük <strong>zárthurkú szabályzásnak</strong>, az érzékelésből kapott információkat pedig <strong>visszacsatolásnak</strong>.</p>
 <div class="admonition note">
@@ -2683,25 +2749,27 @@ Egy nagyon durva összehasonlítást tartalmaz az 1. Ábra. Képzeljünk el egy 
 <p><img alt="image info" src="szenergy-autonom_control_01.png" /></p>
 <p><em>1. Ábra: a zárthurkú szabályozás mögötti motiváció. Forrás: Autonomous Driving Software Engineering - Lecture 08: Control</em></p>
 <h2 id="2-architekturalis-attekintes-visszatekintes">2. Architekturális áttekintés, visszatekintés<a class="headerlink" href="#2-architekturalis-attekintes-visszatekintes" title="Permanent link">&para;</a></h2>
-<p>Ahogyan azt a korábbi fejezetekben is láttuk, a teljes járműirányítási lánc moduláris. A legfőbb feladatok:
-- érzékelés
-- észlelés
-- tervezés
-- szabályzás</p>
+<p>Ahogyan azt a korábbi fejezetekben is láttuk, a teljes járműirányítási lánc moduláris. A legfőbb feladatok:</p>
+<ul>
+<li>érzékelés</li>
+<li>észlelés</li>
+<li>tervezés</li>
+<li>szabályzás</li>
+</ul>
 <p>Ez a fejezet a szabályzásról szól. A szabályzások alapjairól a 3. alfejezetben olvashatunk. A szabályzó rétegnek a tervezés biztosítja a bemenetet. Így - némileg kiegészítve - vessünk egy pillantást az architektúrára! Ezt a 2. Ábra mutatja.</p>
 <p><pre class="mermaid"><code>flowchart LR
 
 GP1[Globális tervezés
-   Bemenetek:
-   - Sofőrprofil
-   - Térkép
-   Kimenet:
-   - Útvonalterv
-   Cél: globális terv megtervezése
-   útvonalon, amely A-ból vezet
-   B-be, figyelembe véve pl.
-   forgalmi adatok, üzemanyag
-   fogyasztás… stb.]:::light
+     Bemenetek:
+     - Sofőrprofil
+     - Térkép
+     Kimenet:
+     - Útvonalterv
+     Cél: globális terv megtervezése
+     útvonalon, amely A-ból vezet
+     B-be, figyelembe véve pl.
+     forgalmi adatok, üzemanyag
+     fogyasztás… stb.]:::light
 
 GP2[Szeretnék eljutni
    A-ból B-be
@@ -2763,19 +2831,19 @@ VC2[A járművet a
 
 
 AC1[Aktuátor szabályozás
-  Alacsony szintű szabályozás
-  Bemenetek:
-  - Járműszintű cél
-  mennyiségek
-  - Ellenőrzési korlátok
-  - Aktuátor
-  állapotváltozói
-  Kimenet:
-  - Aktuátor célállapotai
-  Cél: A járműszintű 
-  mennyiségeket lebontsa
-  és megvalósítsa 
-  az aktuátorokon keresztül]:::light
+     Alacsony szintű szabályozás
+     Bemenetek:
+     - Járműszintű cél
+     mennyiségek
+     - Ellenőrzési korlátok
+     - Aktuátor
+     állapotváltozói
+     Kimenet:
+     - Aktuátor célállapotai
+     Cél: A járműszintű 
+     mennyiségeket lebontsa
+     és megvalósítsa 
+     az aktuátorokon keresztül]:::light
   AC2[Kiszámolni a
 szükséges motor
 nyomaték és kormányzási
@@ -2804,16 +2872,20 @@ classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
 classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
 </code></pre>
 <em>2. Ábra: a legfőbb tervezési és szabályzási rétegek az architektúrában.</em></p>
-<p>A szabályzó réteg általában több szinre bomlik. Minimum két ilyen szintet megkülönböztetünk:
-- járműszintű szabályzás
-- aktuátor szabályzás</p>
+<p>A szabályzó réteg általában több szinre bomlik. Minimum két ilyen szintet megkülönböztetünk:</p>
+<ul>
+<li>járműszintű szabályzás</li>
+<li>aktuátor szabályzás</li>
+</ul>
 <p>Mindkettő rétegnek meg van a feladata. A járműszintű szabályzás feladata, hogy a járművet a tervezett trajektórián végigvezesse a megfelelő sebességgel. Ehhez a jármű szintjén megfogalmazott célértékeket határoz meg. Ökölszabályként elfogadhatjuk, hogy azok a mennyiségek a járműszintűek, amelyek még nem kapcsolódnak egy kimondott aktuátorhoz. Azaz, pl. minden autóra jellemző annak gyorsulása vagy szögsebessége, attól függetlenül, milyen hajtással (elektromos, hibrid, belsőégésű) vagy kormányzással (elektromos szervó, hidraulikus szervó, lánctalpas...stb.) rendelkezik. Általában ez a szabályzó réteg a "leglassabb", beágyazott környezetben a ciklus idő 10-50ms.
 Az aktuátot szabályzás feladata, hogy a járműszintű mennyiségeket lebontsa és megvalósítsa az aktuátorokon keresztül. Pl. a hosszirányú gyorsulást befolyásolhatjuk a motoron és a féken keresztül. A motor esetében a gyorsulást a motor nyomatékának szabályzásával érjük el, amit pedig a fojtószelep állásával érünk el. A fojtószelep állását pedig az azt mozgató pl. szervómotor pozíciójának, voltaképp a szervómotor kapocsfeszültségének szabályzásával érünk el. A fékrendszer esetén a fékerőt tudjuk befolyásolni, ami egyben a féknyomás szabályzását jelenti (pl. az ESP szelepein keresztül), amit pedig a hidraulikus fékrendszer motor szivattyújának nyomásával érhetünk el. Ezt pedig a szivattyú motorjának fordulatszámával tudjuk befolyásolni, ami megint a motor kapocsfeszültségének a szabályzásával érünk el...stb. Láthatjuk, hogy aktuátoroktól függően itt több (akár 4-6) egymásba ágyazott szabályzó hurokról beszélünk. 
 Belülről kifelé érdemes a problémát megközelíteni, ahogy a legbelső szabályzás ciklusideje akár 1 ms (vagy az alatti) lehet, még ahogy kintebb lépünk ez nő, 5-10-20ms tartományban. 
 Fontos, hogy automatizált vezetési rendszerek mozgásszabályzása esetén az aktuátor szabályzó rétegeket sokszor nem vesszük figyelembe, hanem feltételezzük, hogy azok teljesítménye, pontossága, sebessége megfelelő, "közel ideális". Persze a gyakorlatban ezt sokszor nehéz elválasztani, de arra törekszünk, hogy csak a járműszintű szabályzást kelljen megtervezni.</p>
-<p>A legfelső szintű szabályzás feladata tehát az, hogy a jármű a trajektóriát lekövesse. Általában két dimenziót különböztetünk meg:
-- hosszirányú mozgás: a jármű hosszirányú gyorsulásának, és végül a fék és motorerők meghatározása.
-- keresztirányú mozgás: a jármű célszögesebességének, és végül a kormányszögnek a meghatározása.</p>
+<p>A legfelső szintű szabályzás feladata tehát az, hogy a jármű a trajektóriát lekövesse. Általában két dimenziót különböztetünk meg:</p>
+<ul>
+<li>hosszirányú mozgás: a jármű hosszirányú gyorsulásának, és végül a fék és motorerők meghatározása.</li>
+<li>keresztirányú mozgás: a jármű célszögesebességének, és végül a kormányszögnek a meghatározása.</li>
+</ul>
 <p>A trajektória általában egy időben leírt sebességtszenergy-autonomektória illetve egy térben megadott célpont halmaz, azaz egy görbe (vagy annak egy reprezntációja). A cél, hogy a görbét minél kisebb pozícióhibával lekövessük, illetve a sebességet minél pontosabban tartsuk. Mindezt úgy, hogy ne lépjünk át semmilyen határértéket (pl. túl nagy gyorsulás, pályaelhagyás...stb).</p>
 <p>Mielőtt rátérnénk a létező járműszabályzási megoldásokra, a 3. alfejezetben áttekintést adunk a szabályzási alapokról.</p>
 <h2 id="3-szabalyzasi-alapok">3. Szabályzási alapok<a class="headerlink" href="#3-szabalyzasi-alapok" title="Permanent link">&para;</a></h2>
@@ -2830,9 +2902,11 @@ Fontos, hogy automatizált vezetési rendszerek mozgásszabályzása esetén az 
 <strong>Időinvariancia:</strong> Az időinvariáns rendszer esetén, ha a rendszer egy U(t) gerjesztésre adott válasza Q(t), akkor az időben eltolt U(t-tau) gerjesztésre adott Y(t-tau) válasz is egyszerű időbeni eltolással megkapható. Ez egyúttal azt is jelenti, hogy a rendszer modellje időben nem változik, azaz a rendszer paraméterei állandóak.<br>
 <em>Példa: a jármű kinematikai bicikli modelljének paraméterei pl. a jármű tengelytávja, amely (remélhetőleg) időben nem változik, azaz ez a paraméter időinvariáns. Ha a rendszer modelljének összes paramétere időinvariáns, maga az absztrakt rendszer is invariáns.</em><br>
 <em>Példa: a jármű dinamikai bicikli modelljének egy paramétere a jármű tömege. Ez változhat "menet közben is", hiszen pl. többen ülnek az autóban, csomagokat pakolnak bele, az üzemanyag szintje változik, azaz ez a paraméter nem időinvariáns, tehát a fizikai rendszer sem időinvariáns. Ugyanakkor tekinthetjük </em><em>bizonyos feltételek mellett</em><em> időinvariánsnak, ekkor a modell pontatlansága nő.</em></p>
-<p><strong>Állapot</strong>: Az állapot a memória jelleggel rendelkező dinamikai rendszerekben a múlt összesített hatása. A rendszer állapotának a következő két tulajdonsággal kell rendelkeznie
-- Bármely T időpillanatban a kimenőjel az adott pillanatbeli állapot és bemenőjel együttes ismeretében egyértelműen meghatározható legyen. Kimeneti egyenletnek nevezzük azt az összefüggést, amely az állapotból és a bemenőjelből meghatározza a kimenőjeleket.
-- Az állapot egy adott T időpillanatban egyértelműen meghatározható legyen a bemenőjel a t≤T időtartománybeli értékének ismeretében. Az állapot változását leíró egyenletet állapotegyenletnek nevezzük.</p>
+<p><strong>Állapot</strong>: Az állapot a memória jelleggel rendelkező dinamikai rendszerekben a múlt összesített hatása. A rendszer állapotának a következő két tulajdonsággal kell rendelkeznie</p>
+<ul>
+<li>Bármely T időpillanatban a kimenőjel az adott pillanatbeli állapot és bemenőjel együttes ismeretében egyértelműen meghatározható legyen. Kimeneti egyenletnek nevezzük azt az összefüggést, amely az állapotból és a bemenőjelből meghatározza a kimenőjeleket.</li>
+<li>Az állapot egy adott T időpillanatban egyértelműen meghatározható legyen a bemenőjel a t≤T időtartománybeli értékének ismeretében. Az állapot változását leíró egyenletet állapotegyenletnek nevezzük.</li>
+</ul>
 <p><strong>Állapotváltozó</strong>: Az állapotváltozók az állapot egyértelmű leírására szolgálnak. Az állapotváltozó lehet egy időfüggvény, az állapot mennyiségi változásainak leírására, illetve logikai változó az állapot minőségi váltásainak leírására.</p>
 <p><strong>Rendszer dimenzió:</strong> Egy rendszer állapotának egyértelmű leírásához minimálisan szükséges állapotváltozók számát a rendszer dimenziójának szokás nevezni.</p>
 <p><strong>Kanonikus állapotváltozók:</strong> Kanonikus állapotváltozónak nevezzük az állapotváltozók legkisebb olyan halmazának elemeit, amelyek segítségével az állapot egyértelműen leírható. A nem kanonikus állapotváltozókat származtatott állapotváltozóknak nevezzük.</p>
@@ -2842,11 +2916,13 @@ Fontos, hogy automatizált vezetési rendszerek mozgásszabályzása esetén az 
 - modellezés, az absztrakt matematikai modell elkészítése
 - szabályzás, azaz a szabályzó megtervezése.</p>
 <h3 id="32-a-szabalyzasi-feladat-megfogalmazasa">3.2. A szabályzási feladat megfogalmazása<a class="headerlink" href="#32-a-szabalyzasi-feladat-megfogalmazasa" title="Permanent link">&para;</a></h3>
-<p><strong>A cél mindig a valós fizikai rendszer irányítása úgy, hogy az az előírt célértéknek megfelelően viselkedjen.</strong> Fontos, hogy minden célhoz meghatározzunk olyan <strong>mérhető</strong> mennyiségeket, amelyek alapján a szabályzás <em>jóságát</em> meg tudjuk határozni. A legtöbbször (de nem kizárólagosan) használt ilyen mennyiségek:
-- beállási idő (gyorsaság)
-- túllendülés mértéke
-- állandósult állapotbeli hiba
-- a szabályzás energiája.</p>
+<p><strong>A cél mindig a valós fizikai rendszer irányítása úgy, hogy az az előírt célértéknek megfelelően viselkedjen.</strong> Fontos, hogy minden célhoz meghatározzunk olyan <strong>mérhető</strong> mennyiségeket, amelyek alapján a szabályzás <em>jóságát</em> meg tudjuk határozni. A legtöbbször (de nem kizárólagosan) használt ilyen mennyiségek:</p>
+<ul>
+<li>beállási idő (gyorsaság)</li>
+<li>túllendülés mértéke</li>
+<li>állandósult állapotbeli hiba</li>
+<li>a szabályzás energiája.</li>
+</ul>
 <p>A szabályzási láncot a 3. Ábrán látható módon írhatjuk fel. A következő jelöléseket használjuk:</p>
 <ul>
 <li><span class="arithmatex">\(r(t)\)</span>: a célérték, avagy referenciajel</li>
@@ -2868,17 +2944,23 @@ A következőkben egy egyszerű példán szemléltetjük egy rendszer modellezé
 A rendszerre a járműre ható gyorsító erővel szeretnénk hatni, ezért ez a bemenet. A kimenet a jármű sebessége, hiszen ezt szeretnénk egy adott célértékre szabályozni. Mivel ennek a rendszernek 1 be- és 1 kimenete van, ezért szokás SISO (Single Input Single Output) rendszernek is hívni. Ennek analógiáján léteznek MIMO (Multiple Inputs Multiple Outputs) rendszerek is.
 <em>Megjegyzés: a valóságban a járműre a gázpedállal és a fékpedállal hatunk, de ezek voltaképp a jármű gyorsulását befolyásolják, így az egyszerűség kedvéért a szakasz ezen részét nem modellezzük. Ezzel természetesen hibát viszünk a modellbe, de növeljük annak általánosságát.</em></p>
 <ol>
-<li>Feladat: készítsük el a jármű matematikai modelljét / absztrakt modelljét!
-Olyan egyenletrendszert keresünk, amely összeköti a be- és kimenetet. Itt meg kell határoznunk, mennyire törekszünk pontos modellre. Az egyszerűség kedvéért éljünk a következő megkötésekkel:</li>
-<li>eltekintünk a hosszirányban fellépő kerékszliptől</li>
+<li>
+<p>Feladat: készítsük el a jármű matematikai modelljét / absztrakt modelljét!
+Olyan egyenletrendszert keresünk, amely összeköti a be- és kimenetet. Itt meg kell határoznunk, mennyire törekszünk pontos modellre. Az egyszerűség kedvéért éljünk a következő megkötésekkel:</p>
+</li>
+<li>
+<p>eltekintünk a hosszirányban fellépő kerékszliptől</p>
+</li>
 <li>eltekintünk az aktuátorok dinamikai viselkedésétől, azaz a kért gyorsulás egyből megvalósul</li>
 <li>eltekintünk a mért mennyiségeket terhelő hibáktól, azaz a szenzorok pontatlanságától.</li>
 <li>eltekintünk a futómű és a felfüggesztés dinamikai tulajdonságaitól.</li>
 </ol>
-<p>Az egyenletünk így egy koncentrált tömegpont lineáris mozgásává egyszerűsödik. A modellbe foglaljuk be a következő mennyiségeket:
-- a jármű tömege
-- a jármű légellenállása
-- a jármű sebességarányos súrlódása.</p>
+<p>Az egyenletünk így egy koncentrált tömegpont lineáris mozgásává egyszerűsödik. A modellbe foglaljuk be a következő mennyiségeket:</p>
+<ul>
+<li>a jármű tömege</li>
+<li>a jármű légellenállása</li>
+<li>a jármű sebességarányos súrlódása.</li>
+</ul>
 <p>Newton II. tételének megfelelően írjuk fel a következő dinamikai egyensúlyi egyenletet: <br>
 $$
 \ddot I = \sum F
@@ -2958,26 +3040,32 @@ D=50
 <p>Hasonló interaktív vizualizáció érhető el a Viktor.ai oldalon, de itt még hangolni is van lehetőségünk: <a href="https://cloud.viktor.ai/public/control-application">cloud.viktor.ai/public/control-application</a></p>
 <h3 id="osszegzes">Összegzés<a class="headerlink" href="#osszegzes" title="Permanent link">&para;</a></h3>
 <p>Ebben a fejezetben áttekintettük a szabályzástechnikai alapfogalmakat, példákat hoztunk a járműirányítás területéről. Ezen kívül a gyakorlatban megalkottunk egy egyszerű matematikai modellt, amely leírja egy jármű, mint tömegpont hosszirányú mozgását. Ezen keresztül MATLAB/Simulink segítségével sebességszabályzással kapcsolatos szimulációt végeztünk. Az egyik legelterjedtebb szabályzót, a PID szabályzót mutattuk be.
-A következő pontokat érdemes megjegyezni:
-- egy zárthurkú szabályzás általában áll a szabályzott szakaszból (mely a valós fizikai rendszer absztrakt matematikai modellje) és a szabályzóból.
-- a valós fizikai rendszert matematikai modellel írjuk le, amely alapján tervezhető a szabályzó is. A modell pontossága befolyásolja a megtervezett szabályzó minőségét is.
-- a matematikai modell általában differenciálegyenletek formájában áll elő.
-- a PID szabályzók a hiba minimalizálására törekednek. A P tag gyorsítja a rendszert, az I tag eltünteti a maradandó hibát, a D tag szintén gyorsítja a szabályzó reakcióját, de instabilitást is okozhat.
-- a valóságban a járműszabályzás összetett, a változó paraméterek (pl. autó tömege), az útviszonyok illetve az egymásba ágyazott szabályzó hurkok miatt.</p>
+A következő pontokat érdemes megjegyezni:</p>
+<ul>
+<li>egy zárthurkú szabályzás általában áll a szabályzott szakaszból (mely a valós fizikai rendszer absztrakt matematikai modellje) és a szabályzóból.</li>
+<li>a valós fizikai rendszert matematikai modellel írjuk le, amely alapján tervezhető a szabályzó is. A modell pontossága befolyásolja a megtervezett szabályzó minőségét is.</li>
+<li>a matematikai modell általában differenciálegyenletek formájában áll elő.</li>
+<li>a PID szabályzók a hiba minimalizálására törekednek. A P tag gyorsítja a rendszert, az I tag eltünteti a maradandó hibát, a D tag szintén gyorsítja a szabályzó reakcióját, de instabilitást is okozhat.</li>
+<li>a valóságban a járműszabályzás összetett, a változó paraméterek (pl. autó tömege), az útviszonyok illetve az egymásba ágyazott szabályzó hurkok miatt.</li>
+</ul>
 <h2 id="4-jarmuiranyitasi-megoldasok">4. Járműirányítási megoldások<a class="headerlink" href="#4-jarmuiranyitasi-megoldasok" title="Permanent link">&para;</a></h2>
-<p>A járműszabályzás területén - ahogy azt a 2. alfejezetben láttuk - több, egymásba ágyazott szabályzó kört használunk. Mindegyik jellemzően tartalmaz egy előre csatolt és egy visszcsatolt ágat. Automatizált vezetési rendszerek esetén általában a legfelső, ún. járműszintű irányítást szoktuk legelőre venni. Az alacsonyabb szintű szabályzókra most nem térünk ki, csupán egy lista erejéig összegezzük őket. Meg kell jegyezni, hogy ezek az alacsonyszintű szabályzók nagyban függnek a járműben elérhető aktuátoroktól, hiszen többféle fékrendszer, hajtás és kormányrendszer is elérhető lehet. Ez a felosztás nagyban támogatja moduláris tervezést, azaz a járműszintű szabályzást függetlenül tudjuk fejleszteni az alacsony szintű szabályzásoktól. Ez pl. sorozatgyártott szoftverek esetén nagyban megkönnyíti az újrahasznosíthatóságot. Az alacsony szintű, aktuátor szabályzó hurkok a következők lehetnek (a teljesség igénye nélkül):
-- kormány szervó motor szögszabályzás
-- kormány szervó motor nyomatékszabályzás
-- motor nyomaték szabályzás
-- fék erő szabályzás (fék nyomás szabályzás).</p>
+<p>A járműszabályzás területén - ahogy azt a 2. alfejezetben láttuk - több, egymásba ágyazott szabályzó kört használunk. Mindegyik jellemzően tartalmaz egy előre csatolt és egy visszcsatolt ágat. Automatizált vezetési rendszerek esetén általában a legfelső, ún. járműszintű irányítást szoktuk legelőre venni. Az alacsonyabb szintű szabályzókra most nem térünk ki, csupán egy lista erejéig összegezzük őket. Meg kell jegyezni, hogy ezek az alacsonyszintű szabályzók nagyban függnek a járműben elérhető aktuátoroktól, hiszen többféle fékrendszer, hajtás és kormányrendszer is elérhető lehet. Ez a felosztás nagyban támogatja moduláris tervezést, azaz a járműszintű szabályzást függetlenül tudjuk fejleszteni az alacsony szintű szabályzásoktól. Ez pl. sorozatgyártott szoftverek esetén nagyban megkönnyíti az újrahasznosíthatóságot. Az alacsony szintű, aktuátor szabályzó hurkok a következők lehetnek (a teljesség igénye nélkül):</p>
+<ul>
+<li>kormány szervó motor szögszabályzás</li>
+<li>kormány szervó motor nyomatékszabályzás</li>
+<li>motor nyomaték szabályzás</li>
+<li>fék erő szabályzás (fék nyomás szabályzás).</li>
+</ul>
 <p>Innentől minden megállapítás a jármű szintjére vonatkozik. Fontos megjegyezni, hogy mindig két dimenzióban gondolkodunk: hosszirányú és keresztirányú szabályzásban. A hosszirányú szabályzásra láttunk példát a 3. alfejezetben. Ez általában a sebesség szabályzását, esetleg a gyorsulás szabályzását jelenti. Habár a hosszirányú szabályzás is rejt nem levés kihívást (a motor tehetetlensége, a fék- és hajtóerők szétválasztása...stb.), a legtöbb járműirányítási megoldás elsősorban a keresztirányú szabályzásra összpontosít. 
-Mivel a jármű automatikus irányítási feladata nagyban hasonlít az emberek vezetési feladatához (tehát a kormány és a pedálok segítségével a jármű mozgásának befolyásolása), ezért szokás ezeket az irányítási megoldásokat vezetői modelleknek (angolul driver models) is hívni. Az egyes modellekről rövid összefoglalókat találunk az ajánlott irodalom alatt. Ezek közül [1] szerint 3 csoportra oszthatjuk a vezetői modelleket:
--   Inverz-modellek (inverse models)
--   Prediktív modellek (predictive/forward models)
--   Zárhurkú modellek (closed loop models).</p>
+Mivel a jármű automatikus irányítási feladata nagyban hasonlít az emberek vezetési feladatához (tehát a kormány és a pedálok segítségével a jármű mozgásának befolyásolása), ezért szokás ezeket az irányítási megoldásokat vezetői modelleknek (angolul driver models) is hívni. Az egyes modellekről rövid összefoglalókat találunk az ajánlott irodalom alatt. Ezek közül [1] szerint 3 csoportra oszthatjuk a vezetői modelleket:</p>
+<ul>
+<li>Inverz-modellek (inverse models)</li>
+<li>Prediktív modellek (predictive/forward models)</li>
+<li>Zárhurkú modellek (closed loop models).</li>
+</ul>
 <p><img alt="" src="https://raw.githubusercontent.com/jkk-research/wayp_plan_tools/main/csv/control_overview01.svg" />
 <em>18. Ábra: járműirányítási megoldások szemléltetése.</em></p>
-<h3 id="inverz-modellek">Inverz modellek<a class="headerlink" href="#inverz-modellek" title="Permanent link">&para;</a></h3>
+<h3 id="inverz-modellek-pursuit">Inverz modellek (<em>pursuit</em>)<a class="headerlink" href="#inverz-modellek-pursuit" title="Permanent link">&para;</a></h3>
 <p>Az inverz modelleket angol terminológiában <em>pursuit</em> modelleknek is szokás hívni, amely a legjobban talán <em>előre tekintő</em>, <em>előre toló</em>nak lehet fordítani. A lényege, hogy a kormányzáshoz szükséges célértéket az két információ alapján határozza meg:
 - egy előretekintési pontban mi a jármű célállapota?
 - a járműről előzetesen felállított modell.
@@ -2997,20 +3085,23 @@ Egyszerű trigonometriai megfontolások alapján a következő összefüggést �
 \]</div>
 <p>Ahol <span class="arithmatex">\(L_w\)</span> a jármű tengelytávja. </p>
 <p>Feltételezzük a modellben, hogy a jármű elsőkerék-kormányzású. A kapott szög az út-kerék szög, amely a kormánymű geometriájának függvényében átszámítható pl. szervó motor szöggé, és így közvetlenül megvalósítható.</p>
-<p><img alt="" src="https://raw.githubusercontent.com/sze-info/szenergy-autonom/main/docs/transzformaciok/vehicle_axes01.svg" />
+<p><img alt="" src="/szenergy-autonom/assets/images_common/vehicle_axes01.svg" />
 <img alt="" src="szenergy-autonom_control_18.svg" />
 <em>19. Ábra: a pure pursuit szabályzó geometriai összefüggései.</em></p>
 <p>A 20. Ábrán láthatjuk, milyen hatással van az előretekintési távolság a jármű viselkedésére. Amennyiben túl közeli pontot választunk, a jármű hajlamos oszcillációra (ez hasonló hatás, mint egy PID szabályzó túl nagy P erősítéssel). A túl nagy előretekintési távolság esetén a reakció lassul, de pl. élesebb kanyarokban a jármű hajlamos lesz <em>kanyarlevágásra</em>.
 Szokás az előretekintési távot adaptívan, pl. a sebesség függvényében megadni. Ilyenkor gyakorlatilag előretekintési időről beszélünk.</p>
-<p><center>
+<center>
 <img src="szenergy-autonom_control_19_look_ahead.svg" width="90%"/>
-</center></p>
+</center>
+
 <p><em>20. Ábra: a pure pursuit előretekintési távolságának hatása a jármű viselkedésére</em></p>
 <p>A pure-pursuit modellek továbbfejlesztett változatairól pl. a [2] és [3] cikkben olvashatunk.</p>
-<h3 id="prediktiv-modellek">Prediktív modellek<a class="headerlink" href="#prediktiv-modellek" title="Permanent link">&para;</a></h3>
-<p>A prediktív modellek, hasonlóan a az inverz modellekhez a jármű modelljén alapszanak. Azonban egyúttal előre is tekintenek egy meghatározott horizonton: a modell segítségével becsüljük a jármű viselkedését előre, majd ennek függvényében a lehető legjobb megoldást választjuk a jelenben. Tehát ez esetben a jövő valamilyen pontosságú információit felhasználva hozunk döntést. Itt két esetet különböztetünk meg:
-- receding horizon: azaz a jövőbeli horizont folyamatosan tolódik előttünk, mivel a megtervezett jövőbeli viselkedésnek mindig az első elemét hajtjuk csak végre, ezek után újratervezünk
-- proceeding horizon: a horizont közeledik felénk, azaz a jövőbeli megtervezett viselkedést teljes egészében végrehajtjuk, és csak ez után tervezünk újra.</p>
+<h3 id="prediktiv-modellek-mpc">Prediktív modellek (<em>MPC</em>)<a class="headerlink" href="#prediktiv-modellek-mpc" title="Permanent link">&para;</a></h3>
+<p>A prediktív modellek, hasonlóan a az inverz modellekhez a jármű modelljén alapszanak. Azonban egyúttal előre is tekintenek egy meghatározott horizonton: a modell segítségével becsüljük a jármű viselkedését előre, majd ennek függvényében a lehető legjobb megoldást választjuk a jelenben. Tehát ez esetben a jövő valamilyen pontosságú információit felhasználva hozunk döntést. Itt két esetet különböztetünk meg:</p>
+<ul>
+<li>receding horizon: azaz a jövőbeli horizont folyamatosan tolódik előttünk, mivel a megtervezett jövőbeli viselkedésnek mindig az első elemét hajtjuk csak végre, ezek után újratervezünk</li>
+<li>proceeding horizon: a horizont közeledik felénk, azaz a jövőbeli megtervezett viselkedést teljes egészében végrehajtjuk, és csak ez után tervezünk újra.</li>
+</ul>
 <p>Mivel a szabályzás itt egyben egy mozgástervezést is jelent, így a tervezés eszköztárát is használnunk kell. Ezeket a szabályzókat szokás <strong>Optimális szabályzóknak</strong>, angolul <strong>Optimum controls</strong>nak is hívni. Hiszen ebben az esetben az előretekintési horizonton a modell segítségével megtervezzük azt a mozgást, amely a legkisebb költséget eredményezi a megadott szempontok szerint. Itt visszautalunk a 3.2. alfejezet elején bevezetett szempontokra:
 - beállási idő (gyorsaság)
 - túllendülés mértéke
@@ -3042,7 +3133,7 @@ A 22. Ábrán azt látjuk, hogy 10 m/s-ig az MPC és a PID is jól teljesít, az
 <em>22. Ábra: MPC és PID szabályzó összevetése, kinematikai modell esetén, kanyarodás, magasabb sebességeken</em></p>
 <p><img src="szenergy-autonom_control_22.png" width="500" height="350" /> <br>
 <em>23. Ábra: MPC és PID szabályzó összevetése, kinematikai modell esetén, körpálya, alacsony sebességeken</em></p>
-<h3 id="zarthurku-modellek">Zárthurkú modellek<a class="headerlink" href="#zarthurku-modellek" title="Permanent link">&para;</a></h3>
+<h3 id="zarthurku-modellek-pid">Zárthurkú modellek (<em>PID</em>)<a class="headerlink" href="#zarthurku-modellek-pid" title="Permanent link">&para;</a></h3>
 <p>Az ilyen típusú modellek, ahogy a neve is sugallja, a PID szabályzók logikáján alapszanak. Jellemzően egy vagy több visszacsatolt mennyiség hibáját minimalizálják. Ilyen modellekre találunk példát a [3] és [8] irodalomban. 
 A 24. Ábrán a [3]-ban bemutatott példa illusztrációját látjuk. Eszerint kijelölünk kettő előretekintési pontot: egy közelit (a jármű előtt) és egy távolit (a horizonton). Hasonlóan a pure-pursuit megoldásokhoz, itt is azt vizsgáljuk, hogyan juthatunk el a jelenlegi pozícióból a távoliba. Azonban nem egy egyszerű görbületszámolással, hanem a hiba minimalizálásával érjük ezt el, a következő egyenlet szerint:</p>
 <div class="arithmatex">\[
@@ -3081,7 +3172,7 @@ A 24. Ábrán a [3]-ban bemutatott példa illusztrációját látjuk. Eszerint k
 <li><a href="https://www.mathworks.com/campaigns/products/control-tutorials.html">Interactive Live Script Control Tutorials for MATLAB and Simulink</a></li>
 <li><a href="https://thomasfermi.github.io/Algorithms-for-Automated-Driving/Control/PID.html">Mario Theers - PID</a> - <a href="https://github.com/thomasfermi/Algorithms-for-Automated-Driving/blob/master/LICENSE">CC BY 4.0 License</a></li>
 <li><a href="https://thomasfermi.github.io/Algorithms-for-Automated-Driving/Control/PurePursuit.html">Mario Theers - Pure pursuit</a> - <a href="https://github.com/thomasfermi/Algorithms-for-Automated-Driving/blob/master/LICENSE">CC BY 4.0 License</a></li>
-<li><a href="https://www.youtube.com/@ControlLectures/videos">Youtube ControlLectures</a></li>
+<li><a href="https://www.youtube.com/@BrianBDouglas/videos">Youtube ControlLectures Brian B. Douglas</a></li>
 <li><a href="https://dtk.tankonyvtar.hu/bitstream/handle/123456789/3269/Bokor_Gaspar_Soumelidis_Iranyitastechnika_II.pdf">Bokor József &amp; Gáspár Péter. Irányítástechnika</a></li>
 </ol>
 <h2 id="vezetoi-modellek">Vezetői modellek<a class="headerlink" href="#vezetoi-modellek" title="Permanent link">&para;</a></h2>
@@ -3135,7 +3226,7 @@ A 24. Ábrán a [3]-ban bemutatott példa illusztrációját látjuk. Eszerint k
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; Széchenyi István Egyetem 
+      &copy; SZEnergy Team, 2024. Minden jog fenntartva.
 
     </div>
   
@@ -3175,7 +3266,7 @@ A 24. Ábrán a [3]-ban bemutatott példa illusztrációját látjuk. Eszerint k
     <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      <script src="../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
@@ -3188,6 +3279,8 @@ A 24. Ábrán a [3]-ban bemutatott példa illusztrációját látjuk. Eszerint k
         <script src="../pymdownx.snippets"></script>
       
         <script src="../pymdownx.superfences"></script>
+      
+        <script src="../assets/slides/js/slides.js"></script>
       
     
   </body>

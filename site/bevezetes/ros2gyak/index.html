@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A course at Széchenyi István University, Győr, Hungary">
+        <meta name="description" content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga.">
       
       
-        <meta name="author" content="sze">
+        <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://sze-info.github.io/szenergy-autonom/bevezetes/ros2gyak/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/bevezetes/ros2gyak/">
       
       
         <link rel="prev" href="../ros2/">
@@ -22,15 +22,15 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.23">
     
     
       
-        <title>Gyakorlat - ROS 2 alapok - Autonóm járművek és robotok programozása</title>
+        <title>Gyakorlat - ROS 2 alapok - Autonóm tananyag</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -54,6 +54,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../assets/slides/css/slides.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -63,11 +65,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Gyakorlat - ROS 2 alapok - Autonóm járművek és robotok programozása" >
+        <meta  property="og:title"  content="Gyakorlat - ROS 2 alapok - Autonóm tananyag" >
       
-        <meta  property="og:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/bevezetes/ros2gyak.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/bevezetes/ros2gyak.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +77,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://sze-info.github.io/szenergy-autonom/bevezetes/ros2gyak/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/bevezetes/ros2gyak/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Gyakorlat - ROS 2 alapok - Autonóm járművek és robotok programozása" >
+        <meta  name="twitter:title"  content="Gyakorlat - ROS 2 alapok - Autonóm tananyag" >
       
-        <meta  name="twitter:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/bevezetes/ros2gyak.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/bevezetes/ros2gyak.png" >
       
     
     
@@ -120,7 +122,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-header__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-header__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
@@ -134,7 +136,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Autonóm járművek és robotok programozása
+            Autonóm tananyag
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -245,7 +247,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -371,23 +373,6 @@
   
 
       
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-tabs__link">
-        
-  
-    
-  
-  Moodle
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -410,17 +395,17 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-nav__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-nav__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
 
     </a>
-    Autonóm járművek és robotok programozása
+    Autonóm tananyag
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -571,29 +556,6 @@
   
   <span class="md-ellipsis">
     Gyakorlat
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gepterem/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    Gépterem
   </span>
   
 
@@ -786,13 +748,70 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-feladat-node-es-publish" class="md-nav__link">
+  <a href="#0-feladat-gazebo-3d-szimulacio" class="md-nav__link">
     <span class="md-ellipsis">
-      1. feladat - Node és publish
+      0. feladat - Gazebo 3D szimuláció
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. feladat - Node és publish">
+    <nav class="md-nav" aria-label="0. feladat - Gazebo 3D szimuláció">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#szimulacio-clone-es-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Szimuláció clone és build
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Szimuláció clone és build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#futtatas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Futtatás
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasznos-parancsok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hasznos parancsok
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-feladat-node-es-publish-turtlesim-2d-szimulacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. feladat - Node és publish - Turtlesim 2D szimuláció
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. feladat - Node és publish - Turtlesim 2D szimuláció">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1169,6 +1188,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../../ros2halado/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-3.1 3.9s-.7-.3-1-.3c-.6-.1-1 .1-1.2 1.1L12 16.8c-.2.8-.5 1.4-1 1.8-.4.3-.8.4-1.3.4-.8 0-2-.5-2-.5l.5-1.4s.8.3 1 .3c.3.1.5 0 .7-.1.2-.1.3-.4.4-.7l1.6-9.2c.1-.8.5-1.4 1-1.9.6-.4 1.3-.5 2.1-.4.7.1 1.5.5 1.5.5l-.6 1.3Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 haladó
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ros2halado/ros2launch/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 launch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../feleves_beadando/" class="md-nav__link">
         
   
@@ -1222,29 +1287,6 @@
   
   <span class="md-ellipsis">
     Nagy féléves
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ros2halado/ros2launch/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    ROS 2 launch
   </span>
   
 
@@ -1629,13 +1671,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../../szimulacio/gyakorlat/" class="md-nav__link">
+      <a href="../../szimulacio/f1tenth_sim_a/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo saját robotszimuláció készítése
+    Gyakorlat - Gazebo versenypálya
   </span>
   
 
@@ -1652,13 +1694,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../../szimulacio/f1tenth_sim_a/" class="md-nav__link">
+      <a href="../../szimulacio/gyakorlat/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo Fortress ROS 2 Wheeltec
+    Gyakorlat - Gazebo saját robotszimuláció készítése
   </span>
   
 
@@ -1935,6 +1977,52 @@
   
   <span class="md-ellipsis">
     Gyakorlat - Mesterséges intelligencia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/kaggle_notebook/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Kaggle Notebook - Előkészítés (gyakorlat)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/slides/slides_nn/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h8a2 2 0 0 1 2-2 2 2 0 0 1 2 2h8v2h-1v11h-5.75L17 22h-2l-1.75-6h-2.5L9 22H7l1.75-6H3V5H2V3m3 2v9h14V5H5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    NN slides
   </span>
   
 
@@ -2244,6 +2332,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../onallo/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../ros2halado/rqt/" class="md-nav__link">
         
   
@@ -2426,6 +2535,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onallo/troubleshoot/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Hibák
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2445,26 +2577,6 @@
   
   <span class="md-ellipsis">
     Linkek
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Moodle
   </span>
   
 
@@ -2509,13 +2621,70 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-feladat-node-es-publish" class="md-nav__link">
+  <a href="#0-feladat-gazebo-3d-szimulacio" class="md-nav__link">
     <span class="md-ellipsis">
-      1. feladat - Node és publish
+      0. feladat - Gazebo 3D szimuláció
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. feladat - Node és publish">
+    <nav class="md-nav" aria-label="0. feladat - Gazebo 3D szimuláció">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#szimulacio-clone-es-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Szimuláció clone és build
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Szimuláció clone és build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#futtatas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Futtatás
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasznos-parancsok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hasznos parancsok
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-feladat-node-es-publish-turtlesim-2d-szimulacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. feladat - Node és publish - Turtlesim 2D szimuláció
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. feladat - Node és publish - Turtlesim 2D szimuláció">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2676,17 +2845,66 @@
 <li><strong>Publish / subscribe</strong>: Üzenetekre történő publikálás és feliratkozás. </li>
 <li><strong>Build</strong>: A package forráskódjából futtatható állományok készítésének folyamata. ROS2-ben a <code>colcon</code> az alapértelmezett build eszköz. </li>
 </ul>
-<h2 id="1-feladat-node-es-publish"><code>1.</code> feladat - Node és publish<a class="headerlink" href="#1-feladat-node-es-publish" title="Permanent link">&para;</a></h2>
+<h2 id="0-feladat-gazebo-3d-szimulacio"><code>0.</code> feladat - Gazebo 3D szimuláció<a class="headerlink" href="#0-feladat-gazebo-3d-szimulacio" title="Permanent link">&para;</a></h2>
+<p>Próbáljuk, ki, hogy a parancsok működnek-e. (<em>Később részletes telepítést is bemutatunk, egyelőre ez szemléltetés.</em>)</p>
+<div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo<span class="w"> </span>-v<span class="w"> </span><span class="m">4</span><span class="w"> </span>-r<span class="w"> </span>ackermann_steering.sdf
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo<span class="w"> </span>shapes.sdf
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>ign<span class="w"> </span>param<span class="w"> </span>--versions
+</code></pre></div>
+<h3 id="szimulacio-clone-es-build">Szimuláció clone és build<a class="headerlink" href="#szimulacio-clone-es-build" title="Permanent link">&para;</a></h3>
+<p>Lépjünk a <code>~/ros2_ws/</code> mappába.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+</code></pre></div>
+<p>Klónozzuk a szükséges package-t.</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/robotverseny/robotverseny_gazebo24
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/robotverseny/megoldas_sim24
+</code></pre></div>
+<h4 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--packages-select<span class="w"> </span>robotverseny_application<span class="w"> </span>robotverseny_description<span class="w"> </span>robotverseny_bringup<span class="w"> </span>robotverseny_gazebo<span class="w"> </span>megoldas_sim24<span class="w"> </span>
+</code></pre></div>
+<h4 id="futtatas">Futtatás<a class="headerlink" href="#futtatas" title="Permanent link">&para;</a></h4>
+<details>
+<summary> Ne felejsünk source-olni ROS parancsok előtt.</summary>
+
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
+</code></pre></div>
+</details>
+
+<p><div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>robotverseny_bringup<span class="w"> </span>roboworks.launch.py
+</code></pre></div>
+és egy másik terminálban:</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>megoldas_sim24<span class="w"> </span>megoldas1.launch.py
+</code></pre></div>
+<p>vagy:</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>megoldas_sim24<span class="w"> </span>megoldas2.launch.py
+</code></pre></div>
+<p><img alt="" src="https://raw.githubusercontent.com/robotverseny/megoldas_sim24/refs/heads/main/img/sim01.png" /></p>
+<h4 id="hasznos-parancsok">Hasznos parancsok<a class="headerlink" href="#hasznos-parancsok" title="Permanent link">&para;</a></h4>
+<p>Publikálhatjuk a <code>/roboworks/cmd_vel</code> topicra a következő üzenetet:</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>--once<span class="w"> </span>/roboworks/cmd_vel<span class="w"> </span>geometry_msgs/msg/Twist<span class="w"> </span><span class="s2">"{linear: {x: 2.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -0.01}}"</span>
+</code></pre></div>
+<p>Teleop twist keyboard:
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>--ros-args<span class="w"> </span>-r<span class="w"> </span>/cmd_vel:<span class="o">=</span>/roboworks/cmd_vel
+</code></pre></div></p>
+<h2 id="1-feladat-node-es-publish-turtlesim-2d-szimulacio"><code>1.</code> feladat - Node és publish - Turtlesim 2D szimuláció<a class="headerlink" href="#1-feladat-node-es-publish-turtlesim-2d-szimulacio" title="Permanent link">&para;</a></h2>
 <p>Nyissunk két terminált. Az első terminálból indítsuk a beépített <code>turtlesim_node</code> szimulátort, ami a <code>turtlesim</code> package-ben található.</p>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">turtlesim</span><span class="w"> </span><span class="n">turtlesim_node</span>
 </code></pre></div>
 <p><em>Megjegyzés</em>: ha esetleg valamiért hiányozna, telepíthető a <code>sudo apt install ros-humble-turtlesim</code> paranccsal.</p>
 <p>A második ablakból publikáljunk egy parancsot, melynek hatására körbe fordul:</p>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">pub</span><span class="w"> </span><span class="o">/</span><span class="n">turtle1</span><span class="o">/</span><span class="n">cmd_vel</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">Twist</span><span class="w"> </span><span class="s">&#39;{linear: {x: 0.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.2}}&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">pub</span><span class="w"> </span><span class="o">/</span><span class="n">turtle1</span><span class="o">/</span><span class="n">cmd_vel</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">Twist</span><span class="w"> </span><span class="s">'{linear: {x: 0.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.2}}'</span>
 </code></pre></div>
 <figure>
-  <img alt="" src="../turtlesim01.gif" />
-  <figcaption>Turtlesim animáció</figcaption>
+  <img alt="" src="/szenergy-autonom/assets/images_common/turtlesim01.gif" />
+<br />
+<figcaption>Turtlesim animáció</figcaption>
 </figure>
 <p>A háttérben a <code>turtlesim_node</code> node (kerek jelölés) feliratkozik a <code>/turtle1/cmd_vel</code> topicra (szögletes jelölés), ennek hatására indul a mozgás. </p>
 <pre class="mermaid"><code>flowchart LR
@@ -2750,9 +2968,11 @@ Az összes topic-ot így lehet listázni:</p>
 </ul>
 <h3 id="source">Source<a class="headerlink" href="#source" title="Permanent link">&para;</a></h3>
 <p>Ahhoz hogy az ROS2 futtatható fájlainkat valóban el tudjuk indítani, be kell állíani a be a környezetet (úgynevezett source-olás), tehát meg kell adni a bash számára, hogy hol keresse az adott futtatható fájlokat, azoknak milyen függőségei vannak stb. Ez egyszerűbb, mint hangzik, csak egy <code>source &lt;útvonal&gt;/&lt;név&gt;.bash</code> parancsot kell kiadni. Korábban írtuk, hogy a worksapce neve nem számít, és valóban, a source megadása után mindegy, hogy fizikailag hol található a futtatható állomány, kényelmesen elindítható egy paranccsal bármelyik mappából. 
-Mivel a packagek különböző workspace-eken belül egymásra is épülhetnek, az ROS2 bevezette az overlay / underlay elvet. Ez azt jelenti, hogy egyik workspace buildelésekor egy másik workspace már be volt source-olva, annak valamely package-e függ a az előzőleg lebuildelt package-től. Tehát annak funkcionalitása, kódja szükséges a ráépülő package-nek. Ennek megfeleően a source-olás is kétféle lehet:
-- A <code>local_setup.bash</code> script csak a jelenlegi workspace-ben állítja be a környezetet (source-ol). Tehát nem source-ol szülő (függő) workspace-t.
-- A <code>setup.bash</code> szkript viszont a <code>local_setup.bash</code> parancsfájlt adja az összes olyan workspace-hez, amely a munkaterület létrehozásakor függőség volt. </p>
+Mivel a packagek különböző workspace-eken belül egymásra is épülhetnek, az ROS2 bevezette az overlay / underlay elvet. Ez azt jelenti, hogy egyik workspace buildelésekor egy másik workspace már be volt source-olva, annak valamely package-e függ a az előzőleg lebuildelt package-től. Tehát annak funkcionalitása, kódja szükséges a ráépülő package-nek. Ennek megfeleően a source-olás is kétféle lehet:</p>
+<ul>
+<li>A <code>local_setup.bash</code> script csak a jelenlegi workspace-ben állítja be a környezetet (source-ol). Tehát nem source-ol szülő (függő) workspace-t.</li>
+<li>A <code>setup.bash</code> szkript viszont a <code>local_setup.bash</code> parancsfájlt adja az összes olyan workspace-hez, amely a munkaterület létrehozásakor függőség volt. </li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A tantárgyban nem kell ilyen összetett rendszereket használni, legtöbbször egy <code>ros2_ws</code> is elég.</p>
@@ -2791,10 +3011,10 @@ Mivel a packagek különböző workspace-eken belül egymásra is épülhetnek, 
 <p class="admonition-title">Success</p>
 <p>A második terminálban ellenőrizzük a <code>ros2_ws/src</code> tartalmát, és <strong>ha szükséges</strong> klónozzuk, majd buildeljük a példa package-t.</p>
 </div>
-<p><div class="highlight"><pre><span></span><code><span class="n">ls</span><span class="w"> </span><span class="o">~/</span><span class="n">ros2_ws</span><span class="o">/</span><span class="n">src</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">grep</span><span class="w"> </span><span class="n">szenergy-autonom_</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">ls</span><span class="w"> </span><span class="o">~/</span><span class="n">ros2_ws</span><span class="o">/</span><span class="n">src</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">grep</span><span class="w"> </span><span class="n">szenergy</span><span class="o">-</span><span class="n">autonom_</span>
 </code></pre></div>
 vagy </p>
-<div class="highlight"><pre><span></span><code><span class="n">cd</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="o">-</span><span class="n">d</span><span class="w"> </span><span class="s">&quot;ros2_ws/src/szenergy-autonom_packages&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Letezik</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Nem</span><span class="w"> </span><span class="n">letezik</span>
+<div class="highlight"><pre><span></span><code><span class="n">cd</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="o">-</span><span class="n">d</span><span class="w"> </span><span class="s">"ros2_ws/src/szenergy-autonom_packages"</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Letezik</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Nem</span><span class="w"> </span><span class="n">letezik</span>
 </code></pre></div>
 <ul>
 <li><code>A. opció:</code> Ha nincs package (az előző <code>ls</code> nem ad vissza találatot), akkor <code>git clone</code> és <code>colcon</code> build.</li>
@@ -2827,12 +3047,13 @@ vagy </p>
 <div class="highlight"><pre><span></span><code><span class="n">source</span><span class="w"> </span><span class="o">~/</span><span class="n">ros2_ws</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">setup.bash</span>
 </code></pre></div>
 <p>Ezután már futtatható a node:</p>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">szenergy-autonom_intro_cpp</span><span class="w"> </span><span class="n">cmd_gen_node</span>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">szenergy</span><span class="o">-</span><span class="n">autonom_intro_cpp</span><span class="w"> </span><span class="n">cmd_gen_node</span>
 </code></pre></div>
 <p>A következőképp mozog most a teknős:</p>
 <figure>
-  <img alt="Image title" src="../turtlesim02.gif" width="100%" />
-  <figcaption>Turtle</figcaption>
+  <img alt="Image title" src="/szenergy-autonom/assets/images_common/turtlesim02.gif" width="100%" />
+<br />
+<figcaption>Turtle</figcaption>
 </figure>
 <p>Forráskódja elérhető a <a href="https://github.com/sze-info/szenergy-autonom_packages/blob/main/szenergy-autonom_intro_cpp/src/cmd_gen_node.cpp">github.com/sze-info/szenergy-autonom_packages</a> repon.A lényeg, hogy a <code>loop</code> függvény 5 Hz (200 ms) frekvencián fut le, és </p>
 <div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
@@ -2862,10 +3083,10 @@ vagy </p>
 <p>A C++ kód python verziója szintén elérhető a <a href="https://github.com/sze-info/szenergy-autonom_packages/blob/main/szenergy-autonom_intro_py/szenergy-autonom_intro_py/cmd_gen_node.py">github.com/sze-info/szenergy-autonom_packages</a> címen. Érdemes összehasonlítani a C++ és a python kódokat.</p>
 </div>
 <p>Nézzük meg az utolsó terminálban a Foxglove segítségével az élő adatokat (itt se felejtsük a <code>source</code>-t):</p>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">szenergy-autonom_intro_cpp</span><span class="w"> </span><span class="n">foxglove_bridge.launch.py</span>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">szenergy</span><span class="o">-</span><span class="n">autonom_intro_cpp</span><span class="w"> </span><span class="n">foxglove_bridge.launch.py</span>
 </code></pre></div>
 <p>Vizsgáljuk meg Foxglove Studio-val is WebSocketen keresztül (Open connection <code>ws://localhost:8765</code>):</p>
-<p><img alt="foxglove" src="../foxglove02.png" /></p>
+<p><img alt="foxglove" src="/szenergy-autonom/assets/images_common/foxglove02.png" /></p>
 <p><em>Megjegyzés</em>: gépteremben fel van téve a <code>foxglove_bridge</code>, otthon <code>sudo apt install ros-humble-foxglove-bridge</code> paranccsal (előtte update) telepíthető.</p>
 <p><pre class="mermaid"><code>flowchart LR
 
@@ -2879,7 +3100,7 @@ classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
 classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
 </code></pre>
 Mindehárom node-ot egyben a következőképp indíthatjuk:</p>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">szenergy-autonom_intro_cpp</span><span class="w"> </span><span class="n">turtle.launch.py</span>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">szenergy</span><span class="o">-</span><span class="n">autonom_intro_cpp</span><span class="w"> </span><span class="n">turtle.launch.py</span>
 </code></pre></div>
 <p>Vizsgáljuk meg a package tartalmát röviden a <code>code ~/ros2_ws/src/szenergy-autonom_packages/szenergy-autonom_intro_cpp</code> parancs után.</p>
 <h2 id="3-feladat-sajat-package-keszitese"><code>3.</code> feladat - Saját package készítése<a class="headerlink" href="#3-feladat-sajat-package-keszitese" title="Permanent link">&para;</a></h2>
@@ -2942,7 +3163,7 @@ Mindehárom node-ot egyben a következőképp indíthatjuk:</p>
 <span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="n">argc</span><span class="p">;</span>
 <span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="n">argv</span><span class="p">;</span>
 
-<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;hello world my_package package</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">"hello world my_package package</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -2960,6 +3181,10 @@ Mindehárom node-ot egyben a következőképp indíthatjuk:</p>
 <p>A <code>code</code> parancs után fájlt megadva a fájl niytódik meg, míg mappát (könyvtárat) megadva az adott mappa tartalma nyílik meg. Gyakran forul elő, hogy például egy adott package-ben vagyunk és szeretnénk az aktuális mappát megnyitni. Ezt megtehetjük a <code>code .</code> paranccsal, amikoris az aktuális mappa nyitódik meg, hiszen a <code>.</code> karakter az aktuális mappát jelenti linuxban. </p>
 </div>
 <h2 id="4-feladat-c-publisher-subscriber"><code>4.</code> feladat - C++ publisher / subscriber<a class="headerlink" href="#4-feladat-c-publisher-subscriber" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Házi feladat</p>
+<p>Otthon készítsük el a <code>cpp_pubsub</code> / <code>py_pubsub</code> package-t, ami egy egyszerű publish/subscribe példát valósít meg.</p>
+</div>
 <p>A gyakorlat a hivatalos ROS 2 tutorialokon alapszik: <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html</a></p>
 <ul>
 <li><a href="https://github.com/ros2/examples/blob/humble/rclcpp/topics/minimal_publisher/member_function.cpp">C++ publisher</a></li>
@@ -2984,8 +3209,8 @@ Ez az a könyvtár minden CMake package-ben, ahová a forrásfájlok tartoznak (
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rclcpp/rclcpp.hpp&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;std_msgs/msg/string.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"rclcpp/rclcpp.hpp"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"std_msgs/msg/string.hpp"</span>
 
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="o">::</span><span class="nn">chrono_literals</span><span class="p">;</span>
 
@@ -2996,9 +3221,9 @@ Ez az a könyvtár minden CMake package-ben, ahová a forrásfájlok tartoznak (
 <span class="p">{</span>
 <span class="w">    </span><span class="k">public</span><span class="o">:</span>
 <span class="w">    </span><span class="n">MinimalPublisher</span><span class="p">()</span>
-<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">&quot;minimal_publisher&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">count_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">"minimal_publisher"</span><span class="p">),</span><span class="w"> </span><span class="n">count_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">publisher_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_publisher</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;topic&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">        </span><span class="n">publisher_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_publisher</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"topic"</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
 <span class="w">        </span><span class="n">timer_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_wall_timer</span><span class="p">(</span>
 <span class="w">        </span><span class="mi">500</span><span class="n">ms</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="o">&amp;</span><span class="n">MinimalPublisher</span><span class="o">::</span><span class="n">timer_callback</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">));</span>
 <span class="w">    </span><span class="p">}</span>
@@ -3007,8 +3232,8 @@ Ez az a könyvtár minden CMake package-ben, ahová a forrásfájlok tartoznak (
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">timer_callback</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="p">();</span>
-<span class="w">        </span><span class="n">message</span><span class="p">.</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, world! &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">count_</span><span class="o">++</span><span class="p">);</span>
-<span class="w">        </span><span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;Publishing: &#39;%s&#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">        </span><span class="n">message</span><span class="p">.</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello, world! "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">count_</span><span class="o">++</span><span class="p">);</span>
+<span class="w">        </span><span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="w"> </span><span class="s">"Publishing: '%s'"</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 <span class="w">        </span><span class="n">publisher_</span><span class="o">-&gt;</span><span class="n">publish</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">TimerBase</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">timer_</span><span class="p">;</span>
@@ -3031,7 +3256,7 @@ Ez az a könyvtár minden CMake package-ben, ahová a forrásfájlok tartoznak (
 </code></pre></div>
 <p>Mindig érdemes kitölteni a <code>&lt;description&gt;</code>, <code>&lt;maintainer&gt;</code> és <code>&lt;license&gt;</code> tag-eket:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;description&gt;</span>Examples<span class="w"> </span>of<span class="w"> </span>minimal<span class="w"> </span>publisher/subscriber<span class="w"> </span>using<span class="w"> </span>rclcpp<span class="nt">&lt;/description&gt;</span>
-<span class="nt">&lt;maintainer</span><span class="w"> </span><span class="na">email=</span><span class="s">&quot;you@email.com&quot;</span><span class="nt">&gt;</span>Your<span class="w"> </span>Name<span class="nt">&lt;/maintainer&gt;</span>
+<span class="nt">&lt;maintainer</span><span class="w"> </span><span class="na">email=</span><span class="s">"you@email.com"</span><span class="nt">&gt;</span>Your<span class="w"> </span>Name<span class="nt">&lt;/maintainer&gt;</span>
 <span class="nt">&lt;license&gt;</span>Apache<span class="w"> </span>License<span class="w"> </span>2.0<span class="nt">&lt;/license&gt;</span>
 </code></pre></div>
 <p>Adjunk hozzá egy új sort az <code>ament_cmake</code> buildtool függősége után, és illessze be a következő függőségeket a node include utasításainak megfelelően:</p>
@@ -3063,7 +3288,7 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 <span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD</span><span class="w"> </span><span class="s">14</span><span class="p">)</span>
 <span class="nb">endif</span><span class="p">()</span>
 
-<span class="nb">if</span><span class="p">(</span><span class="s">CMAKE_COMPILER_IS_GNUCXX</span><span class="w"> </span><span class="s">OR</span><span class="w"> </span><span class="s">CMAKE_CXX_COMPILER_ID</span><span class="w"> </span><span class="s">MATCHES</span><span class="w"> </span><span class="s2">&quot;Clang&quot;</span><span class="p">)</span>
+<span class="nb">if</span><span class="p">(</span><span class="s">CMAKE_COMPILER_IS_GNUCXX</span><span class="w"> </span><span class="s">OR</span><span class="w"> </span><span class="s">CMAKE_CXX_COMPILER_ID</span><span class="w"> </span><span class="s">MATCHES</span><span class="w"> </span><span class="s2">"Clang"</span><span class="p">)</span>
 <span class="nb">add_compile_options</span><span class="p">(</span><span class="s">-Wall</span><span class="w"> </span><span class="s">-Wextra</span><span class="w"> </span><span class="s">-Wpedantic</span><span class="p">)</span>
 <span class="nb">endif</span><span class="p">()</span>
 
@@ -3112,22 +3337,22 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>cpp_pubsub<span class="w"> </span>talker
 </code></pre></div></p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 0&quot;</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 1&quot;</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 2&quot;</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 3&quot;</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 4&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 0"</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 1"</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 2"</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 3"</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_publisher</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Publishing</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 4"</span>
 </code></pre></div>
 <p>Egy újabb terminalba:
 <div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>cpp_pubsub<span class="w"> </span>listener
 </code></pre></div></p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 10&quot;</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 11&quot;</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 12&quot;</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 13&quot;</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">&quot;Hello World: 14&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 10"</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 11"</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 12"</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 13"</span>
+<span class="p">[</span><span class="n">INFO</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="n">minimal_subscriber</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">heard</span><span class="o">:</span><span class="w"> </span><span class="s">"Hello World: 14"</span>
 </code></pre></div>
 <h2 id="5-feladat-python-publisher-subscriber"><code>5.</code> feladat - Python publisher / subscriber<a class="headerlink" href="#5-feladat-python-publisher-subscriber" title="Permanent link">&para;</a></h2>
 <p>A gyakorlat a hivatalos ROS 2 tutorialokon alapszik: <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html">docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html</a></p>
@@ -3171,35 +3396,35 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 <span class="normal">35</span>
 <span class="normal">36</span>
 <span class="normal">37</span>
-<span class="normal">38</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">rclpy</span>      <span class="c1">## ROS2 Python API </span>
-<span class="kn">from</span> <span class="nn">std_msgs.msg</span> <span class="kn">import</span> <span class="n">String</span> <span class="c1">## ROS2 Standard String</span>
-<span class="kn">from</span> <span class="nn">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span> 
+<span class="normal">38</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">rclpy</span>      <span class="c1">## ROS2 Python API </span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">std_msgs.msg</span><span class="w"> </span><span class="kn">import</span> <span class="n">String</span> <span class="c1">## ROS2 Standard String</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rclpy.node</span><span class="w"> </span><span class="kn">import</span> <span class="n">Node</span> 
 
 
 
 
 <span class="c1">## MinimalPublisher osztály</span>
-<span class="k">class</span> <span class="nc">MinimalPublisher</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MinimalPublisher</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;minimal_publisher&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">publisher_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_publisher</span><span class="p">(</span><span class="n">String</span><span class="p">,</span> <span class="s1">&#39;topic&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">'minimal_publisher'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">publisher_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_publisher</span><span class="p">(</span><span class="n">String</span><span class="p">,</span> <span class="s1">'topic'</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
         <span class="n">timer_period</span> <span class="o">=</span> <span class="mf">0.5</span>  <span class="c1"># seconds</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">timer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_timer</span><span class="p">(</span><span class="n">timer_period</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">timer_callback</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 
-    <span class="k">def</span> <span class="nf">timer_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">timer_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">msg</span> <span class="o">=</span> <span class="n">String</span><span class="p">()</span>
-        <span class="n">msg</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="s1">&#39;Hello World: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">i</span>
+        <span class="n">msg</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="s1">'Hello World: </span><span class="si">%d</span><span class="s1">'</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">i</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">publisher_</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Publishing: &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">msg</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Publishing: "</span><span class="si">%s</span><span class="s1">"'</span> <span class="o">%</span> <span class="n">msg</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 
 
 
 
 
-<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="n">rclpy</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">)</span>
     <span class="n">minimal_publisher</span> <span class="o">=</span> <span class="n">MinimalPublisher</span><span class="p">()</span>
     <span class="n">rclpy</span><span class="o">.</span><span class="n">spin</span><span class="p">(</span><span class="n">minimal_publisher</span><span class="p">)</span>
@@ -3207,7 +3432,7 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
     <span class="n">rclpy</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
 
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">main</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
 </div>
@@ -3245,8 +3470,8 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 <span class="normal">31</span>
 <span class="normal">32</span>
 <span class="normal">33</span>
-<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rclcpp/rclcpp.hpp&quot;</span><span class="c1"> // ROS2 C++ API </span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;std_msgs/msg/string.hpp&quot;</span><span class="c1"> // ROS2 standard String</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">"rclcpp/rclcpp.hpp"</span><span class="w"> </span><span class="c1">// ROS2 C++ API </span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"std_msgs/msg/string.hpp"</span><span class="w"> </span><span class="c1">// ROS2 standard String</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;chrono&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;functional&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
@@ -3255,8 +3480,8 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 <span class="c1">// MinimalPublisher osztály</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">MinimalPublisher</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"> </span><span class="n">MinimalPublisher</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">&quot;minimal_publisher&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">count_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">publisher_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_publisher</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;topic&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"> </span><span class="n">MinimalPublisher</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">"minimal_publisher"</span><span class="p">),</span><span class="w"> </span><span class="n">count_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">publisher_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_publisher</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"topic"</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
 <span class="w">        </span><span class="n">timer_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_wall_timer</span><span class="p">(</span>
 <span class="w">        </span><span class="mi">500</span><span class="n">ms</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="o">&amp;</span><span class="n">MinimalPublisher</span><span class="o">::</span><span class="n">timer_callback</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">));</span>
 <span class="w">    </span><span class="p">}</span>
@@ -3264,8 +3489,8 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 <span class="w">    </span><span class="k">private</span><span class="o">:</span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">timer_callback</span><span class="p">(){</span>
 <span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="p">();</span>
-<span class="w">        </span><span class="n">message</span><span class="p">.</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello, world! &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">count_</span><span class="o">++</span><span class="p">);</span>
-<span class="w">        </span><span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;Publishing: &#39;%s&#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">        </span><span class="n">message</span><span class="p">.</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hello, world! "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">count_</span><span class="o">++</span><span class="p">);</span>
+<span class="w">        </span><span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="w"> </span><span class="s">"Publishing: '%s'"</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 <span class="w">        </span><span class="n">publisher_</span><span class="o">-&gt;</span><span class="n">publish</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">TimerBase</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">timer_</span><span class="p">;</span>
@@ -3334,7 +3559,7 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; Széchenyi István Egyetem 
+      &copy; SZEnergy Team, 2024. Minden jog fenntartva.
 
     </div>
   
@@ -3374,7 +3599,7 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
     <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -3387,6 +3612,8 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
         <script src="../../pymdownx.snippets"></script>
       
         <script src="../../pymdownx.superfences"></script>
+      
+        <script src="../../assets/slides/js/slides.js"></script>
       
     
   </body>

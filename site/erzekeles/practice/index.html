@@ -6,31 +6,31 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A course at Széchenyi István University, Győr, Hungary">
+        <meta name="description" content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga.">
       
       
-        <meta name="author" content="sze">
+        <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://sze-info.github.io/szenergy-autonom/erzekeles/practice/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/erzekeles/practice/">
       
       
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../feleves_beadando/">
+        <link rel="next" href="../../ros2halado/">
       
       
       <link rel="icon" href="../../assets/images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.23">
     
     
       
-        <title>Gyakorlat - Érzékelés - Autonóm járművek és robotok programozása</title>
+        <title>Gyakorlat - Érzékelés - Autonóm tananyag</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -54,6 +54,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../assets/slides/css/slides.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -63,11 +65,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Gyakorlat - Érzékelés - Autonóm járművek és robotok programozása" >
+        <meta  property="og:title"  content="Gyakorlat - Érzékelés - Autonóm tananyag" >
       
-        <meta  property="og:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/erzekeles/practice.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/erzekeles/practice.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -75,15 +77,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://sze-info.github.io/szenergy-autonom/erzekeles/practice/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/erzekeles/practice/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Gyakorlat - Érzékelés - Autonóm járművek és robotok programozása" >
+        <meta  name="twitter:title"  content="Gyakorlat - Érzékelés - Autonóm tananyag" >
       
-        <meta  name="twitter:description"  content="A course at Széchenyi István University, Győr, Hungary" >
+        <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://sze-info.github.io/szenergy-autonom/assets/images/social/erzekeles/practice.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/erzekeles/practice.png" >
       
     
     
@@ -120,7 +122,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-header__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-header__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
@@ -134,7 +136,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Autonóm járművek és robotok programozása
+            Autonóm tananyag
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -245,7 +247,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -371,23 +373,6 @@
   
 
       
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-tabs__link">
-        
-  
-    
-  
-  Moodle
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -410,17 +395,17 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Autonóm járművek és robotok programozása" class="md-nav__button md-logo" aria-label="Autonóm járművek és robotok programozása" data-md-component="logo">
+    <a href="../.." title="Autonóm tananyag" class="md-nav__button md-logo" aria-label="Autonóm tananyag" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 14V5h12c5.5 0 10 4.5 10 10v2h-2.17A2.99 2.99 0 0 1 18 19a2.99 2.99 0 0 1-2.83-2H10a5.002 5.002 0 0 1-9-3m5-3c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m9-1v2h5.25c-.33-.73-.75-1.4-1.25-2h-4Z"/></svg>
 
     </a>
-    Autonóm járművek és robotok programozása
+    Autonóm tananyag
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/sze-info/szenergy-autonom/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/szenergy/autonomous_oktato_anyag" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
@@ -571,29 +556,6 @@
   
   <span class="md-ellipsis">
     Gyakorlat
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../bevezetes/gepterem/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    Gépterem
   </span>
   
 
@@ -969,6 +931,162 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#jatsszuk-vissza-az-mcap-fajlt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Játsszuk vissza az .mcap fájlt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ros-2-idokezeles" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROS 2 időkezelés
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-navigation-satellite-system-gnss-global-positioning-system-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global Navigation Satellite System (GNSS) / Global Positioning System (GPS)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inertial-measurement-unit-imu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inertial Measurement Unit (IMU)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kamera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kamera
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lidar" class="md-nav__link">
+    <span class="md-ellipsis">
+      LIDAR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vizualizacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vizualizáció
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vizualizáció">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rviz2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RVIZ2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foxglove-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Foxglove studio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hozzuk-letre-a-simple_sub_cpp-package-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hozzuk létre a simple_sub_cpp package-t
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hozzuk létre a simple_sub_cpp package-t">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#irjuk-meg-a-subscriber-node-ot-print_posecpp-simple_sub_node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Írjuk meg a subscriber node-ot (print_pose.cpp &gt;&gt; simple_sub_node)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuggosegek-hozzaadasa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Függőségek hozzáadása
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmakeliststxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      CMakeLists.txt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-es-futtatas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build és futtatás
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hazi-feladat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Házi feladat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forrasok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Források
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1031,6 +1149,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../../ros2halado/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-3.1 3.9s-.7-.3-1-.3c-.6-.1-1 .1-1.2 1.1L12 16.8c-.2.8-.5 1.4-1 1.8-.4.3-.8.4-1.3.4-.8 0-2-.5-2-.5l.5-1.4s.8.3 1 .3c.3.1.5 0 .7-.1.2-.1.3-.4.4-.7l1.6-9.2c.1-.8.5-1.4 1-1.9.6-.4 1.3-.5 2.1-.4.7.1 1.5.5 1.5.5l-.6 1.3Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 haladó
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ros2halado/ros2launch/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    ROS 2 launch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../feleves_beadando/" class="md-nav__link">
         
   
@@ -1084,29 +1248,6 @@
   
   <span class="md-ellipsis">
     Nagy féléves
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ros2halado/ros2launch/" class="md-nav__link">
-        
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
-  
-  <span class="md-ellipsis">
-    ROS 2 launch
   </span>
   
 
@@ -1491,13 +1632,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../../szimulacio/gyakorlat/" class="md-nav__link">
+      <a href="../../szimulacio/f1tenth_sim_a/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo saját robotszimuláció készítése
+    Gyakorlat - Gazebo versenypálya
   </span>
   
 
@@ -1514,13 +1655,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../../szimulacio/f1tenth_sim_a/" class="md-nav__link">
+      <a href="../../szimulacio/gyakorlat/" class="md-nav__link">
         
   
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
   
   <span class="md-ellipsis">
-    Gyakorlat - Gazebo Fortress ROS 2 Wheeltec
+    Gyakorlat - Gazebo saját robotszimuláció készítése
   </span>
   
 
@@ -1797,6 +1938,52 @@
   
   <span class="md-ellipsis">
     Gyakorlat - Mesterséges intelligencia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/kaggle_notebook/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.59 3.41 7 4.82 3.82 8 7 11.18 5.59 12.6 1 8l4.59-4.59m5.82 0L16 8l-4.59 4.6L10 11.18 13.18 8 10 4.82l1.41-1.41M22 6v12c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2v-4h2v4h16V6h-2.97V4H20c1.11 0 2 .89 2 2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Kaggle Notebook - Előkészítés (gyakorlat)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mesterseges_intelligencia/slides/slides_nn/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h8a2 2 0 0 1 2-2 2 2 0 0 1 2 2h8v2h-1v11h-5.75L17 22h-2l-1.75-6h-2.5L9 22H7l1.75-6H3V5H2V3m3 2v9h14V5H5Z"/></svg>
+  
+  <span class="md-ellipsis">
+    NN slides
   </span>
   
 
@@ -2106,6 +2293,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../onallo/joystick/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Joystick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../ros2halado/rqt/" class="md-nav__link">
         
   
@@ -2288,6 +2496,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../onallo/troubleshoot/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2v2m8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2v2Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Hibák
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2307,26 +2538,6 @@
   
   <span class="md-ellipsis">
     Linkek
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://szelearning.sze.hu/course/view.php?id=13973" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Moodle
   </span>
   
 
@@ -2370,6 +2581,162 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#jatsszuk-vissza-az-mcap-fajlt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Játsszuk vissza az .mcap fájlt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ros-2-idokezeles" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROS 2 időkezelés
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-navigation-satellite-system-gnss-global-positioning-system-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global Navigation Satellite System (GNSS) / Global Positioning System (GPS)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inertial-measurement-unit-imu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inertial Measurement Unit (IMU)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kamera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kamera
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lidar" class="md-nav__link">
+    <span class="md-ellipsis">
+      LIDAR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vizualizacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vizualizáció
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vizualizáció">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rviz2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RVIZ2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foxglove-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Foxglove studio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hozzuk-letre-a-simple_sub_cpp-package-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hozzuk létre a simple_sub_cpp package-t
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hozzuk létre a simple_sub_cpp package-t">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#irjuk-meg-a-subscriber-node-ot-print_posecpp-simple_sub_node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Írjuk meg a subscriber node-ot (print_pose.cpp &gt;&gt; simple_sub_node)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuggosegek-hozzaadasa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Függőségek hozzáadása
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmakeliststxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      CMakeLists.txt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-es-futtatas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build és futtatás
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hazi-feladat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Házi feladat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forrasok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Források
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2398,14 +2765,16 @@
 </code></pre></div>
 <p>Gépteremben is ellenőrizzük a <code>check_all.sh</code> segítségével:
 <div class="highlight"><pre><span></span><code><span class="n">cd</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">script</span>
-<span class="n">.</span><span class="o">/</span><span class="n">bag_mcap.sh</span>
-<span class="n">.</span><span class="o">/</span><span class="n">check_all.sh</span>
 </code></pre></div></p>
+<div class="highlight"><pre><span></span><code><span class="n">.</span><span class="o">/</span><span class="n">check_all.sh</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">.</span><span class="o">/</span><span class="n">bag_mcap.sh</span>
+</code></pre></div>
 <h2 id="elokeszuletek">Előkészületek<a class="headerlink" href="#elokeszuletek" title="Permanent link">&para;</a></h2>
 <p>Az előző gyakorlaton megismerkedtünk a következő rosbag-gel (ROS 2-ben a formátum már <code>.mcap</code>):</p>
-<p><img alt="foxglove01" src="https://sze-info.github.io/szenergy-autonom/bevezetes/foxglove01.png" /></p>
+<p><img alt="foxglove01" src="/szenergy-autonom/assets/images_common/foxglove01.png" /></p>
 <p>Előkészületként nézzük meg, hogy létezik-e a <code>C:\temp</code> könyvtár</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">test</span><span class="w"> </span><span class="o">-</span><span class="n">d</span><span class="w"> </span><span class="s">&quot;/mnt/c/temp&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Letezik</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Nem</span><span class="w"> </span><span class="n">letezik</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">test</span><span class="w"> </span><span class="o">-</span><span class="n">d</span><span class="w"> </span><span class="s">"/mnt/c/temp"</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Letezik</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Nem</span><span class="w"> </span><span class="n">letezik</span>
 </code></pre></div>
 Vagy egyszerűbben:
 <div class="highlight"><pre><span></span><code><span class="n">ls</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span>
@@ -2414,82 +2783,117 @@ Vagy egyszerűbben:
 <li>Ha nem létezik (<code>No such file or directory</code>), akkor hozzuk létre: <code>mkdir /mnt/c/temp</code></li>
 <li>Ha létezik, akkor nincs teendőnk, lépjünk a következő lépésre, másoljuk át ide az <code>.mcap</code> fájlokat</li>
 </ul>
-<p>Tanteremben a másolás a következő parancsok <strong>egyike</strong> legyen:</p>
-<div class="highlight"><pre><span></span><code><span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">avzh</span><span class="w"> </span><span class="o">--</span><span class="n">progress</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">measurement_files</span><span class="o">/</span><span class="n">lexus3sample01.mcap</span><span class="w">  </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span>
-<span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">avzh</span><span class="w"> </span><span class="o">--</span><span class="n">progress</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">measurement_files</span><span class="o">/</span><span class="n">lexus3sample02.mcap</span><span class="w">  </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span>
-<span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">avzh</span><span class="w"> </span><span class="o">--</span><span class="n">progress</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">measurement_files</span><span class="o">/</span><span class="n">lexus3sample03.mcap</span><span class="w">  </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span>
-<span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">avzh</span><span class="w"> </span><span class="o">--</span><span class="n">progress</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">measurement_files</span><span class="o">/</span><span class="n">lexus3sample04.mcap</span><span class="w">  </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span>
-<span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">avzh</span><span class="w"> </span><span class="o">--</span><span class="n">progress</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">measurement_files</span><span class="o">/</span><span class="n">lexus3sample05.mcap</span><span class="w">  </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span>
+<p>Listázzuk a mérésadatokat a <code>mnt/kozos/measurement_files</code> könyvtárban:</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">ls</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">measurement_files</span><span class="o">/</span><span class="w"> </span><span class="o">-</span><span class="n">lh</span>
 </code></pre></div>
+Az eredmény valami hasonló lesz:
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="n">rwxrwxrwx</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="m">4.9</span><span class="n">K</span><span class="w"> </span><span class="n">Aug</span><span class="w"> </span><span class="m">23</span><span class="w">  </span><span class="m">2023</span><span class="w"> </span><span class="n">leaf01foxglove.json</span>
+<span class="o">-</span><span class="n">rwxrwxrwx</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="m">6.6</span><span class="n">K</span><span class="w"> </span><span class="n">Sep</span><span class="w">  </span><span class="m">4</span><span class="w">  </span><span class="m">2023</span><span class="w"> </span><span class="n">lexus01foxglove.json</span>
+<span class="o">-</span><span class="n">rwxrwxrwx</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="m">2.7</span><span class="n">G</span><span class="w"> </span><span class="n">Jun</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">09</span><span class="o">:</span><span class="m">17</span><span class="w"> </span><span class="n">lexus</span><span class="m">-2023-07-18</span><span class="o">-</span><span class="n">campus.mcap</span>
+<span class="o">-</span><span class="n">rwxrwxrwx</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="m">541</span><span class="n">M</span><span class="w"> </span><span class="n">Apr</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">17</span><span class="o">:</span><span class="m">01</span><span class="w"> </span><span class="n">lexus3</span><span class="m">-2024-04-05</span><span class="o">-</span><span class="n">gyor.mcap</span>
+</code></pre></div></p>
+<p>Tanteremben a másolás a következő parancs segítségével:</p>
+<div class="highlight"><pre><span></span><code><span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">avzh</span><span class="w"> </span><span class="o">--</span><span class="n">progress</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">measurement_files</span><span class="o">/</span><span class="n">lexus3</span><span class="m">-2024-04-05</span><span class="o">-</span><span class="n">gyor.mcap</span><span class="w">  </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Figyelem</p>
+<p>A fájl mérete miatt a másolás néhány percig is eltarthat.</p>
+</div>
 <p>Otthon a következő linkről (zöld gomb), vagy parancsként <code>wget</code>-el lehet letölteni:</p>
-<div class="highlight"><pre><span></span><code><span class="n">wget</span><span class="w">  </span><span class="o">-</span><span class="n">O</span><span class="w"> </span><span class="n">lexus3sample02.mcap</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">laesze</span><span class="o">-</span><span class="n">my.sharepoint.com</span><span class="o">/:</span><span class="n">u</span><span class="o">:/</span><span class="n">g</span><span class="o">/</span><span class="n">personal</span><span class="o">/</span><span class="n">herno_o365_sze_hu</span><span class="o">/</span><span class="n">EakTOhcjblNInqjRMfaGVmsB0diDv0SWpXw9rwo0MD7f3w</span><span class="o">?</span><span class="n">download</span><span class="o">=</span><span class="m">1</span>
+<div class="highlight"><pre><span></span><code><span class="n">wget</span><span class="w">  </span><span class="o">-</span><span class="n">O</span><span class="w"> </span><span class="n">lexus3</span><span class="m">-2024-04-05</span><span class="o">-</span><span class="n">gyor.mcap</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">laesze</span><span class="o">-</span><span class="n">my.sharepoint.com</span><span class="o">/:</span><span class="n">u</span><span class="o">:/</span><span class="n">g</span><span class="o">/</span><span class="n">personal</span><span class="o">/</span><span class="n">herno_sze_hu</span><span class="o">/</span><span class="n">Eclwzn42FS9GunGay5LPq</span><span class="o">-</span><span class="n">EBA6U1dZseBFNDrr6P0MwB2w</span><span class="o">?</span><span class="n">download</span><span class="o">=</span><span class="m">1</span>
 </code></pre></div>
-<p><a class="md-button" href="https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1">MCAP letöltése <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span> 553 MB</a></p>
-<p><a class="md-button" href="https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EakTOhcjblNInqjRMfaGVmsB0diDv0SWpXw9rwo0MD7f3w?download=1">MCAP sample letöltése <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span> 300 MB</a> </p>
+<p><a class="md-button" href="https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1">MCAP letöltése <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span> 553 MB</a></p>
 <p>Listázzuk a <strong>megfelelő</strong> átmásolt <code>.mcap</code> fájl alap információit, hasonlóan:  </p>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">bag</span><span class="w"> </span><span class="n">info</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span><span class="n">lexus3sample06.mcap</span>
-
-<span class="n">closing.</span>
-
-<span class="n">Files</span><span class="o">:</span><span class="w">             </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span><span class="n">lexus3sample06.mcap</span>
-<span class="n">Bag</span><span class="w"> </span><span class="n">size</span><span class="o">:</span><span class="w">          </span><span class="m">286.7</span><span class="w"> </span><span class="n">MiB</span>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">bag</span><span class="w"> </span><span class="n">info</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span><span class="n">lexus3</span><span class="m">-2024-04-05</span><span class="o">-</span><span class="n">gyor.mcap</span>
+</code></pre></div>
+<p>Az eredmény hasnló lesz:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Files</span><span class="o">:</span><span class="w">             </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span><span class="n">lexus3</span><span class="m">-2024-04-05</span><span class="o">-</span><span class="n">gyor.mcap</span>
+<span class="n">Bag</span><span class="w"> </span><span class="n">size</span><span class="o">:</span><span class="w">          </span><span class="m">540.7</span><span class="w"> </span><span class="n">MiB</span>
 <span class="n">Storage</span><span class="w"> </span><span class="n">id</span><span class="o">:</span><span class="w">        </span><span class="n">mcap</span>
-<span class="n">Duration</span><span class="o">:</span><span class="w">          </span><span class="m">3.367</span><span class="n">s</span>
-<span class="n">Start</span><span class="o">:</span><span class="w">             </span><span class="n">Jul</span><span class="w"> </span><span class="m">18</span><span class="w"> </span><span class="m">2023</span><span class="w"> </span><span class="m">15</span><span class="o">:</span><span class="m">37</span><span class="o">:</span><span class="m">09.211</span><span class="w"> </span><span class="p">(</span><span class="m">1689687429.211</span><span class="p">)</span>
-<span class="n">End</span><span class="o">:</span><span class="w">               </span><span class="n">Jul</span><span class="w"> </span><span class="m">18</span><span class="w"> </span><span class="m">2023</span><span class="w"> </span><span class="m">15</span><span class="o">:</span><span class="m">38</span><span class="o">:</span><span class="m">03.314</span><span class="w"> </span><span class="p">(</span><span class="m">1689687483.314</span><span class="p">)</span>
-<span class="n">Messages</span><span class="o">:</span><span class="w">          </span><span class="m">29598</span>
+<span class="n">Duration</span><span class="o">:</span><span class="w">          </span><span class="m">12.519</span><span class="n">s</span>
+<span class="n">Start</span><span class="o">:</span><span class="w">             </span><span class="n">Apr</span><span class="w">  </span><span class="m">5</span><span class="w"> </span><span class="m">2024</span><span class="w"> </span><span class="m">14</span><span class="o">:</span><span class="m">51</span><span class="o">:</span><span class="m">02.480</span><span class="w"> </span><span class="p">(</span><span class="m">1712321462.480</span><span class="p">)</span>
+<span class="n">End</span><span class="o">:</span><span class="w">               </span><span class="n">Apr</span><span class="w">  </span><span class="m">5</span><span class="w"> </span><span class="m">2024</span><span class="w"> </span><span class="m">14</span><span class="o">:</span><span class="m">51</span><span class="o">:</span><span class="m">14.999</span><span class="w"> </span><span class="p">(</span><span class="m">1712321474.999</span><span class="p">)</span>
+<span class="n">Messages</span><span class="o">:</span><span class="w">          </span><span class="m">5930</span>
 <span class="n">Topic</span><span class="w"> </span><span class="n">information</span><span class="o">:</span><span class="w"> </span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">zed2i</span><span class="o">/</span><span class="n">zed_node</span><span class="o">/</span><span class="n">right_raw</span><span class="o">/</span><span class="n">image_raw_color</span><span class="o">/</span><span class="n">compressed</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">CompressedImage</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_left</span><span class="o">/</span><span class="n">points</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">PointCloud2</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_right</span><span class="o">/</span><span class="n">points</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">PointCloud2</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_center</span><span class="o">/</span><span class="n">imu</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">Imu</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">tf_static</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">tf2_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">TFMessage</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_center</span><span class="o">/</span><span class="n">points</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">PointCloud2</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">tf</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">tf2_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">TFMessage</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">mag</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">MagneticField</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">imu</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">Imu</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">status_string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">std_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">String</span>
-<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">current_pose</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">PoseStamped</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">status_string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">std_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">String</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">124</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">tf_static</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">tf2_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">TFMessage</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">24</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">tf</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">tf2_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">TFMessage</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">2597</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_right</span><span class="o">/</span><span class="n">points</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">PointCloud2</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">247</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_left</span><span class="o">/</span><span class="n">points</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">PointCloud2</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">249</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">time_ref</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">TimeReference</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">124</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">status_flag</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">std_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">UInt8</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">124</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">mag</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">MagneticField</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">315</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">time_diff</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">std_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">Float64</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">124</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_center</span><span class="o">/</span><span class="n">points</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">PointCloud2</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">246</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">navsatfix</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">NavSatFix</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">124</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">imu</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">Imu</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">1259</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">current_pose</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">124</span>
+<span class="w">  </span><span class="n">Topic</span><span class="o">:</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">zed2i</span><span class="o">/</span><span class="n">zed_node</span><span class="o">/</span><span class="n">left</span><span class="o">/</span><span class="n">image_rect_color</span><span class="o">/</span><span class="n">compressed</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Type</span><span class="o">:</span><span class="w"> </span><span class="n">sensor_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">CompressedImage</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Count</span><span class="o">:</span><span class="w"> </span><span class="m">249</span>
 </code></pre></div>
-<h1 id="jatsszuk-vissza-az-mcap-fajlt">Játsszuk vissza az <code>.mcap</code> fájlt<a class="headerlink" href="#jatsszuk-vissza-az-mcap-fajlt" title="Permanent link">&para;</a></h1>
+<h2 id="jatsszuk-vissza-az-mcap-fajlt">Játsszuk vissza az <code>.mcap</code> fájlt<a class="headerlink" href="#jatsszuk-vissza-az-mcap-fajlt" title="Permanent link">&para;</a></h2>
 <p>A következőken a mérésadatfájlt visszajátsszuk és ellenőrizzük, hogy milyen adatok jelennek meg, milyen típusban és sebességgel. A <code>--loop</code> kapcsoló a végtelen ismétlést, a <code>--clock</code> kapcsoló pedig egy <code>/clock</code> topic hirdetéséért felel, ehhez igazítja a lejátszást.</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">bag</span><span class="w"> </span><span class="n">play</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span><span class="n">lexus3sample06.mcap</span><span class="w"> </span><span class="o">--</span><span class="n">clock</span><span class="w"> </span><span class="o">--</span><span class="n">loop</span>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">bag</span><span class="w"> </span><span class="n">play</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span><span class="n">lexus3</span><span class="m">-2024-04-05</span><span class="o">-</span><span class="n">gyor.mcap</span><span class="w"> </span><span class="o">--</span><span class="n">clock</span><span class="w"> </span><span class="o">--</span><span class="n">loop</span>
 </code></pre></div>
-Ugyanez, csak lassabban visszajátszva pl.:</p>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">bag</span><span class="w"> </span><span class="n">play</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span><span class="n">lexus3sample06.mcap</span><span class="w"> </span><span class="o">--</span><span class="n">clock</span><span class="w"> </span><span class="o">--</span><span class="n">loop</span><span class="w"> </span><span class="o">--</span><span class="n">rate</span><span class="w"> </span><span class="m">0.2</span>
+<div class="admonition danger">
+<p class="admonition-title">Figyelem</p>
+<p>A statikus TF-ek miatt szükség lehet egy QoS profil fájlra a helyes TF megjelenítéshez. AErről később részletesen lesz szó. Most annyit elég tudni, hogy létrehozhatjuk a home könyvtárban a <code>qos_tf.yaml</code> fájlt a következőképp:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="p">;</span><span class="w"> </span>wget<span class="w"> </span>https://raw.githubusercontent.com/jkk-research/jkk_utils/refs/heads/ros2/qos_tf.yaml
+</code></pre></div>
+Ennek tartalma nagyjából a következő lesz:
+<div class="highlight"><pre><span></span><code><span class="c1"># qos_tf.yaml</span>
+<span class="nt">/tf_static</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">durability</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">transient_local</span>
+<span class="w">  </span><span class="nt">reliability</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reliable</span>
+<span class="w">  </span><span class="nt">history</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">keep_last</span>
+<span class="w">  </span><span class="nt">depth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+</code></pre></div>
+Ezután a használhatjuk a <code>--qos-profile-overrides-path</code> kapcsolót.</p>
+</div>
+<p>QoS override fájl használatával tehát:</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>bag<span class="w"> </span>play<span class="w"> </span>/mnt/c/temp/lexus3-2024-04-05-gyor.mcap<span class="w"> </span><span class="se">\</span>
+--clock<span class="w"> </span>--loop<span class="w"> </span><span class="se">\</span>
+--qos-profile-overrides-path<span class="w"> </span>~/qos_tf.yaml
+</code></pre></div>
+<p>Ugyanez, csak lassabban visszajátszva pl.:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">bag</span><span class="w"> </span><span class="n">play</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span><span class="n">lexus3</span><span class="m">-2024-04-05</span><span class="o">-</span><span class="n">gyor.mcap</span><span class="w"> </span><span class="o">--</span><span class="n">clock</span><span class="w"> </span><span class="o">--</span><span class="n">loop</span><span class="w"> </span><span class="o">--</span><span class="n">rate</span><span class="w"> </span><span class="m">0.2</span><span class="w"> </span><span class="o">--</span><span class="n">qos</span><span class="o">-</span><span class="n">profile</span><span class="o">-</span><span class="n">overrides</span><span class="o">-</span><span class="n">path</span><span class="w"> </span><span class="o">~/</span><span class="n">qos_tf.yaml</span>
 </code></pre></div>
 <p>A következő topic-ok jelennek meg:</p>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">list</span>
-
-<span class="o">/</span><span class="n">clock</span>
+</code></pre></div>
+<p>Eredménye valami hasonló lesz:  </p>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">clock</span>
 <span class="o">/</span><span class="n">events</span><span class="o">/</span><span class="n">read_split</span>
 <span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">current_pose</span>
 <span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">imu</span>
 <span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">mag</span>
+<span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">navsatfix</span>
+<span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">status_flag</span>
 <span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">status_string</span>
-<span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_center</span><span class="o">/</span><span class="n">imu</span>
+<span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">time_diff</span>
+<span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">time_ref</span>
 <span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_center</span><span class="o">/</span><span class="n">points</span>
 <span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_left</span><span class="o">/</span><span class="n">points</span>
 <span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_right</span><span class="o">/</span><span class="n">points</span>
-<span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">zed2i</span><span class="o">/</span><span class="n">zed_node</span><span class="o">/</span><span class="n">right_raw</span><span class="o">/</span><span class="n">image_raw_color</span>
+<span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">zed2i</span><span class="o">/</span><span class="n">zed_node</span><span class="o">/</span><span class="n">left</span><span class="o">/</span><span class="n">image_rect_color</span><span class="o">/</span><span class="n">compressed</span>
 <span class="o">/</span><span class="n">parameter_events</span>
 <span class="o">/</span><span class="n">rosout</span>
 <span class="o">/</span><span class="n">tf</span>
 <span class="o">/</span><span class="n">tf_static</span>
 </code></pre></div>
-<p>A <code>ros2 topic hz</code> az adott topic frekvenciáját mutatja. A pozíció ebben az esetben ~20Hz.</p>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">hz</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">current_pose</span>
-<span class="n">average</span><span class="w"> </span><span class="n">rate</span><span class="o">:</span><span class="w"> </span><span class="m">20.133</span>
-<span class="w">        </span><span class="n">min</span><span class="o">:</span><span class="w"> </span><span class="m">0.002</span><span class="n">s</span><span class="w"> </span><span class="n">max</span><span class="o">:</span><span class="w"> </span><span class="m">0.101</span><span class="n">s</span><span class="w"> </span><span class="n">std</span><span class="w"> </span><span class="n">dev</span><span class="o">:</span><span class="w"> </span><span class="m">0.03451</span><span class="n">s</span><span class="w"> </span><span class="n">window</span><span class="o">:</span><span class="w"> </span><span class="m">22</span>
+<p>A <code>ros2 topic hz</code> az adott topic frekvenciáját mutatja. A pozíció ebben az esetben ~10Hz.</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">hz</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">current_pose</span>
 </code></pre></div>
-<h1 id="ros-2-idokezeles"><code>ROS 2</code> időkezelés<a class="headerlink" href="#ros-2-idokezeles" title="Permanent link">&para;</a></h1>
+Az eredmény valami hasonló lesz:
+<div class="highlight"><pre><span></span><code><span class="n">average</span><span class="w"> </span><span class="n">rate</span><span class="o">:</span><span class="w"> </span><span class="m">9.994</span>
+<span class="w">        </span><span class="n">min</span><span class="o">:</span><span class="w"> </span><span class="m">0.003</span><span class="n">s</span><span class="w"> </span><span class="n">max</span><span class="o">:</span><span class="w"> </span><span class="m">1.005</span><span class="n">s</span><span class="w"> </span><span class="n">std</span><span class="w"> </span><span class="n">dev</span><span class="o">:</span><span class="w"> </span><span class="m">0.09166</span><span class="n">s</span><span class="w"> </span><span class="n">window</span><span class="o">:</span><span class="w"> </span><span class="m">107</span>
+</code></pre></div></p>
+<h2 id="ros-2-idokezeles"><code>ROS 2</code> időkezelés<a class="headerlink" href="#ros-2-idokezeles" title="Permanent link">&para;</a></h2>
 <p>Az <code>ROS</code> idő kezelésre a Unix-időt, vagy a POSIX-időt használja. Ez a UTC (greenwichi idő) szerinti 1970. január 1. 00:00:00 óta eltelt másodpercek és nanoszekundumok számát jelenti (<code>int32 sec</code>, <code>int32 nsec</code>). Ez egyrészt relatív kis helyet foglal a memóriában, másrészt könnyen számolható két időpont között eltelt idő, mégpedig egy egyszerű kivonással. </p>
 <p><a class="md-button md-button-purple mr-4" href="https://github.com/sze-info/szenergy-autonom/blob/main/docs/erzekeles/ros2time.ipynb">ros2time.ipynb</a> </p>
-<p>Hátránya, hogy nem túl intuitív, nem olvasható az ember számára. Pl. a Foxglove Studio ezért is gyakran átalakítja olvashatóbb formátumra. </p>
-<p><img alt="foxglove_a" src="../foxglove04.png#only-light" />
-<img alt="foxglove_a" src="../foxglove03.png#only-dark" /></p>
+<p>Hátránya, hogy nem túl intuitív, nem olvasható az ember számára. Pl. a Foxglove Studio / Lichtblick Suite ezért is gyakran átalakítja olvashatóbb formátumra. </p>
+<p><img alt="foxglove_a" src="/szenergy-autonom/assets/images_common/foxglove05.png" /></p>
 <p>A másodpercek és nanoszekundumok a következőképp képzelhetők el:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">rclpy</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">rclpy</span>
 <span class="n">current_time</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">get_clock</span><span class="p">()</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">current_time</span><span class="o">.</span><span class="n">to_msg</span><span class="p">())</span>
 
@@ -2502,29 +2906,30 @@ Ugyanez, csak lassabban visszajátszva pl.:</p>
 <span class="w">  </span><span class="n">sec</span><span class="o">:</span><span class="w"> </span><span class="m">1689687476</span>
 <span class="w">  </span><span class="n">nanosec</span><span class="o">:</span><span class="w"> </span><span class="m">770421827</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="o">--</span><span class="n">once</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">current_pose</span>
-
-<span class="n">header</span><span class="o">:</span>
-<span class="w">  </span><span class="n">stamp</span><span class="o">:</span>
-<span class="w">    </span><span class="n">sec</span><span class="o">:</span><span class="w"> </span><span class="m">1694595162</span>
-<span class="w">    </span><span class="n">nanosec</span><span class="o">:</span><span class="w"> </span><span class="m">945886859</span>
-<span class="w">  </span><span class="n">frame_id</span><span class="o">:</span><span class="w"> </span><span class="n">map</span>
-<span class="n">pose</span><span class="o">:</span>
-<span class="w">  </span><span class="n">position</span><span class="o">:</span>
-<span class="w">    </span><span class="n">x</span><span class="o">:</span><span class="w"> </span><span class="m">640142.9676535318</span>
-<span class="w">    </span><span class="n">y</span><span class="o">:</span><span class="w"> </span><span class="m">5193606.439717201</span>
-<span class="w">    </span><span class="n">z</span><span class="o">:</span><span class="w"> </span><span class="m">1.7999999523162842</span>
-<span class="w">  </span><span class="n">orientation</span><span class="o">:</span>
-<span class="w">    </span><span class="n">x</span><span class="o">:</span><span class="w"> </span><span class="m">0.008532664424537166</span>
-<span class="w">    </span><span class="n">y</span><span class="o">:</span><span class="w"> </span><span class="m">0.0018914791588597107</span>
-<span class="w">    </span><span class="n">z</span><span class="o">:</span><span class="w"> </span><span class="m">0.44068499630505714</span>
-<span class="w">    </span><span class="n">w</span><span class="o">:</span><span class="w"> </span><span class="m">0.8976192678279703</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="o">--</span><span class="n">once</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">current_pose</span>
+</code></pre></div>
+Az eredmény valami hasonló lesz:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">header</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">stamp</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">sec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1694595162</span>
+<span class="w">    </span><span class="nt">nanosec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">945886859</span>
+<span class="w">  </span><span class="nt">frame_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">map</span>
+<span class="nt">pose</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">position</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">x</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">640142.9676535318</span>
+<span class="w">    </span><span class="nt">y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5193606.439717201</span>
+<span class="w">    </span><span class="nt">z</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.7999999523162842</span>
+<span class="w">  </span><span class="nt">orientation</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">x</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.008532664424537166</span>
+<span class="w">    </span><span class="nt">y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0018914791588597107</span>
+<span class="w">    </span><span class="nt">z</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.44068499630505714</span>
+<span class="w">    </span><span class="nt">w</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.8976192678279703</span>
 </code></pre></div>
 <p>Ha szeretnénk átválatni a másodperceket és nanoszekundumokat, azt a következő módon tehetjük meg:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
 <span class="n">current_time_float</span> <span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">to_msg</span><span class="p">()</span><span class="o">.</span><span class="n">sec</span> <span class="o">+</span> <span class="n">current_time</span><span class="o">.</span><span class="n">to_msg</span><span class="p">()</span><span class="o">.</span><span class="n">nanosec</span> <span class="o">/</span> <span class="mf">1e9</span> <span class="c1"># 1e9 is 1,000,000,000: nanosec to sec</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;As a float:</span><span class="se">\t</span><span class="si">%.5f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">current_time_float</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ISO format:&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"As a float:</span><span class="se">\t</span><span class="si">%.5f</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">current_time_float</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"ISO format:"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcfromtimestamp</span><span class="p">(</span><span class="n">current_time_float</span><span class="p">)</span><span class="o">.</span><span class="n">isoformat</span><span class="p">())</span>
 
 
@@ -2533,7 +2938,7 @@ Ugyanez, csak lassabban visszajátszva pl.:</p>
 <span class="n">ISO</span> <span class="nb">format</span><span class="p">:</span> <span class="mi">2023</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">13</span><span class="n">T08</span><span class="p">:</span><span class="mi">52</span><span class="p">:</span><span class="mf">42.945887</span>
 </code></pre></div>
 <p><strong>Emlékeztető</strong>: a nanoszekundum a másodperc egy milliárdodrésze (10^-9 s).</p>
-<h1 id="global-navigation-satellite-system-gnss-global-positioning-system-gps">Global Navigation Satellite System (GNSS) / Global Positioning System (GPS)<a class="headerlink" href="#global-navigation-satellite-system-gnss-global-positioning-system-gps" title="Permanent link">&para;</a></h1>
+<h2 id="global-navigation-satellite-system-gnss-global-positioning-system-gps">Global Navigation Satellite System (GNSS) / Global Positioning System (GPS)<a class="headerlink" href="#global-navigation-satellite-system-gnss-global-positioning-system-gps" title="Permanent link">&para;</a></h2>
 <p>A köveztkezőkben átnézünk pár jellemző szenzort (GPS, kamera, LIDAR) és azok topic-jait, node-jait (driver package-ekbe szervezve). Vessünk egy pillantást a saját fejlesztésű Duro GPS (GNSS) driverre: <a href="https://github.com/szenergy/duro_gps_driver/tree/ros2-humble">github.com/szenergy/duro_gps_driver</a>. A GPS-t etherneten a számítógéphez csatlakoztatva, az ROS drivert indítva a következő topicokat fogja hirdetni:</p>
 <table>
 <thead>
@@ -2581,80 +2986,90 @@ Ugyanez, csak lassabban visszajátszva pl.:</p>
 </tr>
 </tbody>
 </table>
-<h1 id="inertial-measurement-unit-imu">Inertial Measurement Unit (IMU)<a class="headerlink" href="#inertial-measurement-unit-imu" title="Permanent link">&para;</a></h1>
+<h2 id="inertial-measurement-unit-imu">Inertial Measurement Unit (IMU)<a class="headerlink" href="#inertial-measurement-unit-imu" title="Permanent link">&para;</a></h2>
 <p><em>Jellemző <code>ROS 2</code> topic típusok:</em> <a href="https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/Imu.msg"><code>sensor_msgs/msg/Imu</code></a>, <a href="https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/MagneticField.msg"><code>sensor_msgs/msg/MagneticField</code></a></p>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="o">--</span><span class="n">once</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">imu</span>
-
-<span class="n">header</span><span class="o">:</span>
-<span class="w">  </span><span class="n">stamp</span><span class="o">:</span>
-<span class="w">    </span><span class="n">sec</span><span class="o">:</span><span class="w"> </span><span class="m">1695039048</span>
-<span class="w">    </span><span class="n">nanosec</span><span class="o">:</span><span class="w"> </span><span class="m">44466475</span>
-<span class="w">  </span><span class="n">frame_id</span><span class="o">:</span><span class="w"> </span><span class="n">duro</span>
-<span class="n">orientation</span><span class="o">:</span>
-<span class="w">  </span><span class="n">x</span><span class="o">:</span><span class="w"> </span><span class="m">0.0</span>
-<span class="w">  </span><span class="n">y</span><span class="o">:</span><span class="w"> </span><span class="m">0.0</span>
-<span class="w">  </span><span class="n">z</span><span class="o">:</span><span class="w"> </span><span class="m">0.7071067811865475</span>
-<span class="w">  </span><span class="n">w</span><span class="o">:</span><span class="w"> </span><span class="m">0.7071067811865476</span>
-<span class="n">orientation_covariance</span><span class="o">:</span>
-<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="p">[</span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">]</span>
-<span class="n">angular_velocity</span><span class="o">:</span>
-<span class="w">  </span><span class="n">x</span><span class="o">:</span><span class="w"> </span><span class="m">0.01330030487804878</span>
-<span class="w">  </span><span class="n">y</span><span class="o">:</span><span class="w"> </span><span class="m">0.015893864329268294</span>
-<span class="w">  </span><span class="n">z</span><span class="o">:</span><span class="w"> </span><span class="m">0.037307355182926834</span>
-<span class="n">angular_velocity_covariance</span><span class="o">:</span>
-<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="p">[</span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">]</span>
-<span class="n">linear_acceleration</span><span class="o">:</span>
-<span class="w">  </span><span class="n">x</span><span class="o">:</span><span class="w"> </span><span class="m">-0.5291185668945312</span>
-<span class="w">  </span><span class="n">y</span><span class="o">:</span><span class="w"> </span><span class="m">0.031124621582031248</span>
-<span class="w">  </span><span class="n">z</span><span class="o">:</span><span class="w"> </span><span class="m">-9.610325463867188</span>
-<span class="n">linear_acceleration_covariance</span><span class="o">:</span>
-<span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="p">[</span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="m">0.0</span><span class="p">]</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="o">--</span><span class="n">once</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">gps</span><span class="o">/</span><span class="n">duro</span><span class="o">/</span><span class="n">imu</span>
 </code></pre></div>
-<h1 id="kamera">Kamera<a class="headerlink" href="#kamera" title="Permanent link">&para;</a></h1>
-<p><em>Jellemző <code>ROS 2</code> topic típusok:</em> <a href="https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/Image.msg"><code>sensor_msgs/msg/Image</code></a>, <a href="https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/CameraInfo.msg"><code>sensor_msgs/msg/CameraInfo</code></a></p>
+Az eredmény valami hasonló lesz:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">header</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">stamp</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">sec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1695039048</span>
+<span class="w">    </span><span class="nt">nanosec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">44466475</span>
+<span class="w">  </span><span class="nt">frame_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">duro</span>
+<span class="nt">orientation</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">x</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0</span>
+<span class="w">  </span><span class="nt">y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0</span>
+<span class="w">  </span><span class="nt">z</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.7071067811865475</span>
+<span class="w">  </span><span class="nt">w</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.7071067811865476</span>
+<span class="nt">orientation_covariance</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">]</span>
+<span class="nt">angular_velocity</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">x</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.01330030487804878</span>
+<span class="w">  </span><span class="nt">y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.015893864329268294</span>
+<span class="w">  </span><span class="nt">z</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.037307355182926834</span>
+<span class="nt">angular_velocity_covariance</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">]</span>
+<span class="nt">linear_acceleration</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">x</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-0.5291185668945312</span>
+<span class="w">  </span><span class="nt">y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.031124621582031248</span>
+<span class="w">  </span><span class="nt">z</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-9.610325463867188</span>
+<span class="nt">linear_acceleration_covariance</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.0</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+<h2 id="kamera">Kamera<a class="headerlink" href="#kamera" title="Permanent link">&para;</a></h2>
+<p><em>Jellemző <code>ROS 2</code> topic típusok:</em> <a href="https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/Image.msg"><code>sensor_msgs/msg/Image</code></a>, <a href="https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/CameraInfo.msg"><code>sensor_msgs/msg/CameraInfo</code></a>, <a href="https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/CompressedImage.msg"><code>sensor_msgs/msg/CompressedImage</code></a></p>
+<p>Attzól függően, hogy a kamera képe tömörített vagy sem, a <code>sensor_msgs/msg/Image</code> vagy a <code>sensor_msgs/msg/CompressedImage</code> típusú üzeneteket fogunk látni. Használjuk a <strong>megfelelő</strong> topic-ot.</p>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="o">--</span><span class="n">once</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">zed2i</span><span class="o">/</span><span class="n">zed_node</span><span class="o">/</span><span class="n">right_raw</span><span class="o">/</span><span class="n">image_raw_color</span>
-
-<span class="n">header</span><span class="o">:</span>
-<span class="w">  </span><span class="n">stamp</span><span class="o">:</span>
-<span class="w">    </span><span class="n">sec</span><span class="o">:</span><span class="w"> </span><span class="m">1695039047</span>
-<span class="w">    </span><span class="n">nanosec</span><span class="o">:</span><span class="w"> </span><span class="m">340698516</span>
-<span class="w">  </span><span class="n">frame_id</span><span class="o">:</span><span class="w"> </span><span class="n">zed2i_right_camera_optical_frame</span>
-<span class="n">height</span><span class="o">:</span><span class="w"> </span><span class="m">720</span>
-<span class="n">width</span><span class="o">:</span><span class="w"> </span><span class="m">1280</span>
-<span class="n">encoding</span><span class="o">:</span><span class="w"> </span><span class="n">bgra8</span>
-<span class="n">is_bigendian</span><span class="o">:</span><span class="w"> </span><span class="m">0</span>
-<span class="n">step</span><span class="o">:</span><span class="w"> </span><span class="m">5120</span>
-<span class="n">data</span><span class="o">:</span><span class="w"> </span><span class="m">21</span><span class="p">,</span><span class="m">66</span><span class="p">,</span><span class="m">93</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">21</span><span class="p">,</span><span class="m">66</span><span class="p">,</span><span class="m">94</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">25</span><span class="p">,</span><span class="m">69</span><span class="p">,</span><span class="m">94</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">14</span><span class="p">,</span><span class="m">63</span><span class="p">,</span><span class="m">90</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">31</span><span class="p">,</span><span class="m">55</span><span class="p">,</span><span class="m">80</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">19</span><span class="p">,</span><span class="m">49</span><span class="p">,</span><span class="m">75</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">26</span><span class="p">,</span><span class="m">55</span><span class="p">,</span><span class="m">76</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">24</span><span class="p">,</span><span class="m">57</span><span class="p">,</span><span class="m">80</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">35</span><span class="p">,</span><span class="m">51</span><span class="p">,</span><span class="m">72</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">30</span><span class="p">,</span><span class="m">52</span><span class="p">,</span><span class="m">74</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">57</span><span class="p">,</span><span class="m">73</span><span class="p">,</span><span class="m">88</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">55</span><span class="p">,</span><span class="m">74</span><span class="p">,</span><span class="m">90</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">64</span><span class="p">,</span><span class="m">74</span><span class="p">,</span><span class="m">93</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">52</span><span class="p">,</span><span class="m">66</span><span class="p">,</span><span class="m">86</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">56</span><span class="p">,</span><span class="m">61</span><span class="p">,</span><span class="m">76</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">25</span><span class="p">,</span><span class="m">34</span><span class="p">,</span><span class="m">48</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">25</span><span class="p">,</span><span class="m">31</span><span class="p">,</span><span class="m">52</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">16</span><span class="p">,</span><span class="m">24</span><span class="p">,</span><span class="m">43</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">14</span><span class="p">,</span><span class="m">22</span><span class="p">,</span><span class="m">41</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">19</span><span class="p">,</span><span class="m">27</span><span class="p">,</span><span class="m">46</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">13</span><span class="p">,</span><span class="m">20</span><span class="p">,</span><span class="m">38</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">23</span><span class="p">,</span><span class="m">28</span><span class="p">,</span><span class="m">45</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">31</span><span class="p">,</span><span class="m">41</span><span class="p">,</span><span class="m">65</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">36</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">59</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">23</span><span class="p">,</span><span class="m">59</span><span class="p">,</span><span class="m">82</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">45</span><span class="p">,</span><span class="m">71</span><span class="p">,</span><span class="m">91</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">51</span><span class="p">,</span><span class="m">84</span><span class="p">,</span><span class="m">116</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">70</span><span class="p">,</span><span class="m">94</span><span class="p">,</span><span class="m">122</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">57</span><span class="p">,</span><span class="m">105</span><span class="p">,</span><span class="m">141</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">42</span><span class="p">,</span><span class="m">84</span><span class="p">,</span><span class="m">117</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">42</span><span class="p">,</span><span class="m">90</span><span class="p">,</span><span class="m">126</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">36</span><span class="p">,</span><span class="m">81</span><span class="p">,</span><span class="m">116</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="n">..</span>
 </code></pre></div>
-<h1 id="lidar">LIDAR<a class="headerlink" href="#lidar" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="o">--</span><span class="n">once</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">zed2i</span><span class="o">/</span><span class="n">zed_node</span><span class="o">/</span><span class="n">left</span><span class="o">/</span><span class="n">image_rect_color</span><span class="o">/</span><span class="n">compressed</span>
+</code></pre></div>
+<p>Az eredmény valami hasonló lesz:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">header</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">stamp</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">sec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1695039047</span>
+<span class="w">    </span><span class="nt">nanosec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">340698516</span>
+<span class="w">  </span><span class="nt">frame_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zed2i_right_camera_optical_frame</span>
+<span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">720</span>
+<span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1280</span>
+<span class="nt">encoding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bgra8</span><span class="w"> </span><span class="c1"># vagy format: bgra8; jpeg compressed bgr8</span>
+<span class="nt">is_bigendian</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="nt">step</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5120</span>
+<span class="nt">data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">21,66,93,255,21,66,94,255,25,69,94,255,14,63,90,255,31,55,80,255,19,49,75,255,26,55,76,255,24,57,80,255,35,51,72,255,30,52,74,255,57,73,88,255,55,74,90,255,64,74,93,255,52,66,86,255,56,61,76,255,25,34,48,255,25,31,52,255,16,24,43,255,14,22,41,255,19,27,46,255,13,20,38,255,23,28,45,255,31,41,65,255,36,37,59,255,23,59,82,255,45,71,91,255,51,84,116,255,70,94,122,255,57,105,141,255,42,84,117,255,42,90,126,255,36,81,116,255,..</span>
+</code></pre></div>
+<h2 id="lidar">LIDAR<a class="headerlink" href="#lidar" title="Permanent link">&para;</a></h2>
 <p><em>Jellemző <code>ROS 2</code> topic típusok:</em> <a href="https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/PointCloud2.msg"><code>sensor_msgs/msg/PointCloud2</code></a>, <a href="https://github.com/ros2/common_interfaces/blob/humble/sensor_msgs/msg/LaserScan.msg"><code>sensor_msgs/msg/LaserScan</code></a></p>
-<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="o">--</span><span class="n">once</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_center</span><span class="o">/</span><span class="n">points</span>
-
-<span class="n">header</span><span class="o">:</span>
-<span class="w">  </span><span class="n">stamp</span><span class="o">:</span>
-<span class="w">    </span><span class="n">sec</span><span class="o">:</span><span class="w"> </span><span class="m">1695039048</span>
-<span class="w">    </span><span class="n">nanosec</span><span class="o">:</span><span class="w"> </span><span class="m">390894137</span>
-<span class="w">  </span><span class="n">frame_id</span><span class="o">:</span><span class="w"> </span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_center_a_laser_data_frame</span>
-<span class="n">height</span><span class="o">:</span><span class="w"> </span><span class="m">64</span>
-<span class="n">width</span><span class="o">:</span><span class="w"> </span><span class="m">1024</span>
-<span class="n">fields</span><span class="o">:</span>
-<span class="o">-</span><span class="w"> </span><span class="n">name</span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">intensity</span><span class="p">,</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">reflectivity</span><span class="p">,</span><span class="w"> </span><span class="n">ring</span><span class="p">,</span><span class="w"> </span><span class="n">ambient</span><span class="p">,</span><span class="w"> </span><span class="n">range</span>
-<span class="n">data</span><span class="o">:</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">128</span><span class="p">,</span><span class="m">63</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">16</span><span class="p">,</span><span class="m">65</span><span class="p">,</span><span class="m">96</span><span class="p">,</span><span class="m">211</span><span class="p">,</span><span class="m">241</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">12</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">128</span><span class="p">,</span><span class="m">63</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">16</span><span class="p">,</span><span class="m">65</span><span class="p">,</span><span class="m">116</span><span class="p">,</span><span class="m">145</span><span class="p">,</span><span class="m">242</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">128</span><span class="p">,</span><span class="m">63</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">32</span><span class="p">,</span><span class="m">65</span><span class="p">,</span><span class="m">18</span><span class="p">,</span><span class="m">92</span><span class="p">,</span><span class="m">243</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">253</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="kc">...</span><span class="p">,</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="o">--</span><span class="n">once</span><span class="w"> </span><span class="o">/</span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_center</span><span class="o">/</span><span class="n">points</span>
 </code></pre></div>
-<h1 id="vizualizacio">Vizualizáció<a class="headerlink" href="#vizualizacio" title="Permanent link">&para;</a></h1>
-<h2 id="rviz2">RVIZ2<a class="headerlink" href="#rviz2" title="Permanent link">&para;</a></h2>
+Az eredmény valami hasonló lesz:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">header</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">stamp</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">sec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1695039048</span>
+<span class="w">    </span><span class="nt">nanosec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">390894137</span>
+<span class="w">  </span><span class="nt">frame_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lexus3/os_center_a_laser_data_frame</span>
+<span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">64</span>
+<span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1024</span>
+<span class="nt">fields</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">x, y, z, intensity, t, reflectivity, ring, ambient, range</span>
+<span class="nt">data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0,0,0,0,0,0,0,0,0,0,0,0,0,0,128,63,0,0,16,65,96,211,241,2,0,0,0,0,12,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128,63,0,0,16,65,116,145,242,2,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128,63,0,0,32,65,18,92,243,2,0,0,0,0,253,2,0,0,...,</span>
+</code></pre></div>
+<h2 id="vizualizacio">Vizualizáció<a class="headerlink" href="#vizualizacio" title="Permanent link">&para;</a></h2>
+<h3 id="rviz2">RVIZ2<a class="headerlink" href="#rviz2" title="Permanent link">&para;</a></h3>
+<p>Az ROS 2 alapértelmezett vizualizációs eszköze az RVIZ2. A következő paranccsal indíthatsuk el. Az RVIZ2-ben a <code>Fixed Frame</code>-et állítsuk be a <code>lexus3/os_center_a_laser_data_frame</code>-re. </p>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">rviz2</span><span class="w"> </span><span class="n">rviz2</span><span class="w"> </span><span class="o">--</span><span class="n">fixed</span><span class="o">-</span><span class="n">frame</span><span class="w"> </span><span class="n">lexus3</span><span class="o">/</span><span class="n">os_center_a_laser_data_frame</span>
+</code></pre></div>
+<p><em>Megjegyzés</em>, hogy állatalában nem szükséges a <code>--fixed-frame</code> kapcsoló, mert az RVIZ2-ben is beállítható. Enélkül az alapértelmezett <code>map</code>-ra állítódik:</p>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">rviz2</span><span class="w"> </span><span class="n">rviz2</span>
 </code></pre></div>
 <p>Alakítsunk ki hasonló elrendezést:</p>
-<p><img alt="" src="../rviz01.png" /></p>
-<h2 id="foxglove-studio">Foxglove studio<a class="headerlink" href="#foxglove-studio" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="/szenergy-autonom/assets/images_common/rviz01.png" /></p>
+<h3 id="foxglove-studio">Foxglove studio<a class="headerlink" href="#foxglove-studio" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">foxglove_bridge</span><span class="w"> </span><span class="n">foxglove_bridge_launch.xml</span><span class="w"> </span><span class="n">port</span><span class="o">:=</span><span class="m">8765</span>
 </code></pre></div>
 <p><img alt="" src="https://foxglove.dev/images/blog/introducing-foxglove-studios-new-navigation/breakdown.jpeg" /></p>
 <p>Alakítsunk ki hasonló elrendezést:</p>
-<p><img alt="" src="../foxglove04.png" /></p>
+<p><img alt="" src="/szenergy-autonom/assets/images_common/foxglove06.png" /></p>
 <p>Forrás: <a href="https://foxglove.dev/blog/introducing-foxglove-studios-new-navigation">foxglove.dev/blog/introducing-foxglove-studios-new-navigation</a></p>
-<h1 id="hozzuk-letre-a-simple_sub_cpp-package-t">Hozzuk létre a <code>simple_sub_cpp</code> package-t<a class="headerlink" href="#hozzuk-letre-a-simple_sub_cpp-package-t" title="Permanent link">&para;</a></h1>
+<h2 id="hozzuk-letre-a-simple_sub_cpp-package-t">Hozzuk létre a <code>simple_sub_cpp</code> package-t<a class="headerlink" href="#hozzuk-letre-a-simple_sub_cpp-package-t" title="Permanent link">&para;</a></h2>
 <p>A következőkben egy egyszerű subscriber node fog feliratkozni <code>geometry_msgs/PoseStamped</code> üzenetekre, majd kiírni az X és az Y koordinátákat. A gyakorlat a <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">hivatalos ROS 2 tutorialokon alapszik</a> felépítését tekintve.</p>
 <p>Nyissunk egy új terminált, és source-oljuk a telepítést, hogy a <code>ros2</code> parancsok működjenek.</p>
 <p>Navigáljunk az már létrehozott <code>ros2_ws</code> könyvtárba.</p>
@@ -2663,7 +3078,7 @@ Ugyanez, csak lassabban visszajátszva pl.:</p>
 ros2 pkg create --build-type ament_cmake simple_sub_cpp
 </code></pre></div>
 <p>A terminál egy üzenetet küld vissza, amely megerősíti a <code>simple_sub_cpp</code> csomag és az összes szükséges fájl és mappa létrehozását.</p>
-<h2 id="irjuk-meg-a-subscriber-node-ot-print_posecpp-simple_sub_node">Írjuk meg a subscriber node-ot (<code>print_pose.cpp</code> &gt;&gt; <code>simple_sub_node</code>)<a class="headerlink" href="#irjuk-meg-a-subscriber-node-ot-print_posecpp-simple_sub_node" title="Permanent link">&para;</a></h2>
+<h3 id="irjuk-meg-a-subscriber-node-ot-print_posecpp-simple_sub_node">Írjuk meg a subscriber node-ot (<code>print_pose.cpp</code> &gt;&gt; <code>simple_sub_node</code>)<a class="headerlink" href="#irjuk-meg-a-subscriber-node-ot-print_posecpp-simple_sub_node" title="Permanent link">&para;</a></h3>
 <p>Lépjünk a <code>ros2_ws/src/simple_sub_cpp/src</code> mappába.</p>
 <div class="highlight"><pre><span></span><code><span class="n">cd</span><span class="w"> </span><span class="o">~/</span><span class="n">ros2_ws</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">simple_sub_cpp</span><span class="o">/</span><span class="n">src</span>
 </code></pre></div>
@@ -2676,29 +3091,29 @@ ros2 pkg create --build-type ament_cmake simple_sub_cpp
 Nyissuk meg pl. VS code segítségével a mappát: <code>code .</code> parancs. Itt a <code>.</code> a <code>code</code> után az aktuális mappát jelenti. <strong>Tipp</strong>: ha nem a könyvtárban állnánk, akkor is lehetséges teljes könyvtárat megnyitni, ami később pár dolgot egyszerűsít:</p>
 <div class="highlight"><pre><span></span><code><span class="n">code</span><span class="w"> </span><span class="o">~/</span><span class="n">ros2_ws</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">simple_sub_cpp</span><span class="o">/</span>
 </code></pre></div>
-<p><img alt="" src="../vscode05.png" /></p>
+<p><img alt="" src="/szenergy-autonom/assets/images_common/vscode05.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="c1">// ros2 topic type /lexus3/gps/duro/current_pose</span>
 <span class="c1">// geometry_msgs/msg/PoseStamped</span>
 <span class="c1">// ros2 interface show geometry_msgs/msg/PoseStamped</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rclcpp/rclcpp.hpp&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;geometry_msgs/msg/pose_stamped.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"rclcpp/rclcpp.hpp"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"geometry_msgs/msg/pose_stamped.hpp"</span>
 
 <span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">placeholders</span><span class="o">::</span><span class="n">_1</span><span class="p">;</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">SimplePoseSub</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
-<span class="w">  </span><span class="n">SimplePoseSub</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">&quot;simple_pose_sub&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="n">SimplePoseSub</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">"simple_pose_sub"</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">sub1_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_subscription</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;/lexus3/gps/duro/current_pose&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="o">&amp;</span><span class="n">SimplePoseSub</span><span class="o">::</span><span class="n">topic_callback</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">_1</span><span class="p">));</span>
+<span class="w">    </span><span class="n">sub1_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_subscription</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"/lexus3/gps/duro/current_pose"</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="o">&amp;</span><span class="n">SimplePoseSub</span><span class="o">::</span><span class="n">topic_callback</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">_1</span><span class="p">));</span>
 <span class="w">  </span><span class="p">}</span>
 
 <span class="k">private</span><span class="o">:</span>
 <span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">topic_callback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">msg</span><span class="p">)</span><span class="w"> </span><span class="k">const</span>
 <span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;x: %.3f, y: %.3f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+<span class="w">    </span><span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="w"> </span><span class="s">"x: %.3f, y: %.3f"</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Subscription</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">sub1_</span><span class="p">;</span>
 <span class="p">};</span>
@@ -2715,10 +3130,10 @@ Nyissuk meg pl. VS code segítségével a mappát: <code>code .</code> parancs. 
 <p class="admonition-title">Python megfelelője</p>
 <p>A <a href="https://github.com/sze-info/szenergy-autonom_packages/blob/main/etc/print_pose.cpp">C++ kód</a> python verziója szintén elérhető a <a href="https://github.com/sze-info/szenergy-autonom_packages/blob/main/etc/print_pose.py">github.com/sze-info/szenergy-autonom_packages</a> címen. Érdemes összehasonlítani a C++ és a python kódokat.</p>
 </div>
-<h2 id="fuggosegek-hozzaadasa">Függőségek hozzáadása<a class="headerlink" href="#fuggosegek-hozzaadasa" title="Permanent link">&para;</a></h2>
+<h3 id="fuggosegek-hozzaadasa">Függőségek hozzáadása<a class="headerlink" href="#fuggosegek-hozzaadasa" title="Permanent link">&para;</a></h3>
 <p>Mindig érdemes kitölteni a <code>&lt;description&gt;</code>, <code>&lt;maintainer&gt;</code> és <code>&lt;license&gt;</code> tag-eket:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;description&gt;</span>Examples<span class="w"> </span>of<span class="w"> </span>minimal<span class="w"> </span>publisher/subscriber<span class="w"> </span>using<span class="w"> </span>rclcpp<span class="nt">&lt;/description&gt;</span>
-<span class="nt">&lt;maintainer</span><span class="w"> </span><span class="na">email=</span><span class="s">&quot;you@email.com&quot;</span><span class="nt">&gt;</span>Your<span class="w"> </span>Name<span class="nt">&lt;/maintainer&gt;</span>
+<span class="nt">&lt;maintainer</span><span class="w"> </span><span class="na">email=</span><span class="s">"you@email.com"</span><span class="nt">&gt;</span>Your<span class="w"> </span>Name<span class="nt">&lt;/maintainer&gt;</span>
 <span class="nt">&lt;license&gt;</span>Apache<span class="w"> </span>License<span class="w"> </span>2.0<span class="nt">&lt;/license&gt;</span>
 </code></pre></div>
 <p>Adjunk hozzá egy új sort az <code>ament_cmake</code> buildtool függősége után, és illesszük be a következő függőségeket a node include utasításainak megfelelően:</p>
@@ -2726,7 +3141,7 @@ Nyissuk meg pl. VS code segítségével a mappát: <code>code .</code> parancs. 
 <span class="nt">&lt;depend&gt;</span>geometry_msgs<span class="nt">&lt;/depend&gt;</span>
 </code></pre></div>
 <p>Ez deklarálja, hogy a pacakge-nek szükséges az <code>rclcpp</code> és a <code>geometry_msgs</code> fordításkor és futtatáskor.</p>
-<h2 id="cmakeliststxt">CMakeLists.txt<a class="headerlink" href="#cmakeliststxt" title="Permanent link">&para;</a></h2>
+<h3 id="cmakeliststxt">CMakeLists.txt<a class="headerlink" href="#cmakeliststxt" title="Permanent link">&para;</a></h3>
 <p>Most nyissuk meg a <code>CMakeLists.txt</code> fájlt.
 A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adjuk hozzá a következő sorokat:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">find_package</span><span class="p">(</span><span class="s">rclcpp</span><span class="w"> </span><span class="s">REQUIRED</span><span class="p">)</span>
@@ -2750,7 +3165,7 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 <span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD</span><span class="w"> </span><span class="s">14</span><span class="p">)</span>
 <span class="nb">endif</span><span class="p">()</span>
 
-<span class="nb">if</span><span class="p">(</span><span class="s">CMAKE_COMPILER_IS_GNUCXX</span><span class="w"> </span><span class="s">OR</span><span class="w"> </span><span class="s">CMAKE_CXX_COMPILER_ID</span><span class="w"> </span><span class="s">MATCHES</span><span class="w"> </span><span class="s2">&quot;Clang&quot;</span><span class="p">)</span>
+<span class="nb">if</span><span class="p">(</span><span class="s">CMAKE_COMPILER_IS_GNUCXX</span><span class="w"> </span><span class="s">OR</span><span class="w"> </span><span class="s">CMAKE_CXX_COMPILER_ID</span><span class="w"> </span><span class="s">MATCHES</span><span class="w"> </span><span class="s2">"Clang"</span><span class="p">)</span>
 <span class="nb">add_compile_options</span><span class="p">(</span><span class="s">-Wall</span><span class="w"> </span><span class="s">-Wextra</span><span class="w"> </span><span class="s">-Wpedantic</span><span class="p">)</span>
 <span class="nb">endif</span><span class="p">()</span>
 
@@ -2768,19 +3183,21 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 <span class="nb">ament_package</span><span class="p">()</span>
 </code></pre></div>
 <p>Összefoglalásképp, a következő módosításokat hajtottuk végre:</p>
-<p><img alt="" src="../package_xml01.png" /></p>
-<p><img alt="" src="../cmakelists01.png" /></p>
-<h2 id="build-es-futtatas">Build és futtatás<a class="headerlink" href="#build-es-futtatas" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="/szenergy-autonom/assets/images_common/package_xml01.png" /></p>
+<p><img alt="" src="/szenergy-autonom/assets/images_common/cmakelists01.png" /></p>
+<h3 id="build-es-futtatas">Build és futtatás<a class="headerlink" href="#build-es-futtatas" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <p>Már buildelhető a package:</p>
 </div>
 <div class="highlight"><pre><span></span><code><span class="n">cd</span><span class="w"> </span><span class="o">~/</span><span class="n">ros2_ws</span><span class="o">/</span>
-<span class="n">colcon</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="o">--</span><span class="n">packages</span><span class="o">-</span><span class="n">select</span><span class="w"> </span><span class="n">simple_sub_cpp</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">colcon</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="o">--</span><span class="n">packages</span><span class="o">-</span><span class="n">select</span><span class="w"> </span><span class="n">simple_sub_cpp</span>
 </code></pre></div>
 <p>Futtassuk a szokásos módon:</p>
 <div class="highlight"><pre><span></span><code><span class="n">source</span><span class="w"> </span><span class="o">~/</span><span class="n">ros2_ws</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">setup.bash</span>
-<span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">simple_sub_cpp</span><span class="w"> </span><span class="n">simple_sub_node</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">simple_sub_cpp</span><span class="w"> </span><span class="n">simple_sub_node</span>
 </code></pre></div>
 <p>Kimenet:</p>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">simple_pose_sub</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="o">:</span><span class="w"> </span><span class="m">697201.725</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">:</span><span class="w"> </span><span class="m">5285679.845</span>
@@ -2788,7 +3205,12 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 <span class="p">[</span><span class="n">simple_pose_sub</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="o">:</span><span class="w"> </span><span class="m">697201.838</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">:</span><span class="w"> </span><span class="m">5285679.251</span>
 <span class="p">[</span><span class="n">simple_pose_sub</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="o">:</span><span class="w"> </span><span class="m">697201.886</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">:</span><span class="w"> </span><span class="m">5285678.949</span>
 </code></pre></div>
-<h1 id="forrasok">Források<a class="headerlink" href="#forrasok" title="Permanent link">&para;</a></h1>
+<h2 id="hazi-feladat">Házi feladat<a class="headerlink" href="#hazi-feladat" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Házi feladat</p>
+<p>Otthon készítsük el a <code>simple_sub_py</code> package-t, ami a <code>simple_sub_cpp</code> python megfelelője. </p>
+</div>
+<h2 id="forrasok">Források<a class="headerlink" href="#forrasok" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html">docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html</a></li>
 <li><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html</a></li>
@@ -2834,7 +3256,7 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; Széchenyi István Egyetem 
+      &copy; SZEnergy Team, 2024. Minden jog fenntartva.
 
     </div>
   
@@ -2874,7 +3296,7 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
     <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "content.code.copy", "content.code.select", "content.tabs.link", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
@@ -2887,6 +3309,8 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
         <script src="../../pymdownx.snippets"></script>
       
         <script src="../../pymdownx.superfences"></script>
+      
+        <script src="../../assets/slides/js/slides.js"></script>
       
     
   </body>
