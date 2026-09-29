@@ -2,7 +2,7 @@
 
 - Images and diagrams
 
-![aa](/szenergy-autonom/mesterseges_intelligencia/assets/images/segment.gif)
+![aa](/autonomous_oktato_anyag/mesterseges_intelligencia/assets/images/segment.gif)
 
 - Embedded videos
 - Interactive elements

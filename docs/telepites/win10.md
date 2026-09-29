@@ -5,7 +5,7 @@ icon: material/code-block-tags # kiegészítő tananyag
 
 # Windows WSL2
 
-![wsl](/szenergy-autonom/assets/images_common/wsl01.svg){ align=right width="200" }
+![wsl](/autonomous_oktato_anyag/assets/images_common/wsl01.svg){ align=right width="200" }
 
 A **Windows Subsystem for Linux** egy kompatibilitási réteg Linux-alapú elemek natív futtatásához Windows 10, vagy Windows 11 alapú rendszereken. Akkor érdemes választani a WSL használatát, ha nem szeretnétek natív Ubuntu-t (pl 18.04 / 22.04) telepíteni a számítógépeitekre. A tantárgyban használható rendszer többféle módon is létrehozható:
 
@@ -44,7 +44,7 @@ Tehát a fenti parancsban a `<melyik tar-ból>` helyére a letöltött `.tar` f�
 
 ### 5. VS code és WSL kiegészítő telepítése: 
 
-![wsl03](/szenergy-autonom/assets/images_common/wsl03.png)
+![wsl03](/autonomous_oktato_anyag/assets/images_common/wsl03.png)
 
 !!! danger
     A `wsl -l -v` parancs listázza a telepített WSL verziókat. A `VERSION` oszlopnak 2-nek kell lennie, különben a WSL elavult verzióját telepítettük. Példa helyes kimenetre:
@@ -65,18 +65,18 @@ A Windows Subsystem for Linux (WSL) használatához a kollégiumban végezd el a
 - Válaszd a Hálózatkezelés menüt (networking)
 - Az első, hálózati mód networking mode) beállításnál válaszd a **Mirrored** opciót (**nem Nat**)
 
-![wsl06](/szenergy-autonom/assets/images_common/wsl06.png)
+![wsl06](/autonomous_oktato_anyag/assets/images_common/wsl06.png)
 
 
 ### További ajánlott beállítások
 
 A Windows Terminal programban ajánlott beállítani a `Deafault Profile`-t az `szenergy-autonom2`-re, hogy mindig ezzel induljon a program. Továbbá az `Open windows from previous session` beállítás is hasznos lehet, hogy a legutóbbi állapotban induljon a program (pl. több panellel).s
 
-![wsl04](/szenergy-autonom/assets/images_common/wsl04.png)
+![wsl04](/autonomous_oktato_anyag/assets/images_common/wsl04.png)
 
 A paneleket ezután a `Alt`+`Shift`+`minus` vagy `Alt`+`Shift`+`plus` billentyűkombinációval lehet létrehozni. Ez szétosztja a terminál ablakot (`Split pane`) több részre vertikálisan vagy horizontálisan.
 
-![wsl05](/szenergy-autonom/assets/images_common/wsl05.png)
+![wsl05](/autonomous_oktato_anyag/assets/images_common/wsl05.png)
 
 ## WSL telepítése és ROS installálása Script segítségével
 

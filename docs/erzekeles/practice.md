@@ -6,7 +6,7 @@ icon: material/code-braces-box # gyakorlati tananyag
 
 # Gyakorlat
 
-A gyakorlat Ubuntu 22.04 `ROS humble`, Windows 10/11 WSL `humble` mellett működik. A különböző verziók telepítésének leírása [itt található](https://sze-info.github.io/szenergy-autonom/telepites/).
+A gyakorlat Ubuntu 22.04 `ROS humble`, Windows 10/11 WSL `humble` mellett működik. A különböző verziók telepítésének leírása [itt található](https://sze-info.github.io/autonomous_oktato_anyag/telepites/).
 
 !!! success "Előzetes ellenőrzés"
     Otthoni gépen a gyakorlat előtt érdemes ellenőrizni, hogy a megfelelő `ROS 2` szoftvercsomagok telepítve vannak-e.
@@ -32,7 +32,7 @@ cd /mnt/kozos/script
 
 Az előző gyakorlaton megismerkedtünk a következő rosbag-gel (ROS 2-ben a formátum már `.mcap`):
 
-![foxglove01](/szenergy-autonom/assets/images_common/foxglove01.png)
+![foxglove01](/autonomous_oktato_anyag/assets/images_common/foxglove01.png)
 
 Előkészületként nézzük meg, hogy létezik-e a `C:\temp` könyvtár
 
@@ -195,11 +195,11 @@ average rate: 9.994
 
 Az `ROS` idő kezelésre a Unix-időt, vagy a POSIX-időt használja. Ez a UTC (greenwichi idő) szerinti 1970. január 1. 00:00:00 óta eltelt másodpercek és nanoszekundumok számát jelenti (`int32 sec`, `int32 nsec`). Ez egyrészt relatív kis helyet foglal a memóriában, másrészt könnyen számolható két időpont között eltelt idő, mégpedig egy egyszerű kivonással. 
 
-[ros2time.ipynb](https://github.com/sze-info/szenergy-autonom/blob/main/docs/erzekeles/ros2time.ipynb){: .md-button .md-button-purple .mr-4 } 
+[ros2time.ipynb](https://github.com/sze-info/autonomous_oktato_anyag/blob/main/docs/erzekeles/ros2time.ipynb){: .md-button .md-button-purple .mr-4 } 
 
 Hátránya, hogy nem túl intuitív, nem olvasható az ember számára. Pl. a Foxglove Studio / Lichtblick Suite ezért is gyakran átalakítja olvashatóbb formátumra. 
 
-![foxglove_a](/szenergy-autonom/assets/images_common/foxglove05.png)
+![foxglove_a](/autonomous_oktato_anyag/assets/images_common/foxglove05.png)
 
 A másodpercek és nanoszekundumok a következőképp képzelhetők el:
 
@@ -394,7 +394,7 @@ ros2 run rviz2 rviz2
 
 Alakítsunk ki hasonló elrendezést:
 
-![](/szenergy-autonom/assets/images_common/rviz01.png)
+![](/autonomous_oktato_anyag/assets/images_common/rviz01.png)
 
 ### Foxglove studio
 
@@ -407,7 +407,7 @@ ros2 launch foxglove_bridge foxglove_bridge_launch.xml port:=8765
 
 Alakítsunk ki hasonló elrendezést:
 
-![](/szenergy-autonom/assets/images_common/foxglove06.png)
+![](/autonomous_oktato_anyag/assets/images_common/foxglove06.png)
 
 Forrás: [foxglove.dev/blog/introducing-foxglove-studios-new-navigation](https://foxglove.dev/blog/introducing-foxglove-studios-new-navigation)
 
@@ -458,7 +458,7 @@ code ~/ros2_ws/src/simple_sub_cpp/
 
 
 
-![](/szenergy-autonom/assets/images_common/vscode05.png)
+![](/autonomous_oktato_anyag/assets/images_common/vscode05.png)
 
 ``` cpp
 // ros2 topic type /lexus3/gps/duro/current_pose
@@ -577,9 +577,9 @@ ament_package()
 
 Összefoglalásképp, a következő módosításokat hajtottuk végre:
 
-![](/szenergy-autonom/assets/images_common/package_xml01.png)
+![](/autonomous_oktato_anyag/assets/images_common/package_xml01.png)
 
-![](/szenergy-autonom/assets/images_common/cmakelists01.png)
+![](/autonomous_oktato_anyag/assets/images_common/cmakelists01.png)
 
 ### Build és futtatás
 

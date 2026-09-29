@@ -34,7 +34,7 @@ A big thank you goes to the following people/groups:
 ## Commands
 
 ``` r
-$ git clone https://github.com/sze-info/szenergy-autonom/ && cd szenergy-autonom
+$ git clone https://github.com/sze-info/autonomous_oktato_anyag/ && cd szenergy-autonom
 $ pip install mkdocs mkdocs-material mkdocs-slides "mkdocs-material[imaging]"
 $ mkdocs build
 $ mkdocs serve

@@ -2385,7 +2385,7 @@
 
 
 <h1 id="windows-wsl2">Windows WSL2<a class="headerlink" href="#windows-wsl2" title="Permanent link">&para;</a></h1>
-<p><img align="right" alt="wsl" src="/szenergy-autonom/assets/images_common/wsl01.svg" width="200" /></p>
+<p><img align="right" alt="wsl" src="/autonomous_oktato_anyag/assets/images_common/wsl01.svg" width="200" /></p>
 <p>A <strong>Windows Subsystem for Linux</strong> egy kompatibilitási réteg Linux-alapú elemek natív futtatásához Windows 10, vagy Windows 11 alapú rendszereken. Akkor érdemes választani a WSL használatát, ha nem szeretnétek natív Ubuntu-t (pl 18.04 / 22.04) telepíteni a számítógépeitekre. A tantárgyban használható rendszer többféle módon is létrehozható:</p>
 <ul>
 <li>WSL telepítése és Snapshot importálása <a href="#wsl-telepitese-es-snapshot-importalasa">link</a></li>
@@ -2414,7 +2414,7 @@
 </code></pre></div>
 Tehát a fenti parancsban a <code>&lt;melyik tar-ból&gt;</code> helyére a letöltött <code>.tar</code> fájl elérési útját kell beírni. A <code>$env:USERPROFILE\Downloads\szenergy-autonom26a\sze26a.tar</code> a letöltött fájl elérési útja, ami a felhasználó <code>Downloads</code> mappájában található. A <code>szenergy-autonom26a</code> mappa a letöltött <code>.zip</code> fájl kicsomagolásával jön létre, és tartalmazza a <code>sze26a.tar</code> fájlt, de ez csak az <strong>alapértelmezett letöltési hely</strong>. Ha máshová töltöttétek le a fájlt, akkor a parancsban a megfelelő elérési utat kell megadni.</p>
 <h3 id="5-vs-code-es-wsl-kiegeszito-telepitese">5. VS code és WSL kiegészítő telepítése:<a class="headerlink" href="#5-vs-code-es-wsl-kiegeszito-telepitese" title="Permanent link">&para;</a></h3>
-<p><img alt="wsl03" src="/szenergy-autonom/assets/images_common/wsl03.png" /></p>
+<p><img alt="wsl03" src="/autonomous_oktato_anyag/assets/images_common/wsl03.png" /></p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p>A <code>wsl -l -v</code> parancs listázza a telepített WSL verziókat. A <code>VERSION</code> oszlopnak 2-nek kell lennie, különben a WSL elavult verzióját telepítettük. Példa helyes kimenetre:
@@ -2433,12 +2433,12 @@ Amennyiben a <code>VERSION</code> oszlopban <code>1</code>-es szerepel <code>wsl
 <li>Válaszd a Hálózatkezelés menüt (networking)</li>
 <li>Az első, hálózati mód networking mode) beállításnál válaszd a <strong>Mirrored</strong> opciót (<strong>nem Nat</strong>)</li>
 </ul>
-<p><img alt="wsl06" src="/szenergy-autonom/assets/images_common/wsl06.png" /></p>
+<p><img alt="wsl06" src="/autonomous_oktato_anyag/assets/images_common/wsl06.png" /></p>
 <h3 id="tovabbi-ajanlott-beallitasok">További ajánlott beállítások<a class="headerlink" href="#tovabbi-ajanlott-beallitasok" title="Permanent link">&para;</a></h3>
 <p>A Windows Terminal programban ajánlott beállítani a <code>Deafault Profile</code>-t az <code>szenergy-autonom2</code>-re, hogy mindig ezzel induljon a program. Továbbá az <code>Open windows from previous session</code> beállítás is hasznos lehet, hogy a legutóbbi állapotban induljon a program (pl. több panellel).s</p>
-<p><img alt="wsl04" src="/szenergy-autonom/assets/images_common/wsl04.png" /></p>
+<p><img alt="wsl04" src="/autonomous_oktato_anyag/assets/images_common/wsl04.png" /></p>
 <p>A paneleket ezután a <code>Alt</code>+<code>Shift</code>+<code>minus</code> vagy <code>Alt</code>+<code>Shift</code>+<code>plus</code> billentyűkombinációval lehet létrehozni. Ez szétosztja a terminál ablakot (<code>Split pane</code>) több részre vertikálisan vagy horizontálisan.</p>
-<p><img alt="wsl05" src="/szenergy-autonom/assets/images_common/wsl05.png" /></p>
+<p><img alt="wsl05" src="/autonomous_oktato_anyag/assets/images_common/wsl05.png" /></p>
 <h2 id="wsl-telepitese-es-ros-installalasa-script-segitsegevel">WSL telepítése és ROS installálása Script segítségével<a class="headerlink" href="#wsl-telepitese-es-ros-installalasa-script-segitsegevel" title="Permanent link">&para;</a></h2>
 <p>A WSL telepítését bemutató Windows 11-es videó (Windows 10 verzió lejjebb, de nagyrészt megegyező tartalommal):</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DIYktkx3XLM?si=-cjaTd6PbhuFkXfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

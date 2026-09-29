@@ -12,14 +12,14 @@ icon: material/math-integral-box # elméleti tananyag
 
 # `ROS 2` alapfoglamak
 
-- [Ajánlott ROS 2 telepítés](https://sze-info.github.io/szenergy-autonom/telepites/win10)
-- [Alternatív ROS 2 verziók és telepítés](https://sze-info.github.io/szenergy-autonom/telepites/)
+- [Ajánlott ROS 2 telepítés](https://sze-info.github.io/autonomous_oktato_anyag/telepites/win10)
+- [Alternatív ROS 2 verziók és telepítés](https://sze-info.github.io/autonomous_oktato_anyag/telepites/)
 
 
 Az `ROS 2`, a `ROS` legújabb kiadása, olyan szoftverkönyvtárak és eszközök készlete (middleware), amelyek segítenek robotalkalmazások fejlesztésében. Definíció szerint a middleware egy szoftver komponenseket összekötő szoftver. Ez egy olyan réteg, amely az operációs rendszer és az alkalmazások között helyezkedik el az elosztott számítógépes hálózat mindkét oldalán. Az `ROS 2` megengedő, nyílt forráskódú, [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) licenszelést használ. 
 
 <figure markdown="span">
-  [![Image title](/szenergy-autonom/assets/images_common/ros_overview01.svg){ width="100%" }](/szenergy-autonom/assets/images_common/ros_overview01.svg)
+  [![Image title](/autonomous_oktato_anyag/assets/images_common/ros_overview01.svg){ width="100%" }](/autonomous_oktato_anyag/assets/images_common/ros_overview01.svg)
   <figcaption>ROS 2 áttekintés</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ A `ROS` 2007-es kiadása óta inkrementális frissítéseken esett át, tehát f
 
 A fentiek hatására tehát az `ROS 2` átlépett az akadémiai kutatások világából az ipari fehasználásra. Érdekesség, hogy a NASA VIPER nevű holdjárója is `ROS 2`-t futtat. Emellett olyan autóipari óriások is használják, mint a Bosch, a BMW vagy a Volvo. Robotikai cégek közül pedig számos további példát lehetne hozni. Linkek: [www.nasa.gov/viper/lunar-operations](https://www.nasa.gov/viper/lunar-operations), [rosindustrial.org/ric/current-members](https://rosindustrial.org/ric/current-members/), [www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers](https://www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers/). ROS felhasználók a világban: [metrorobots.com/rosmap.html](http://metrorobots.com/rosmap.html).
 
-![ROS 2 in space](/szenergy-autonom/assets/images_common/ros2space01.png)
+![ROS 2 in space](/autonomous_oktato_anyag/assets/images_common/ros2space01.png)
 
 Kép forrása: [Robot Operating System 2: Design, Architecture, and Uses In The Wild:
 Steve Macenski et al.](https://arxiv.org/pdf/2211.07752.pdf)
@@ -38,7 +38,7 @@ Steve Macenski et al.](https://arxiv.org/pdf/2211.07752.pdf)
 
 Első robotikai projektünknél választhatjuk azt az utat, hogy framework nélkül teljesen saját megoldásként feljesztünk. Nyilván ennek is vannak előnyei (tanulás, futási gyorsaság, stb.). De hamarosan kelleni fog olyan algoritmus, amit akár mások implementáltak is, csak nem kompatibilis az eredeti elképzeléssel. Itt már célszerű meggondolni egy framework (pl a `ROS 2`) használatát. *Megjegyzés*, hogy nem a `ROS 2` az egyetlen lehetőség számos hasonló, kisebb framework létezik: <a class="http" href="http://playerstage.sf.net">Player</a>, <a class="http" href="http://eris.liralab.it/yarp/">YARP</a>, <a class="http" href="http://www.orocos.org/">Orocos</a>, <a class="http" href="http://carmen.sourceforge.net">CARMEN</a>, <a class="http" href="http://orca-robotics.sourceforge.net">Orca</a>, <a class="http" href="http://www.robots.ox.ac.uk/~pnewman/TheMOOS/index.html">MOOS</a>, and <a class="http" href="http://msdn.microsoft.com/en-us/robotics/default.aspx">Microsoft Robotics Studio</a>. Niylván mindegyiknek van előnye, ebben a tárgyban a támogatottság miatt mégis az `ROS 2`-re szoríthozunk.
 
-[![](/szenergy-autonom/assets/images_common/ros_components01.svg)](/szenergy-autonom/assets/images_common/ros_components02.svg)
+[![](/autonomous_oktato_anyag/assets/images_common/ros_components01.svg)](/autonomous_oktato_anyag/assets/images_common/ros_components02.svg)
 
 Kép inspiráció: [ros.org/blog/ecosystem](https://www.ros.org/blog/ecosystem/)
 
@@ -163,7 +163,7 @@ graph TD;
 - *Változások a Middleware-ben*  
   A `ROS 1` a Master-Slave architektúrát és az XML-RPC middleware-t használja. A `ROS 2` ezzel szemben a  Data Distribution Service (DDS) vagy Zenoh hálózati protokollt használ, amely nagyobb hatékonyságot és megbízhatóságot, alacsony késleltetést és skálázhatóságot, valamint konfigurálható szolgáltatásminőségi (QoS) paramétereket biztosít. Többek között így nem kell `roscore`-t indítani. Az XML-RPC jobb az egyszerű távoli eljáráshívásokhoz, míg a DDS hozzáadott komplexitása lehetővé teszi, hogy jobban támogassa a valós idejű rendszereket.
 
-![dds_zenoh](/szenergy-autonom/assets/images_common/abstraction_dds_zenoh01.svg)
+![dds_zenoh](/autonomous_oktato_anyag/assets/images_common/abstraction_dds_zenoh01.svg)
 
 - *Változások a ROS API-ban*  
   A `ROS 1` két különálló könyvtárral rendelkezik: a C++ nyelvhez készült `roscpp` és a Pythonhoz készült `rospy`. Ezek nem teljesen azonosak egymással a funkciók tekintetében. Ezzel szemben a `ROS 2` egy C nyelven írt alapkönyvtárral - `rcl` (ROS klienskönyvtár) - rendelkezik, amelyre könyvtárak épülnek. Ez biztosítja, hogy az alapvető funkciók hamarabb elérhetők legyenek a különböző API-kban. Ez az egyik fő oka annak, hogy a `ROS 2` a korábbi Pythonon és a C++-on kívül több nyelvi támogatást is képes nyújtani: például  [rclada](https://github.com/ada-ros/rclada) Ada, [rclcpp](https://github.com/ros2/rclcpp) C++, [rclgo](https://github.com/juaruipav/rclgo) Go,  [rclpy](https://github.com/ros2/rclpy) Python, [rcljava](https://github.com/esteve/ros2_java/tree/master/rcljava)  Java, [rclnodejs](https://github.com/RobotWebTools/rclnodejs) Node.js,  [rclobjc](https://github.com/esteve/ros2_objc) Objective C (iOS),  [rclc](https://github.com/ros2/rclc) C, [ros2_rust](https://github.com/ros2-rust/ros2_rust) Rust, [ros2_dotnet](https://github.com/esteve/ros2_dotnet) .NET, [ros2cs](https://github.com/RobotecAI/ros2cs) ros2_dotnet alternatíva C# nyelven.
@@ -181,7 +181,7 @@ graph TD;
 - *Többszálú végrehajtás*  
   A `ROS 2` támogatja a több csomópont valóban párhuzamos futtatását, így a modern többmagos processzorok sokkal jobban kihasználhatók, mint a `ROS 1` esetében. 
 
-![áttekintés](/szenergy-autonom/assets/images_common/ros_overview02.svg)
+![áttekintés](/autonomous_oktato_anyag/assets/images_common/ros_overview02.svg)
 Forrás: [husarnet.com/blog/ros2-docker](https://husarnet.com/blog/ros2-docker)
 
 ## Egyéb változások
@@ -191,7 +191,7 @@ Forrás: [husarnet.com/blog/ros2-docker](https://husarnet.com/blog/ros2-docker)
 
 ## Verziók
 
-[ROS verziók és telepítés](https://sze-info.github.io/szenergy-autonom/telepites/)
+[ROS verziók és telepítés](https://sze-info.github.io/autonomous_oktato_anyag/telepites/)
 
 
 ```mermaid
@@ -216,7 +216,7 @@ gantt
 ```
 
 
-![Alt text](/szenergy-autonom/assets/images_common/ros2distros.svg)
+![Alt text](/autonomous_oktato_anyag/assets/images_common/ros2distros.svg)
 
 Distrok százalékos megoszlása az időben: [metrics.ros.org/rosdistro_rosdistro.html](https://metrics.ros.org/rosdistro_rosdistro.html)
 

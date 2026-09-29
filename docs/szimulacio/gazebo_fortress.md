@@ -13,7 +13,7 @@ icon: material/code-braces-box # gyakorlati tananyag
 
 # Ignition Gazebo Fortress
 
-Az Ignition Gazebo Fortress egy long-term support (LTS) release 2026 szeptemberéig támogatva. ROS 2 Humble kiadással kompatibilis, [lásd a kompatibiltási mátrixot](https://sze-info.github.io/szenergy-autonom/szimulacio/#gazebo-%C3%A9s-ros-kompatibilit%C3%A1s).
+Az Ignition Gazebo Fortress egy long-term support (LTS) release 2026 szeptemberéig támogatva. ROS 2 Humble kiadással kompatibilis, [lásd a kompatibiltási mátrixot](https://sze-info.github.io/autonomous_oktato_anyag/szimulacio/#gazebo-%C3%A9s-ros-kompatibilit%C3%A1s).
 
 [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 
@@ -62,12 +62,12 @@ Indítsuk el a Gazebo-t:
 ign gazebo
 ```
 
-![gazebo](/szenergy-autonom/assets/images_common/ign_gazebo_02.png)
+![gazebo](/autonomous_oktato_anyag/assets/images_common/ign_gazebo_02.png)
 
 
 Nyissuk meg a `shapes.sdf` világot. Az SDF (Simulation Description Format) egy beépített  XML leírás. Akár egy parancsként is indítható: `ign gazebo shapes.sdf`.
 
-![gazebo GIF](/szenergy-autonom/assets/images_common/ign_gazebo_03.gif)
+![gazebo GIF](/autonomous_oktato_anyag/assets/images_common/ign_gazebo_03.gif)
 Forrás: [gazebosim.org](https://gazebosim.org/)
 
 # Példa: Ackermann robot
@@ -78,7 +78,7 @@ Ackermann robotnak a „személyautó-szerű”, hagyományos, elől két kormá
 ign gazebo -v 4 -r ackermann_steering.sdf
 ```
 
-![Alt text](/szenergy-autonom/assets/images_common/ign_gazebo_01.png)
+![Alt text](/autonomous_oktato_anyag/assets/images_common/ign_gazebo_01.png)
 
 Az Ignition Gazebo ROS 2-től független, de jól támogatott, így `ros_gz_bridge` package segítségével indítható az a bridge, amin a szimmulációs topic-ok ROS 2 topic-ként látszanak, pl:
 
