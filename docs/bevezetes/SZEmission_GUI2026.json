@@ -1,0 +1,384 @@
+{
+  "configById": {
+    "Indicator!3tv60pf": {
+      "path": "/stop_sign_exists.data",
+      "style": "background",
+      "fontSize": 36,
+      "fallbackColor": "#ff0000",
+      "fallbackLabel": "No stop sign",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#5eff35",
+          "label": "Stop sign detected"
+        }
+      ],
+      "foxglovePanelTitle": "Stop sign"
+    },
+    "Indicator!17rh1n6": {
+      "path": "/stop_line_pose_marker.color.r",
+      "style": "background",
+      "fontSize": 36,
+      "fallbackColor": "#ff0000",
+      "fallbackLabel": "No stop line",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#5eff35",
+          "label": "Stop line detected"
+        }
+      ],
+      "foxglovePanelTitle": "Stop line"
+    },
+    "DiagnosticSummary!2ieero7": {
+      "minLevel": 0,
+      "pinnedIds": [],
+      "hardwareIdFilter": "",
+      "topicToRender": "/diagnostics",
+      "sortByLevel": true,
+      "secondsUntilStale": 5
+    },
+    "DiagnosticStatusPanel!5nfj35": {
+      "selectedHardwareId": "",
+      "selectedName": "MissingTopics",
+      "topicToRender": "/diagnostics"
+    },
+    "RawMessages!46e3rai": {
+      "defaultExpanded": false,
+      "topicPath": "/smState",
+      "fontSize": 30
+    },
+    "3D!3yfb2ik": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 60,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {},
+      "topics": {},
+      "layers": {
+        "grid": {
+          "visible": true,
+          "drawBehind": false,
+          "label": "Grid",
+          "instanceId": "a83ed5a2-1022-41f1-a731-7b1b84f8ea96",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "synchronize": false,
+      "imageMode": {}
+    },
+    "RawMessages!umdl3j": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/control_angle_rounded.text",
+      "fontSize": 24,
+      "defaultExpanded": false
+    },
+    "RawMessages!4l0jqyi": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/wheel_angle_rounded.text",
+      "fontSize": 24,
+      "defaultExpanded": false
+    },
+    "Plot!33raakx": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/control_angle_rounded.data",
+          "enabled": true,
+          "color": "#4e98e2",
+          "lineSize": 2,
+          "showLine": true
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/wheel_angle_rounded.data",
+          "enabled": true,
+          "color": "#f5774d",
+          "lineSize": 2,
+          "showLine": false
+        }
+      ],
+      "showXAxisLabels": false,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "minYValue": -13,
+      "maxYValue": 13,
+      "followingViewWidth": 30,
+      "yAxisLabel": "",
+      "foxglovePanelTitle": "Wheel Angle"
+    },
+    "RawMessages!2acx389": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/control_speed_rounded.text",
+      "fontSize": 24,
+      "defaultExpanded": false
+    },
+    "RawMessages!2bhlf5i": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/vehicle_speed_rounded.text",
+      "fontSize": 24,
+      "defaultExpanded": false
+    },
+    "Plot!34u5wy2": {
+      "paths": [
+        {
+          "value": "/control_speed_rounded.data",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "lineSize": 2
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/vehicle_speed_rounded.data",
+          "enabled": true,
+          "color": "#f5774d",
+          "lineSize": 2,
+          "showLine": false
+        }
+      ],
+      "showXAxisLabels": false,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "minYValue": -1,
+      "maxYValue": 20,
+      "followingViewWidth": 30,
+      "foxglovePanelTitle": "Speed"
+    },
+    "3D!3d2xo0l": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 60,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {},
+      "topics": {},
+      "layers": {
+        "grid": {
+          "visible": true,
+          "drawBehind": false,
+          "instanceId": "06e8d241-d7ed-4e4e-ad18-f149cff7c600",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "synchronize": false,
+      "imageMode": {}
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {
+    "d4908ce7-d17b-469c-9556-8513e89669e3": {
+      "sourceCode": "import { Input, Message } from \"./types\";\n\ntype Output = {\n  text: string;\n  data: number;\n};\n\nexport const inputs = [\"/vehicle_status\"];\nexport const output = \"/vehicle_speed_rounded\";\n\nexport default function script(event: Input<\"/vehicle_status\">): Output {\n  const speed = event.message.linear.x;\n  const roundedSpeed = Math.round(speed * 360) / 100;\n\n\n  return {\n    text: roundedSpeed.toFixed(2) + \" km/h\",\n    data: roundedSpeed\n  };\n}",
+      "name": "CtrlSpeedRounding"
+    },
+    "7c2ef21f-de63-4536-be30-72d7105073a2": {
+      "sourceCode": "import { Input, Message } from \"./types\";\n\ntype Output = {\n  text: string;\n  data: number;\n};\n\nexport const inputs = [\"/ctrl_cmd\"];\nexport const output = \"/control_speed_rounded\";\n\nexport default function script(event: Input<\"/ctrl_cmd\">): Output {\n  const speed = event.message.linear.x;\n\n  const roundedSpeed = Math.round(speed * 100) / 100;\n\n  return {\n    text: roundedSpeed.toFixed(2) + \" km/h\",\n    data: roundedSpeed,\n  };\n}\n",
+      "name": "RefSpeedRounding"
+    },
+    "d3513a90-7e9c-4701-9d51-357fc8f3a76b": {
+      "sourceCode": "import { Input, Message } from \"./types\";\n\ntype Output = {\n  text: string;\n  data: number;\n};\n\nexport const inputs = [\"/vehicle_status\"];\nexport const output = \"/wheel_angle_rounded\";\n\nexport default function script(event: Input<\"/vehicle_status\">): Output {\n  const angle = event.message.angular.z;\n\n  const roundedAngle = Math.round(angle * (18000 / Math.PI)) / 100;\n  \n\n  return {\n    text: roundedAngle.toFixed(2) + \"°\",\n    data: roundedAngle\n  };\n}",
+      "name": "CtrlAngleRounding"
+    },
+    "84667706-697e-4b50-9998-86688492a4d2": {
+      "sourceCode": "import { Input, Message } from \"./types\";\n\ntype Output = {\n  text: string;\n  data: number;\n};\n\nexport const inputs = [\"/ctrl_cmd\"];\nexport const output = \"/control_angle_rounded\";\n\nexport default function script(event: Input<\"/ctrl_cmd\">): Output {\n  const angle = event.message.angular.z;\n\n  const roundedAngle = Math.round(angle * (18000 / Math.PI)) / 100;\n\n  return {\n    text: roundedAngle.toFixed(2) + \"°\",\n    data: roundedAngle,\n  };\n}\n",
+      "name": "RefAngleRounding"
+    },
+    "b98e4dcc-357b-4bb9-9dee-fda0b7c0ee7b": {
+      "sourceCode": "import { Input, Message, Time } from \"./types\";\n\ntype Output = {\n  text: string;\n};\n\nexport const inputs = [\"/smMissionID\", \"/smState\"];\nexport const output = \"/missionData\";\n\nlet lastReceiveTime: Time = { sec: 0, nsec: 0 };\n\nconst mission: {\n  id?: Message<\"std_msgs/UInt32\">;\n  state?: Message<\"std_msgs/String\">;\n} = {};\n\nexport default function script(\n  event: Input<\"/smMissionID\"> | Input<\"/smState\">,\n): Output | undefined {\n  const { receiveTime, topic, message } = event;\n\n  let inSync = true;\n\n  if (\n    receiveTime.sec !== lastReceiveTime.sec ||\n    receiveTime.nsec !== lastReceiveTime.nsec\n  ) {\n    lastReceiveTime = receiveTime;\n    inSync = false;\n  }\n\n  if (topic === \"/smMissionID\") {\n    mission.id = message;\n  } else if (topic === \"/smState\") {\n    mission.state = message;\n  }\n\n  if (!inSync) {\n    return undefined;\n  }\n\n  return {\n    text:\n      \"Mission ID: \" +\n      (mission.id?.data ?? \"unknown\") +\n      \"\\n\" +\n      (mission.state?.data ?? \"unknown\"),\n  };\n}\n",
+      "name": "Mission"
+    },
+    "58ace0c5-3a97-40ed-b195-5a84de6b49b0": {
+      "sourceCode": "import { Input, Message } from \"./types\";\n\nexport const inputs = [\"/diagnostics\"];\nexport const output = \"/autonomous_system_ready\";\n\ntype Output = {\n  data: boolean;\n};\n\nexport default function script(event: Input<\"/diagnostics\">): Output {\n  const diagnostics = event.message.status;\n  const isEmpty = !diagnostics || diagnostics.length === 0;\n\n  return {\n    data: isEmpty,\n  };\n}\n",
+      "name": "AutonomousSystemReady"
+    },
+    "4a009d01-3dbe-4bc8-8fe6-9d4c8e89be2b": {
+      "sourceCode": "import { Input, Message } from \"./types.ts\";\n\ntype Output = {\n  data: string;\n};\n\nexport const inputs = [\"/diagnostics\"];\n\nexport const output = \"/diagnostics/diagnostic_error\";\n\nexport default function script(event: Input<\"/diagnostics\">): Output {\n  const diagArray = (event.message as any).status;\n\n  if (diagArray && Array.isArray(diagArray)) {\n    const errors = new Set<string>();\n\n    for (const status of diagArray) {\n      if (status.level === 2) {\n        errors.add(`${status.name}: ${status.message}`);\n      }\n    }\n\n    if (errors.size > 0) {\n      return { data: Array.from(errors).join(\"\\n\") };\n    }\n  }\n\n  return { data: \"Nincs hiba\" };\n}",
+      "name": "ERROR"
+    },
+    "c0005f8c-ccfa-4c98-8e29-818a5baad2b5": {
+      "sourceCode": "import { Message } from \"./types\";\n\ntype GPSOutput = {\n  latitude: number;\n  longitude: number;\n  altitude: number;\n  status: { status: number; service: number };\n  position_covariance: number[];\n  position_covariance_type: number;\n};\n\n// Generikus stringként adjuk meg, így a TypeScript nem ellenőrzi a fix létezését\nexport const inputs: string[] = [\n  \"/home/csanda/Downloads/mobilis-bing-nyomvonal.txt\",\n];\nexport const output = \"/converted_gps_path\";\n\nlet isProcessed = false;\n\n// Az event típusát any-re állítjuk, hogy ne akadjon fent a keyof constraint-en\nexport default function script(event: any, log: any): GPSOutput | undefined {\n  if (isProcessed) return undefined;\n\n  // Biztonsági ellenőrzés, hogy valóban a mi fájlunk jött-e be\n  if (\n    event.topic !==\n    \"/home/csanda/Downloads/AUC_-_Bing_-_Mobilis_-_Center_kml_txt\"\n  ) {\n    return undefined;\n  }\n\n  const csvData = event.message?.data;\n  if (!csvData) return undefined;\n\n  const lines = csvData.split(\"\\n\");\n\n  // Győr / Mobilis Center koordinátákhoz az UTM 33N zóna a tökéletes\n  const zone = 33;\n  const northernHemisphere = true;\n\n  for (let i = 1; i < lines.length; i++) {\n    const columns = lines[i].split(\",\");\n    if (columns.length < 2) continue;\n\n    const utmX = parseFloat(columns[0]);\n    const utmY = parseFloat(columns[1]);\n    const altitude = parseFloat(columns[2]) || 0;\n\n    if (!isNaN(utmX) && !isNaN(utmY)) {\n      const { lat, lon } = utmToLatLon(utmX, utmY, zone, northernHemisphere);\n\n      log.publish(\"/converted_gps_path\", {\n        latitude: lat,\n        longitude: lon,\n        altitude: altitude,\n        status: { status: 0, service: 1 },\n        position_covariance: [0, 0, 0, 0, 0, 0, 0, 0, 0],\n        position_covariance_type: 0,\n      });\n    }\n  }\n\n  isProcessed = true;\n  return undefined;\n}\n\n// UTM -> WGS84 Konverter\nfunction utmToLatLon(\n  x: number,\n  y: number,\n  zone: number,\n  northernHemisphere: boolean,\n) {\n  const sa = 6378137.0;\n  const sb = 6356752.314245;\n  const e2 = Math.sqrt(sa * sa - sb * sb) / sb;\n  const e2cuadrada = e2 * e2;\n  const c = (sa * sa) / sb;\n\n  const xang = x - 500000.0;\n  const yang = northernHemisphere ? y : y - 10000000.0;\n\n  const v =\n    (c /\n      Math.sqrt(\n        1 +\n          e2cuadrada *\n            Math.cos(yang / (6366197.724 * 0.9996)) *\n            Math.cos(yang / (6366197.724 * 0.9996)),\n      )) *\n    0.9996;\n  const a = xang / v;\n  const a1 = Math.sin(2 * (yang / (6366197.724 * 0.9996)));\n  const a2 =\n    a1 *\n    Math.cos(yang / (6366197.724 * 0.9996)) *\n    Math.cos(yang / (6366197.724 * 0.9996));\n  const j2 = yang / (6366197.724 * 0.9996) + a1 / 2;\n  const j4 = (3 * j2 + a2) / 4;\n  const j6 =\n    (5 * j4 +\n      a2 *\n        Math.cos(yang / (6366197.724 * 0.9996)) *\n        Math.cos(yang / (6366197.724 * 0.9996))) /\n    3;\n  const alfa = (3 / 4) * e2cuadrada;\n  const beta = (15 / 32) * (e2cuadrada * e2cuadrada);\n  const gama = (35 / 27) * (e2cuadrada * e2cuadrada * e2cuadrada);\n  const bm =\n    0.9996 *\n    c *\n    (yang / (6366197.724 * 0.9996) - alfa * j2 + beta * j4 - gama * j6);\n  const b = (yang - bm) / v;\n  const eplus =\n    ((e2cuadrada * (a * a)) / 2) *\n    Math.cos(yang / (6366197.724 * 0.9996)) *\n    Math.cos(yang / (6366197.724 * 0.9996));\n  const ith = a * (1 - eplus / 3);\n  const lat =\n    yang / (6366197.724 * 0.9996) +\n    (180 / Math.PI) * (b * (1 - eplus) * (1 - (e2cuadrada * (a * a)) / 2));\n  const lon =\n    zone * 6 -\n    183 +\n    ((180 / Math.PI) * ith) / Math.cos(yang / (6366197.724 * 0.9996));\n\n  const latGrad = lat - (lat - Math.floor(lat));\n  const latMin = (lat - latGrad) * 60;\n  const latSec = (latMin - Math.floor(latMin)) * 60;\n  const finalLat = latGrad + Math.floor(latMin) / 60 + latSec / 3600;\n\n  const lonGrad = lon - (lon - Math.floor(lon));\n  const lonMin = (lon - lonGrad) * 60;\n  const lonSec = (lonMin - Math.floor(lonMin)) * 60;\n  const finalLon = lonGrad + Math.floor(lonMin) / 60 + lonSec / 3600;\n\n  return { lat: finalLat, lon: finalLon };\n}\n",
+      "name": "GPS nyomvonal"
+    },
+    "db3522fc-c40b-4a7e-af25-4f524079c31b": {
+      "sourceCode": "type Output = {\n  uncertainty: string;\n};\n\nexport const inputs = [\"/vectornav/raw/gps\"];\nexport const output = \"/gps_uncertainty\";\n\nexport default function script(event: {\n  message: Record<string, any>;\n  topic: string;\n}): Output {\n  const msg = event.message;\n  const fallback: Output = {\n    uncertainty: \"No data\",\n  };\n\n  if (!msg) return fallback;\n\n  const posu = msg[\"posu\"];\n  if (!posu) return fallback;\n\n  const x = posu[\"x\"];\n  const y = posu[\"y\"];\n\n  if (typeof x === \"number\" && typeof y === \"number\") {\n    const average = (x + y) / 2;\n\n    return {\n      uncertainty: average.toFixed(2) + \" m\",\n    };\n  }\n\n  return fallback;\n}\n",
+      "name": "GPS Uncertainty"
+    }
+  },
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "direction": "row",
+    "first": {
+      "first": {
+        "first": "Indicator!3tv60pf",
+        "second": "Indicator!17rh1n6",
+        "direction": "column"
+      },
+      "second": {
+        "first": {
+          "direction": "column",
+          "second": "DiagnosticStatusPanel!5nfj35",
+          "first": "DiagnosticSummary!2ieero7",
+          "splitPercentage": 63.9779749168278
+        },
+        "second": "RawMessages!46e3rai",
+        "direction": "column",
+        "splitPercentage": 78.4313725490196
+      },
+      "direction": "column",
+      "splitPercentage": 41.67038970653936
+    },
+    "second": {
+      "first": {
+        "first": "3D!3yfb2ik",
+        "second": "3D!3d2xo0l",
+        "direction": "column",
+        "splitPercentage": 42.73241342336708
+      },
+      "second": {
+        "first": {
+          "first": {
+            "first": "RawMessages!umdl3j",
+            "second": "RawMessages!4l0jqyi",
+            "direction": "row",
+            "splitPercentage": 49.96802339455348
+          },
+          "second": "Plot!33raakx",
+          "direction": "column",
+          "splitPercentage": 31.070496083550914
+        },
+        "second": {
+          "first": {
+            "first": "RawMessages!2acx389",
+            "second": "RawMessages!2bhlf5i",
+            "direction": "row",
+            "splitPercentage": 44.97954726396994
+          },
+          "second": "Plot!34u5wy2",
+          "direction": "column",
+          "splitPercentage": 31.74436006065584
+        },
+        "direction": "column",
+        "splitPercentage": 52.17983651226158
+      },
+      "direction": "row",
+      "splitPercentage": 68.71801165520368
+    },
+    "splitPercentage": 25.642054574638845
+  }
+}
