@@ -17,10 +17,8 @@ Bevezetésképpen nézzük egy önvezető jármű jellemző adatait. Példaképp
 ![foxglove_a](/autonomous_oktato_anyag/assets/images_common/foxglove04.png#only-light)
 ![foxglove_a](/autonomous_oktato_anyag/assets/images_common/foxglove03.png#only-dark)
 
-# FRISSÍTENI!!!!!
-
 [MCAP letöltése :material-download: 540 MB](https://drive.google.com/file/d/1NODwv5Lvy-wNoPH7ftDvK7sNtne_8dJB/view?usp=drive_link){ .md-button .md-button--primary}
-[Layout letöltése :material-auto-download:](https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/docs/main/docs/bevezetes/lexus01foxglove.json){ .md-button }
+[Layout letöltése :material-auto-download:](https://raw.githubusercontent.com/szenergy/autonomous_oktato_anyag/docs/main/docs/bevezetes/SZEmission_GUI2026.json){.md-button }
 
 ## A Foxglove Studio
 
