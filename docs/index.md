@@ -31,32 +31,32 @@ További karrierrel kapcsolatos érdekességek például a [statista](https://ww
 
 Óra | Tananyag
 -----|-----
-1 | [Bevezetés](https://sze-info.github.io/szenergy-autonom/bevezetes/): A tantárgy felépítése. Robotikai és önvezető járműves ismeretek. Érzékelés, észlelés, tervezés, szabályozás, aktuálás.
-2 | [ROS2 koncepciók](https://sze-info.github.io/szenergy-autonom/bevezetes/ros2/): Egyetemi robotok és járművek ismertetése. `ROS 2` alapismeretek.
-3 | [Érzékelés](https://sze-info.github.io/szenergy-autonom/erzekeles/): Kamera, LIDAR, GNSS (GPS), IMU, CAN szenzorok működése, jelfeldolgozása, főbb `ROS 2` topicok, `ROS 2` időkezelés.
-4 | [Féléves beadandó](https://sze-info.github.io/szenergy-autonom/feleves_beadando/): féléves beadandó ismertetése, osztályzási szempontok, ötletek, kérdések-válaszok
-5 | [Transzformációk](https://sze-info.github.io/szenergy-autonom/transzformaciok/): Merev test mozgása, mátrix szorzás ismétlése, homogén koordináták szemléltetése rövid progamkódokkal, quaternion (kvaterniók) fogalma.
-6 | [Észlelés](https://sze-info.github.io/szenergy-autonom/eszleles/): objektumfelismerés, objektumklasszifikáció, objektum követés és predikció, SLAM és LOAM.
-7 | [Szimuláció](https://sze-info.github.io/szenergy-autonom/szimulacio/): ROS 2 kompatibilis szimulátorok áttekintése (pl [Gazebo](http://gazebosim.org/), [Carla](https://carla.org/), [SVL](https://www.lgsvlsimulator.com/), [OSSDC SIM](https://github.com/OSSDC/OSSDC-SIM), [AirSim](https://microsoft.github.io/AirSim), [AWSIM](https://tier4.github.io/AWSIM), [CoppeliaSim](https://www.coppeliarobotics.com/coppeliaSim), [MVSim](https://mvsimulator.readthedocs.io/))
-8 | [Tervezés](https://sze-info.github.io/szenergy-autonom/tervezes/): Globális tervezés, lokális tervezés. Lokális tervezés: keresztirányú és hosszirányú tervezés.
-9 | [Szabályozás](https://sze-info.github.io/szenergy-autonom/szabalyozas/): Járműirányítási megoldások (inverz-modellek, prediktív modellek, zárhurkú modellek).
-10 | [Mesterséges intelligencia](https://sze-info.github.io/szenergy-autonom/mesterseges_intelligencia/): Neurális hálózatok járműves és robotikai fókusszal.
+1 | [Bevezetés](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/): A tantárgy felépítése. Robotikai és önvezető járműves ismeretek. Érzékelés, észlelés, tervezés, szabályozás, aktuálás.
+2 | [ROS2 koncepciók](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/ros2/): Egyetemi robotok és járművek ismertetése. `ROS 2` alapismeretek.
+3 | [Érzékelés](https://sze-info.github.io/autonomous_oktato_anyag/docs/erzekeles/): Kamera, LIDAR, GNSS (GPS), IMU, CAN szenzorok működése, jelfeldolgozása, főbb `ROS 2` topicok, `ROS 2` időkezelés.
+4 | [Féléves beadandó](https://sze-info.github.io/autonomous_oktato_anyag/docs/feleves_beadando/): féléves beadandó ismertetése, osztályzási szempontok, ötletek, kérdések-válaszok
+5 | [Transzformációk](https://sze-info.github.io/autonomous_oktato_anyag/docs/transzformaciok/): Merev test mozgása, mátrix szorzás ismétlése, homogén koordináták szemléltetése rövid progamkódokkal, quaternion (kvaterniók) fogalma.
+6 | [Észlelés](https://sze-info.github.io/autonomous_oktato_anyag/docs/eszleles/): objektumfelismerés, objektumklasszifikáció, objektum követés és predikció, SLAM és LOAM.
+7 | [Szimuláció](https://sze-info.github.io/autonomous_oktato_anyag/docs/szimulacio/): ROS 2 kompatibilis szimulátorok áttekintése (pl [Gazebo](http://gazebosim.org/), [Carla](https://carla.org/), [SVL](https://www.lgsvlsimulator.com/), [OSSDC SIM](https://github.com/OSSDC/OSSDC-SIM), [AirSim](https://microsoft.github.io/AirSim), [AWSIM](https://tier4.github.io/AWSIM), [CoppeliaSim](https://www.coppeliarobotics.com/coppeliaSim), [MVSim](https://mvsimulator.readthedocs.io/))
+8 | [Tervezés](https://sze-info.github.io/autonomous_oktato_anyag/docs/tervezes/): Globális tervezés, lokális tervezés. Lokális tervezés: keresztirányú és hosszirányú tervezés.
+9 | [Szabályozás](https://sze-info.github.io/autonomous_oktato_anyag/docs/szabalyozas/): Járműirányítási megoldások (inverz-modellek, prediktív modellek, zárhurkú modellek).
+10 | [Mesterséges intelligencia](https://sze-info.github.io/autonomous_oktato_anyag/docs/mesterseges_intelligencia/): Neurális hálózatok járműves és robotikai fókusszal.
 
 
 ## Gyakorlat
 
 Óra | Tananyag
 -----|-----
-1| [Bevezetés](https://sze-info.github.io/szenergy-autonom/bevezetes/practice/) + [Linux](https://sze-info.github.io/szenergy-autonom/bevezetes/linux/) + [Géptermi ismeretek](https://sze-info.github.io/szenergy-autonom/bevezetes/gepterem/): WSL2 használata Windows operációs rendszeren. Géptermi alapismeretek. Linux parancsok, amelyek szükségesek lehetnek a későbbiekben.
-2| [Telepítés](https://sze-info.github.io/szenergy-autonom/telepites/ros_humble/)+ [Fejlesztőkörnyezet beállítása](https://sze-info.github.io/szenergy-autonom/bevezetes/vscodegit/) + [ROS2 kommunikáció](https://sze-info.github.io/szenergy-autonom/bevezetes/ros2gyak/): Első `ROS 2` node-ok, ROS parancsok használata, build és source.
-3| [Érzékelés gyakorlat](https://sze-info.github.io/szenergy-autonom/erzekeles/practice/): Szenzor adatok jellemzőbb formátumai: `sensor_msgs/PointCloud2`, `sensor_msgs/Image`, `geometry_msgs/Pose`, stb. Bag `.mcap` fájlok kezelése, lejátszása. Egyszerű pacakge készítése, amely pozíció adatokra iratkozik fel. 
-4| [Verziókezelés, Git](https://sze-info.github.io/szenergy-autonom/onallo/ros2git/), [Copilot](https://sze-info.github.io/szenergy-autonom/bevezetes/copilot/), [vs code](https://sze-info.github.io/szenergy-autonom/bevezetes/vscodegit/), [ROS 2 launch](https://sze-info.github.io/szenergy-autonom/ros2halado/ros2launch/): Copilot használata ROS 2 fejlesztéshez, Template repo ismertetése, használata, launch fájlok írása python nyelven
-5| [Transzformációk gyakorlat](https://sze-info.github.io/szenergy-autonom/transzformaciok/practice/): Node létrehozása, amely transzformációkat hirdet. Markerek megjelenítése, launch önálló feladat.
-6| [Észlelés gyakorlat](https://sze-info.github.io/szenergy-autonom/eszleles/practice/): egyszerű LIDAR szűrés, X, Y és Z koordináták szerint.
-7| [Szimuláció bevezetés](https://sze-info.github.io/szenergy-autonom/szimulacio/gazebo_fortress/): Gazebo Fortress és ROS 2, [szimuláció gyakorlat](https://sze-info.github.io/szenergy-autonom/szimulacio/gyakorlat/): saját robotszimuláció létrehozása.
-8| [Tervezés gyakorlat](https://sze-info.github.io/szenergy-autonom/tervezes/practice/): Polinom alapú lokális tervező megvalósításás. [Nav2](https://navigation.ros.org/) használata szimulátorral.
-9| [Szabályozás gyakorlat](https://sze-info.github.io/szenergy-autonom/szabalyozas/ros2practice/): PID hangolás. Trajektóriakövetés Gazebo szimulátorral. Saját fejlesztésű szabályzó és jármű modell.
-10| [Mesterséges intelligencia gyakorlat](https://sze-info.github.io/szenergy-autonom/mesterseges_intelligencia/practice/): Neurális hálózatok gyakorlat.
+1| [Bevezetés](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/practice/) + [Linux](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/linux/) + [Géptermi ismeretek](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/gepterem/): WSL2 használata Windows operációs rendszeren. Géptermi alapismeretek. Linux parancsok, amelyek szükségesek lehetnek a későbbiekben.
+2| [Telepítés](https://sze-info.github.io/autonomous_oktato_anyag/docs/telepites/ros_humble/)+ [Fejlesztőkörnyezet beállítása](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/vscodegit/) + [ROS2 kommunikáció](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/ros2gyak/): Első `ROS 2` node-ok, ROS parancsok használata, build és source.
+3| [Érzékelés gyakorlat](https://sze-info.github.io/autonomous_oktato_anyag/docs/erzekeles/practice/): Szenzor adatok jellemzőbb formátumai: `sensor_msgs/PointCloud2`, `sensor_msgs/Image`, `geometry_msgs/Pose`, stb. Bag `.mcap` fájlok kezelése, lejátszása. Egyszerű pacakge készítése, amely pozíció adatokra iratkozik fel. 
+4| [Verziókezelés, Git](https://sze-info.github.io/autonomous_oktato_anyag/docs/onallo/ros2git/), [Copilot](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/copilot/), [vs code](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/vscodegit/), [ROS 2 launch](https://sze-info.github.io/autonomous_oktato_anyag/docs/ros2halado/ros2launch/): Copilot használata ROS 2 fejlesztéshez, Template repo ismertetése, használata, launch fájlok írása python nyelven
+5| [Transzformációk gyakorlat](https://sze-info.github.io/autonomous_oktato_anyag/docs/transzformaciok/practice/): Node létrehozása, amely transzformációkat hirdet. Markerek megjelenítése, launch önálló feladat.
+6| [Észlelés gyakorlat](https://sze-info.github.io/autonomous_oktato_anyag/docs/eszleles/practice/): egyszerű LIDAR szűrés, X, Y és Z koordináták szerint.
+7| [Szimuláció bevezetés](https://sze-info.github.io/autonomous_oktato_anyag/docs/szimulacio/gazebo_fortress/): Gazebo Fortress és ROS 2, [szimuláció gyakorlat](https://sze-info.github.io/autonomous_oktato_anyag/docs/szimulacio/gyakorlat/): saját robotszimuláció létrehozása.
+8| [Tervezés gyakorlat](https://sze-info.github.io/autonomous_oktato_anyag/docs/tervezes/practice/): Polinom alapú lokális tervező megvalósításás. [Nav2](https://navigation.ros.org/) használata szimulátorral.
+9| [Szabályozás gyakorlat](https://sze-info.github.io/autonomous_oktato_anyag/docs/szabalyozas/ros2practice/): PID hangolás. Trajektóriakövetés Gazebo szimulátorral. Saját fejlesztésű szabályzó és jármű modell.
+10| [Mesterséges intelligencia gyakorlat](https://sze-info.github.io/autonomous_oktato_anyag/docs/mesterseges_intelligencia/practice/): Neurális hálózatok gyakorlat.
 
 ## Konvenciók
 
@@ -84,7 +84,7 @@ Szabályzás: zárthurkú modellezett jármű, szabályzó építése (pl PID va
 - Technológiai ismeretek: ROS 2	használata, újdonságai ROS-hez képest				
 - Projektmunka:	Egyéni projektfeladat bemutatása				
 
-![](/szenergy-autonom/assets/images_common/technology01.svg)
+![](/autonomous_oktato_anyag/site/assets/images_common/technology01.svg)
 
 
 

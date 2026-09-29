@@ -12,7 +12,7 @@
         <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/bevezetes/ros2gyak/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/site/bevezetes/ros2gyak/">
       
       
         <link rel="prev" href="../ros2/">
@@ -69,7 +69,7 @@
       
         <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/bevezetes/ros2gyak.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/bevezetes/ros2gyak.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -77,7 +77,7 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/bevezetes/ros2gyak/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/bevezetes/ros2gyak/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
@@ -85,7 +85,7 @@
       
         <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/bevezetes/ros2gyak.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/bevezetes/ros2gyak.png" >
       
     
     
@@ -2608,7 +2608,7 @@
 
 <h1 id="ros-2-bevezetes-es-gyakorlat"><code>ROS 2</code> bevezetés és gyakorlat<a class="headerlink" href="#ros-2-bevezetes-es-gyakorlat" title="Permanent link">&para;</a></h1>
 <h2 id="emlekezteto">Emlékeztető<a class="headerlink" href="#emlekezteto" title="Permanent link">&para;</a></h2>
-<p>Pár alapfogalom az <a href="https://sze-info.github.io/szenergy-autonom/bevezetes/ros2/">előző</a> alkalomról: </p>
+<p>Pár alapfogalom az <a href="https://sze-info.github.io/autonomous_oktato_anyag/site/bevezetes/ros2/">előző</a> alkalomról: </p>
 <ul>
 <li><strong>Node</strong>: Gyakorlatilag ROS <em>program</em>ot jelent. (pl. <code>turtlesim_node</code>, <code>cmd_gen_node</code>, <code>foxglove_bridge</code>)</li>
 <li><strong>Topic</strong> (topik): Nevekkel ellátott kommunikációs csatorna. (pl. <code>/turtle1/cmd_vel</code>, <code>/turtle1/pose</code>, <code>/raw_cmd</code>)</li>
@@ -2675,7 +2675,7 @@
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">topic</span><span class="w"> </span><span class="n">pub</span><span class="w"> </span><span class="o">/</span><span class="n">turtle1</span><span class="o">/</span><span class="n">cmd_vel</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">Twist</span><span class="w"> </span><span class="s">'{linear: {x: 0.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.2}}'</span>
 </code></pre></div>
 <figure>
-  <img alt="" src="/szenergy-autonom/assets/images_common/turtlesim01.gif" />
+  <img alt="" src="/autonomous_oktato_anyag/site/assets/images_common/turtlesim01.gif" />
 <br />
 <figcaption>Turtlesim animáció</figcaption>
 </figure>
@@ -2824,7 +2824,7 @@ vagy </p>
 </code></pre></div>
 <p>A következőképp mozog most a teknős:</p>
 <figure>
-  <img alt="Image title" src="/szenergy-autonom/assets/images_common/turtlesim02.gif" width="100%" />
+  <img alt="Image title" src="/autonomous_oktato_anyag/site/assets/images_common/turtlesim02.gif" width="100%" />
 <br />
 <figcaption>Turtle</figcaption>
 </figure>
@@ -2859,7 +2859,7 @@ vagy </p>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">szenergy</span><span class="o">-</span><span class="n">autonom_intro_cpp</span><span class="w"> </span><span class="n">foxglove_bridge.launch.py</span>
 </code></pre></div>
 <p>Vizsgáljuk meg Foxglove Studio-val is WebSocketen keresztül (Open connection <code>ws://localhost:8765</code>):</p>
-<p><img alt="foxglove" src="/szenergy-autonom/assets/images_common/foxglove02.png" /></p>
+<p><img alt="foxglove" src="/autonomous_oktato_anyag/site/assets/images_common/foxglove02.png" /></p>
 <p><em>Megjegyzés</em>: gépteremben fel van téve a <code>foxglove_bridge</code>, otthon <code>sudo apt install ros-humble-foxglove-bridge</code> paranccsal (előtte update) telepíthető.</p>
 <p><pre class="mermaid"><code>flowchart LR
 

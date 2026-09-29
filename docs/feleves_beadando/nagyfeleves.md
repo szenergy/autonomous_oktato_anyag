@@ -65,7 +65,7 @@ Az alábbi példák nem feltétlenül féléves munkának készültek, de annak 
 
 !!! tip
     Erősen ajánlott a [GitHub Student Developer Pack](https://education.github.com/pack) beszerzése, többek között [Copilot](https://github.com/features/copilot) is jár hozzá.
-    Erről itt lehet részletesen olvasni: [sze-info.github.io/szenergy-autonom/bevezetes/copilot/#github-copilot-beszerzese-sze-hallgatoknak](https://sze-info.github.io/szenergy-autonom/bevezetes/copilot/#github-copilot-beszerzese-sze-hallgatoknak)
+    Erről itt lehet részletesen olvasni: [sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/copilot/#github-copilot-beszerzese-sze-hallgatoknak](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/copilot/#github-copilot-beszerzese-sze-hallgatoknak)
 
 ![](https://github.blog/wp-content/uploads/2019/08/FBLinkedIn_ALL-PARTNERS.png)
 
@@ -97,20 +97,20 @@ C++ és Python nyelven is létrehoztunk egy úgynevezett template repo-t, amely 
 - [github.com/sze-info/ros2_py_template](https://github.com/sze-info/ros2_py_template)
 
 !!! info
-    Erről [leírás itt](https://sze-info.github.io/szenergy-autonom/onallo/ros2git.html) olvasható.
+    Erről [leírás itt](https://sze-info.github.io/autonomous_oktato_anyag/docs/onallo/ros2git.html) olvasható.
 
 <img src="https://raw.githubusercontent.com/sze-info/ros2_cpp_template/main/img/use_this_template01.png" width="60%" />
 
 ### Meme
 
 <figure markdown="span">
-  ![Image title](/szenergy-autonom/assets/images_common/meme01.jpg){ width="60%" }
+  ![Image title](/autonomous_oktato_anyag/site/assets/images_common/meme01.jpg){ width="60%" }
   <figcaption></figcaption>
 </figure>
 Credit: [pycoders](https://www.instagram.com/pycoders/)
 
 <figure markdown="span">
-  ![Image title](/szenergy-autonom/assets/images_common/meme02.jpg){ width="60%" }
+  ![Image title](/autonomous_oktato_anyag/site/assets/images_common/meme02.jpg){ width="60%" }
   <figcaption></figcaption>
 </figure>
 Credit: [knowyourmeme](https://knowyourmeme.com/memes/but-its-honest-work)

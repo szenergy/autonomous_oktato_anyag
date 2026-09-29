@@ -12,7 +12,7 @@ icon: material/math-integral-box # elméleti tananyag
 Rendszerszinten az önvezetés a következő alfunkciók összegeként írható le:
 
 
-[![](/szenergy-autonom/assets/images_common/overview01.svg)](/szenergy-autonom/assets/images_common/overview02.svg)
+[![](/autonomous_oktato_anyag/site/assets/images_common/overview01.svg)](/autonomous_oktato_anyag/site/assets/images_common/overview02.svg)
 
 Irodalom: [[TU München](https://github.com/TUMFTM/Lecture_ADSE)], [[Autoware](https://github.com/autowarefoundation/autoware)], [[University of Texas at Dallas](https://nova-utd.github.io/navigator/system-overview.html)], [[ApolloAuto](https://github.com/ApolloAuto/apollo/blob/master/docs/02_Quick%20Start/demo_guide/images/Apollo_3_5_software_architecture.png)]
 
@@ -68,7 +68,7 @@ Ahogy láthattuk, önvezető (autonomous) járművekhez (L5) hasonló technológ
 
 | Robotok | Robotaxik |
 |---|---|
-| ![tx](/szenergy-autonom/assets/images_common/robots01.png) | ![tx](/szenergy-autonom/assets/images_common/robotaxis01.png) |
+| ![tx](/autonomous_oktato_anyag/site/assets/images_common/robots01.png) | ![tx](/autonomous_oktato_anyag/site/assets/images_common/robotaxis01.png) |
 | Nuro, Segway, Turtlebot, Clearpath, Starship  | Zoox, Cruise, Waymo, Navya, Sensible4 |
 
 Nézzünk egy példát, ami a Zoox önvezető robotaxit mutaja be működés közben:
@@ -139,7 +139,7 @@ Szenzorai: Ouster OS2-64 LIDAR, 2x OS1-32 LIDAR, Stereolabs Zed2i mélységkamer
 További információ [itt](https://github.com/szenergy/szenergy-public-resources/wiki/H-sensorset2021.L).
 
 <figure markdown="span">
-  ![Image title](/szenergy-autonom/assets/images_common/vehcile_lexus01.png){ width="80%" }
+  ![Image title](/autonomous_oktato_anyag/site/assets/images_common/vehcile_lexus01.png){ width="80%" }
   <figcaption>Lexus</figcaption>
 </figure>
 
@@ -148,7 +148,7 @@ Szenzorai: 2x Ouster OS1-64 LIDAR, 2x Velodyne VLP16 LIDAR, SICK LMS111 LIDAR, S
 További információ [itt](https://github.com/szenergy/szenergy-public-resources/wiki/H-sensorset2020.A).
 
 <figure markdown="span">
-  ![Image title](/szenergy-autonom/assets/images_common/vehcile_leaf01.png){ width="80%" }
+  ![Image title](/autonomous_oktato_anyag/site/assets/images_common/vehcile_leaf01.png){ width="80%" }
   <figcaption>Nissan Leaf</figcaption>
 </figure>
 
@@ -157,7 +157,7 @@ Szenzorai: Ouster OS1-128 LIDAR, Stereolabs Zed2i mélységkamera.
 További információ [itt](https://www.youtube.com/szenergyteam).
 
 <figure markdown="span">
-  ![Image title](/szenergy-autonom/assets/images_common/vehicle_szenergy01.png){ width="80%" }
+  ![Image title](/autonomous_oktato_anyag/site/assets/images_common/vehicle_szenergy01.png){ width="80%" }
   <figcaption>Szenergy</figcaption>
 </figure>
 
@@ -197,4 +197,4 @@ Szenzorok: Intel RealSense RGB-D camera, IMU, GPS(GNSS)
   <figcaption>Traffic Cone Manipulation Robot</figcaption>
 </figure>
 
-<center><img src="/szenergy-autonom/assets/images_common/szenergy-autonom02.svg" width="90%" /></center>
+<center><img src="/autonomous_oktato_anyag/site/assets/images_common/szenergy-autonom02.svg" width="90%" /></center>

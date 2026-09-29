@@ -15,7 +15,7 @@ A kis beadandó célja, hogy a hallgatók az órán megszerzett kezdő szintű e
 - Minimum 1 publisher vagy 1 subscriber (több lehet)
 - Rövid dokumentáció, ami a build menetét, a node-topic kapcsolatokat tartalmazza, a [példák](#peldak) szerinti részletességgel
 - Helyes [névadás](#repo-neve) 
-- Template [használata](https://sze-info.github.io/szenergy-autonom/onallo/ros2git/#a-template-hasznalata) vagy saját megoldás, de a [példák](#peldak) szerinti kidolgozottsági szint
+- Template [használata](https://sze-info.github.io/autonomous_oktato_anyag/docs/onallo/ros2git/#a-template-hasznalata) vagy saját megoldás, de a [példák](#peldak) szerinti kidolgozottsági szint
 - Lehetőleg hiba nélkül forduljon, de a `build warning` sok esetben megengedhető, a lényeg a tanulás
 - Terjedelem rövid: 30-100 kódsor node-onként + CMakeLists.txt, package.xml, README.md, launch fájlok (nem baj, ha hosszabb, de nem elvárt)
 
@@ -23,7 +23,7 @@ A kis beadandó célja, hogy a hallgatók az órán megszerzett kezdő szintű e
 
 - Minél több commit, hogy a munkafolyamatot is lássuk
 - Lehetőleg képpel illusztrálva (lásd [példák](#peldak))
-- Lehetőleg [mermaid](https://mermaid.js.org/intro/) diagram a node-ok, topic-ok viszonyáról (lásd [példák](#peldak), [leírás](https://sze-info.github.io/szenergy-autonom/onallo/mermaid.html))
+- Lehetőleg [mermaid](https://mermaid.js.org/intro/) diagram a node-ok, topic-ok viszonyáról (lásd [példák](#peldak), [leírás](https://sze-info.github.io/autonomous_oktato_anyag/docs/onallo/mermaid.html))
 
 ## Hibajavítás
 
@@ -56,7 +56,7 @@ C++ és Python nyelven is létrehoztunk egy úgynevezett template repo-t, amely 
 
 !!! tip
 
-    Erről [leírás itt](https://sze-info.github.io/szenergy-autonom/onallo/ros2git/#a-template-hasznalata) olvasható.
+    Erről [leírás itt](https://sze-info.github.io/autonomous_oktato_anyag/docs/onallo/ros2git/#a-template-hasznalata) olvasható.
 
 <img src="https://raw.githubusercontent.com/sze-info/ros2_cpp_template/main/img/use_this_template01.png" width="60%" />
 

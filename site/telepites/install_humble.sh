@@ -74,7 +74,7 @@ echo ""
 if ! grep -qF "ADDED BY INSTALL SCRIPT" ~/.bashrc; then
 cat >> ~/.bashrc << EOF
 
-#### ADDED BY INSTALL SCRIPT https://raw.githubusercontent.com/sze-info/szenergy-autonom/main/docs/telepites/install_humble.sh
+#### ADDED BY INSTALL SCRIPT https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/site/main/docs/telepites/install_humble.sh
 source /opt/ros/humble/setup.bash
 export RCUTILS_COLORIZED_OUTPUT=1
 export LIBGL_ALWAYS_SOFTWARE=1

@@ -73,7 +73,7 @@ source ~/.bashrc
     Ellenőrizzük, hogy az `ign gazebo` és a `ros2` parancsok működnek.
 
 
-![](/szenergy-autonom/assets/images_common/ign_gazebo_02.png)
+![](/autonomous_oktato_anyag/site/assets/images_common/ign_gazebo_02.png)
 
 Legalább egyik parancsot próbáljuk ki, pl:
 

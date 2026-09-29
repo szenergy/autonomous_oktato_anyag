@@ -12,7 +12,7 @@
         <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/bevezetes/ros2/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/site/bevezetes/ros2/">
       
       
         <link rel="prev" href="../linux/">
@@ -69,7 +69,7 @@
       
         <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/bevezetes/ros2.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/bevezetes/ros2.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -77,7 +77,7 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/bevezetes/ros2/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/bevezetes/ros2/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
@@ -85,7 +85,7 @@
       
         <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/bevezetes/ros2.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/bevezetes/ros2.png" >
       
     
     
@@ -2308,23 +2308,23 @@
 
 <h1 id="ros-2-alapfoglamak"><code>ROS 2</code> alapfoglamak<a class="headerlink" href="#ros-2-alapfoglamak" title="Permanent link">&para;</a></h1>
 <ul>
-<li><a href="https://sze-info.github.io/szenergy-autonom/telepites/win10">Ajánlott ROS 2 telepítés</a></li>
-<li><a href="https://sze-info.github.io/szenergy-autonom/telepites/">Alternatív ROS 2 verziók és telepítés</a></li>
+<li><a href="https://sze-info.github.io/autonomous_oktato_anyag/site/telepites/win10">Ajánlott ROS 2 telepítés</a></li>
+<li><a href="https://sze-info.github.io/autonomous_oktato_anyag/site/telepites/">Alternatív ROS 2 verziók és telepítés</a></li>
 </ul>
 <p>Az <code>ROS 2</code>, a <code>ROS</code> legújabb kiadása, olyan szoftverkönyvtárak és eszközök készlete (middleware), amelyek segítenek robotalkalmazások fejlesztésében. Definíció szerint a middleware egy szoftver komponenseket összekötő szoftver. Ez egy olyan réteg, amely az operációs rendszer és az alkalmazások között helyezkedik el az elosztott számítógépes hálózat mindkét oldalán. Az <code>ROS 2</code> megengedő, nyílt forráskódú, <a href="https://choosealicense.com/licenses/apache-2.0/">Apache 2.0</a> licenszelést használ. </p>
 <figure>
-  <a href="/szenergy-autonom/assets/images_common/ros_overview01.svg"><img alt="Image title" src="/szenergy-autonom/assets/images_common/ros_overview01.svg" width="100%" /></a>
+  <a href="/autonomous_oktato_anyag/site/assets/images_common/ros_overview01.svg"><img alt="Image title" src="/autonomous_oktato_anyag/site/assets/images_common/ros_overview01.svg" width="100%" /></a>
 <br />
 <figcaption>ROS 2 áttekintés</figcaption>
 </figure>
 <p>A <code>ROS</code> 2007-es kiadása óta inkrementális frissítéseken esett át, tehát fundamentális változások nem, nagyobb fejlesztések viszont folyamatosan történtek. 2017-ben jött rá a robotikai közösség, hogy olyan alapvető limitációi vannak az eredeti 2007-es elképzelésnek, amit ilyen inkrementális módon sajnos nem lehet javítani. Így végül a Noetic Ninjemis (2025-ig támogatva) az <code>ROS 1</code> utolsó kiadása, helyette párhuzamosan elkezdték fejleszteni az <code>ROS 2</code>-t. Ez egyben azt is jelenteti, hogy a korábbi forráskódokat nehezebben lehet portolni az új verzióra, cserébe rengeteg újdonságot, javítást, támogatást kaphatunk a fejlesztendő robotok, járművek számára.</p>
 <p>A fentiek hatására tehát az <code>ROS 2</code> átlépett az akadémiai kutatások világából az ipari fehasználásra. Érdekesség, hogy a NASA VIPER nevű holdjárója is <code>ROS 2</code>-t futtat. Emellett olyan autóipari óriások is használják, mint a Bosch, a BMW vagy a Volvo. Robotikai cégek közül pedig számos további példát lehetne hozni. Linkek: <a href="https://www.nasa.gov/viper/lunar-operations">www.nasa.gov/viper/lunar-operations</a>, <a href="https://rosindustrial.org/ric/current-members/">rosindustrial.org/ric/current-members</a>, <a href="https://www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers/">www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers</a>. ROS felhasználók a világban: <a href="http://metrorobots.com/rosmap.html">metrorobots.com/rosmap.html</a>.</p>
-<p><img alt="ROS 2 in space" src="/szenergy-autonom/assets/images_common/ros2space01.png" /></p>
+<p><img alt="ROS 2 in space" src="/autonomous_oktato_anyag/site/assets/images_common/ros2space01.png" /></p>
 <p>Kép forrása: <a href="https://arxiv.org/pdf/2211.07752.pdf">Robot Operating System 2: Design, Architecture, and Uses In The Wild:
 Steve Macenski et al.</a></p>
 <h2 id="miert-hasznaljak-framework-ot-robotikai-projektemhez">Miért használjak framework-öt robotikai projektemhez?<a class="headerlink" href="#miert-hasznaljak-framework-ot-robotikai-projektemhez" title="Permanent link">&para;</a></h2>
 <p>Első robotikai projektünknél választhatjuk azt az utat, hogy framework nélkül teljesen saját megoldásként feljesztünk. Nyilván ennek is vannak előnyei (tanulás, futási gyorsaság, stb.). De hamarosan kelleni fog olyan algoritmus, amit akár mások implementáltak is, csak nem kompatibilis az eredeti elképzeléssel. Itt már célszerű meggondolni egy framework (pl a <code>ROS 2</code>) használatát. <em>Megjegyzés</em>, hogy nem a <code>ROS 2</code> az egyetlen lehetőség számos hasonló, kisebb framework létezik: <a class="http" href="http://playerstage.sf.net">Player</a>, <a class="http" href="http://eris.liralab.it/yarp/">YARP</a>, <a class="http" href="http://www.orocos.org/">Orocos</a>, <a class="http" href="http://carmen.sourceforge.net">CARMEN</a>, <a class="http" href="http://orca-robotics.sourceforge.net">Orca</a>, <a class="http" href="http://www.robots.ox.ac.uk/~pnewman/TheMOOS/index.html">MOOS</a>, and <a class="http" href="http://msdn.microsoft.com/en-us/robotics/default.aspx">Microsoft Robotics Studio</a>. Niylván mindegyiknek van előnye, ebben a tárgyban a támogatottság miatt mégis az <code>ROS 2</code>-re szoríthozunk.</p>
-<p><a href="/szenergy-autonom/assets/images_common/ros_components02.svg"><img alt="" src="/szenergy-autonom/assets/images_common/ros_components01.svg" /></a></p>
+<p><a href="/autonomous_oktato_anyag/site/assets/images_common/ros_components02.svg"><img alt="" src="/autonomous_oktato_anyag/site/assets/images_common/ros_components01.svg" /></a></p>
 <p>Kép inspiráció: <a href="https://www.ros.org/blog/ecosystem/">ros.org/blog/ecosystem</a></p>
 <ul>
 <li>Adatáramlás(Plumbing): A ROS alapvetően egy üzenetküldő rendszert biztosít, amelyet gyakran "middleware"-nek vagy "plumbing"-nek neveznek. A kommunikáció az egyik első igény, amely felmerül egy új robotikai alkalmazás vagy bármilyen olyan szoftverrendszer implementálásakor, amelyhez hardverrel is csatlakozik. A ROS beépített és jól tesztelt üzenetküldő rendszere időt takaríthat meg, hiszen kezeli a kommunikáció részleteit a decentralizált csomópontok között, ezt nem kell külön implementálni. Sőt lehetőség van egy gépen Intra-process kommunikáció segítségével direkt memória elérésre is.</li>
@@ -2425,7 +2425,7 @@ build<span class="w">  </span>install<span class="w">  </span>log<span class="w"
 <li><em>Változások a Middleware-ben</em><br />
   A <code>ROS 1</code> a Master-Slave architektúrát és az XML-RPC middleware-t használja. A <code>ROS 2</code> ezzel szemben a  Data Distribution Service (DDS) vagy Zenoh hálózati protokollt használ, amely nagyobb hatékonyságot és megbízhatóságot, alacsony késleltetést és skálázhatóságot, valamint konfigurálható szolgáltatásminőségi (QoS) paramétereket biztosít. Többek között így nem kell <code>roscore</code>-t indítani. Az XML-RPC jobb az egyszerű távoli eljáráshívásokhoz, míg a DDS hozzáadott komplexitása lehetővé teszi, hogy jobban támogassa a valós idejű rendszereket.</li>
 </ul>
-<p><img alt="dds_zenoh" src="/szenergy-autonom/assets/images_common/abstraction_dds_zenoh01.svg" /></p>
+<p><img alt="dds_zenoh" src="/autonomous_oktato_anyag/site/assets/images_common/abstraction_dds_zenoh01.svg" /></p>
 <ul>
 <li>
 <p><em>Változások a ROS API-ban</em><br />
@@ -2445,7 +2445,7 @@ build<span class="w">  </span>install<span class="w">  </span>log<span class="w"
 <li><em>Többszálú végrehajtás</em><br />
   A <code>ROS 2</code> támogatja a több csomópont valóban párhuzamos futtatását, így a modern többmagos processzorok sokkal jobban kihasználhatók, mint a <code>ROS 1</code> esetében. </li>
 </ul>
-<p><img alt="áttekintés" src="/szenergy-autonom/assets/images_common/ros_overview02.svg" />
+<p><img alt="áttekintés" src="/autonomous_oktato_anyag/site/assets/images_common/ros_overview02.svg" />
 Forrás: <a href="https://husarnet.com/blog/ros2-docker">husarnet.com/blog/ros2-docker</a></p>
 <h2 id="egyeb-valtozasok">Egyéb változások<a class="headerlink" href="#egyeb-valtozasok" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2454,7 +2454,7 @@ Forrás: <a href="https://husarnet.com/blog/ros2-docker">husarnet.com/blog/ros2-
 <li>A <code>ROS 1</code> elsősorban az Ubuntu számára készült. A <code>ROS 2</code> fut MacOS, Windows, Ubuntu és más (akár Real-Time) operációs rendszereken is.</li>
 </ul>
 <h2 id="verziok">Verziók<a class="headerlink" href="#verziok" title="Permanent link">&para;</a></h2>
-<p><a href="https://sze-info.github.io/szenergy-autonom/telepites/">ROS verziók és telepítés</a></p>
+<p><a href="https://sze-info.github.io/autonomous_oktato_anyag/site/telepites/">ROS verziók és telepítés</a></p>
 <pre class="mermaid"><code>
 
 gantt
@@ -2473,7 +2473,7 @@ gantt
     Humble  :active, r009, 2022-05-23, 5y
     .       :active, r011, 2021-01-01, 0d %% placeholder
     Galactic:active, r008, 2021-05-23, 1y</code></pre>
-<p><img alt="Alt text" src="/szenergy-autonom/assets/images_common/ros2distros.svg" /></p>
+<p><img alt="Alt text" src="/autonomous_oktato_anyag/site/assets/images_common/ros2distros.svg" /></p>
 <p>Distrok százalékos megoszlása az időben: <a href="https://metrics.ros.org/rosdistro_rosdistro.html">metrics.ros.org/rosdistro_rosdistro.html</a></p>
 <p><a href="https://docs.ros.org/en/humble/"><img alt="Static Badge" src="https://img.shields.io/badge/ROS_2-Humble-34aec5" /></a></p>
 <p>A <code>Humble Hawksbill</code> vagy röviden <code>Humble</code> egy long term support (LTS) release, 5 évig támogatott (2022 májusától 2027 májusáig)</p>

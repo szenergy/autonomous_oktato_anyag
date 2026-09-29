@@ -37,7 +37,7 @@ source ~/ros2_ws/install/setup.bash
 
 A mesheket Foxglove Studio-ban (vagy Lichtblick Suite) is megjeleníthetjük, csak állítsuk a package path-t a megfelelő helyre, pl:
 
-![alt text](/szenergy-autonom/docs/assets/images_common/foxglove07.png)
+![alt text](/autonomous_oktato_anyag/site/assets/images_common/foxglove07.png)
 
 ## Színek
 
