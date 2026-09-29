@@ -21,7 +21,7 @@ Ebből a 4 lehetőségből az első kettőt ajánljuk, de telmészetesen a több
 
 Az első három opció szemléltetése:
 
-![wsl áttekintés](/autonomous_oktato_anyag/site/assets/images_common/wsl_overview01.svg)
+![wsl áttekintés](/autonomous_oktato_anyag/assets/images_common/wsl_overview01.svg)
 
 # Támogatott operációs rendszerek és `ROS` disztibúciók 
 

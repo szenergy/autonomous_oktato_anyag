@@ -173,7 +173,7 @@ Publishers:
 ros2 run rqt_graph rqt_graph
 ```
 
-![Alt text](/autonomous_oktato_anyag/site/assets/images_common/rqt_graph02.svg)
+![Alt text](/autonomous_oktato_anyag/assets/images_common/rqt_graph02.svg)
 
 ```mermaid
 graph TD;
@@ -200,7 +200,7 @@ code ~/ros2_ws/src/szenergy-autonom_packages/szenergy-autonom_simple_perception
 
 Hasnolítsuk össze a `lidar_filter_simple_param.cpp`-t a `lidar_filter_simple.cpp`-vel. Vs code jobb kilikk a fájlon `Select for compare` és `Compare with Selected`.
 
-![compare_vs_code01](/autonomous_oktato_anyag/site/assets/images_common/compare_vs_code01.png)
+![compare_vs_code01](/autonomous_oktato_anyag/assets/images_common/compare_vs_code01.png)
 
 Az előző feladatban használt egyszerű filter minimum és maximum X,Y,Z értékeit dinamikusan változtassuk.
 
@@ -237,7 +237,7 @@ ros2 launch szenergy-autonom_simple_perception run_all.launch.py
 
 Nagyjából így fog kinézni az `rqt_reconfigure` meg az `rviz2`:
 
-![](/autonomous_oktato_anyag/site/assets/images_common/rqt_rviz01.png)
+![](/autonomous_oktato_anyag/assets/images_common/rqt_rviz01.png)
 
 
 # Önálló feladat 1

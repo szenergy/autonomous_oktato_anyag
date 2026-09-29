@@ -12,7 +12,7 @@
         <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/site/telepites/ros_humble/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/telepites/ros_humble/">
       
       
         <link rel="prev" href="../win10/">
@@ -69,7 +69,7 @@
       
         <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/telepites/ros_humble.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/telepites/ros_humble.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -77,7 +77,7 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/telepites/ros_humble/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/telepites/ros_humble/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
@@ -85,7 +85,7 @@
       
         <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/telepites/ros_humble.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/telepites/ros_humble.png" >
       
     
     
@@ -2295,14 +2295,14 @@
 </div>
 <p>Ahogy abevezetőben írtuk, alapvetően négy lehetőség adott <code>ROS 2 Humble</code> telepítésére:</p>
 <ol>
-<li>Dual boot, Windows mellé telepített natív Linux (leginkább Ubuntu) ✅ <a href="https://sze-info.github.io/autonomous_oktato_anyag/site/telepites/ubuntu">leírás</a></li>
-<li>Windows WSL2, könnyűsúlyú Linux virtuális gép ✅ <a href="https://sze-info.github.io/autonomous_oktato_anyag/site/telepites/win10">leírás</a></li>
+<li>Dual boot, Windows mellé telepített natív Linux (leginkább Ubuntu) ✅ <a href="https://sze-info.github.io/autonomous_oktato_anyag/docs/telepites/ubuntu">leírás</a></li>
+<li>Windows WSL2, könnyűsúlyú Linux virtuális gép ✅ <a href="https://sze-info.github.io/autonomous_oktato_anyag/docs/telepites/win10">leírás</a></li>
 <li>Virtuális gép Windowsra 🟠</li>
 <li>Windows build 🟠</li>
 </ol>
 <p>Ebből a 4 lehetőségből az első kettőt ajánljuk, de telmészetesen a többi sem tiltott. A dual boot betekintést nyújt a Linux világba, ami egy mérnöknél hasznos tudást jelent manapság. Telepítésnél körültekintően kell eljárni, hiszen egy rossz beállítás adatvesztést okoz, így a biztonsági mentés is ajánlott. A WSL (Windows Subsystem for Linux) egy könnyűsúlyú kompatibilitási réteg Linux-alapú elemek futtatásához Windows 10, vagy Windows 11 alapú rendszereken. Ahogy a következő ábrán is látszik, a Linux kernel ugyanolyan egyszerűen érheti el a hardverelemeket (CPU, memória, GPU stb), mint a Windows kernel. Ehhez képest a virtuális gép (3. lehetőség) egy jóval lassabb, több absztrakciós réteget használó megoldás, annak ajánlott, akinek vagy nagyon modern, gyors gépe van, vagy már eleve telepített ilyen rendszereket. A natív Windows build (4. lehetőség) elvileg adott, de mivel a dokumenátió túlnyomó része Linuxra érhető el, így nagyon sok extra munkát fog jelenteni.</p>
 <p>Az első három opció szemléltetése:</p>
-<p><img alt="wsl áttekintés" src="/autonomous_oktato_anyag/site/assets/images_common/wsl_overview01.svg" /></p>
+<p><img alt="wsl áttekintés" src="/autonomous_oktato_anyag/assets/images_common/wsl_overview01.svg" /></p>
 <h2 id="telepites">Telepítés<a class="headerlink" href="#telepites" title="Permanent link">&para;</a></h2>
 <p>A következő leírás Ubuntu 22.04 Jammyre vonatkozik. <em>Megjegyzés</em>, hogy más verziók is támogatottak, ezekre vonatkozó telepítés és leírások elérhetőek itt: <a href="https://docs.ros.org/en/humble/Installation/Alternatives.html">docs.ros.org/en/humble/Installation/Alternatives.html</a></p>
 <p>A következő leírás a <a href="https://docs.ros.org/en/humble/Installation.html">docs.ros.org/en/humble/Installation.html</a> alapszik.</p>
@@ -2371,8 +2371,8 @@
 <p>Szintén célszerű beállítani a <code>colcon_cd</code> paranccsot, így gyorsan válthatunk munkakönyvtárát egy csomag könyvtárára. Példaként a <code>colcon_cd some_ros_package</code> parancsra gyorsan a <code>~/ros2_ws/src/some_ros_package</code> könyvtárba ugorhatunk.</p>
 <p>Részletek: <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd">docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd</a></p>
 <h1 id="otthoni-geptermi-telepites">Otthoni / géptermi telepítés<a class="headerlink" href="#otthoni-geptermi-telepites" title="Permanent link">&para;</a></h1>
-<p>Gépteremben a <a href="https://github.com/sze-info/autonomous_oktato_anyag/site/blob/main/docs/telepites/install_humble.sh">következő <code>install_humble.sh</code></a> fájlt (shell scriptet) futtatuk minden gépen.</p>
-<p><div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/site/main/docs/telepites/install_humble.sh
+<p>Gépteremben a <a href="https://github.com/sze-info/autonomous_oktato_anyag/docs/blob/main/docs/telepites/install_humble.sh">következő <code>install_humble.sh</code></a> fájlt (shell scriptet) futtatuk minden gépen.</p>
+<p><div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/docs/main/docs/telepites/install_humble.sh
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>install_humble.sh
 </code></pre></div></p>
@@ -2384,7 +2384,7 @@ Gépteremben:
 </code></pre></div></p>
 <h1 id="workspace-reset">Workspace reset<a class="headerlink" href="#workspace-reset" title="Permanent link">&para;</a></h1>
 <p>Ha szeretnénk a teljes <code>ros2_ws</code>-t törölni, majd újra klónozni és buildelni (~5 percig eltart), akkor a következő egyetlen hoszú paranccsal megtehetjük:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="p">;</span><span class="w"> </span>rm<span class="w"> </span>ws_reset.sh<span class="p">;</span><span class="w"> </span>wget<span class="w"> </span>https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/site/main/docs/telepites/ws_reset.sh<span class="p">;</span><span class="w"> </span>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>ws_reset.sh<span class="p">;</span><span class="w"> </span>./ws_reset.sh
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="p">;</span><span class="w"> </span>rm<span class="w"> </span>ws_reset.sh<span class="p">;</span><span class="w"> </span>wget<span class="w"> </span>https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/docs/main/docs/telepites/ws_reset.sh<span class="p">;</span><span class="w"> </span>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>ws_reset.sh<span class="p">;</span><span class="w"> </span>./ws_reset.sh
 </code></pre></div>
 
 

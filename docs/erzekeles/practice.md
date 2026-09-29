@@ -32,7 +32,7 @@ cd /mnt/kozos/script
 
 Az előző gyakorlaton megismerkedtünk a következő rosbag-gel (ROS 2-ben a formátum már `.mcap`):
 
-![foxglove01](/autonomous_oktato_anyag/site/assets/images_common/foxglove01.png)
+![foxglove01](/autonomous_oktato_anyag/assets/images_common/foxglove01.png)
 
 Előkészületként nézzük meg, hogy létezik-e a `C:\temp` könyvtár
 
@@ -199,7 +199,7 @@ Az `ROS` idő kezelésre a Unix-időt, vagy a POSIX-időt használja. Ez a UTC (
 
 Hátránya, hogy nem túl intuitív, nem olvasható az ember számára. Pl. a Foxglove Studio / Lichtblick Suite ezért is gyakran átalakítja olvashatóbb formátumra. 
 
-![foxglove_a](/autonomous_oktato_anyag/site/assets/images_common/foxglove05.png)
+![foxglove_a](/autonomous_oktato_anyag/assets/images_common/foxglove05.png)
 
 A másodpercek és nanoszekundumok a következőképp képzelhetők el:
 
@@ -394,7 +394,7 @@ ros2 run rviz2 rviz2
 
 Alakítsunk ki hasonló elrendezést:
 
-![](/autonomous_oktato_anyag/site/assets/images_common/rviz01.png)
+![](/autonomous_oktato_anyag/assets/images_common/rviz01.png)
 
 ### Foxglove studio
 
@@ -407,7 +407,7 @@ ros2 launch foxglove_bridge foxglove_bridge_launch.xml port:=8765
 
 Alakítsunk ki hasonló elrendezést:
 
-![](/autonomous_oktato_anyag/site/assets/images_common/foxglove06.png)
+![](/autonomous_oktato_anyag/assets/images_common/foxglove06.png)
 
 Forrás: [foxglove.dev/blog/introducing-foxglove-studios-new-navigation](https://foxglove.dev/blog/introducing-foxglove-studios-new-navigation)
 
@@ -458,7 +458,7 @@ code ~/ros2_ws/src/simple_sub_cpp/
 
 
 
-![](/autonomous_oktato_anyag/site/assets/images_common/vscode05.png)
+![](/autonomous_oktato_anyag/assets/images_common/vscode05.png)
 
 ``` cpp
 // ros2 topic type /lexus3/gps/duro/current_pose
@@ -577,9 +577,9 @@ ament_package()
 
 Összefoglalásképp, a következő módosításokat hajtottuk végre:
 
-![](/autonomous_oktato_anyag/site/assets/images_common/package_xml01.png)
+![](/autonomous_oktato_anyag/assets/images_common/package_xml01.png)
 
-![](/autonomous_oktato_anyag/site/assets/images_common/cmakelists01.png)
+![](/autonomous_oktato_anyag/assets/images_common/cmakelists01.png)
 
 ### Build és futtatás
 

@@ -16,7 +16,7 @@ icon: material/code-block-tags # kiegészítő tananyag
 A leírásban alapvető Linux ismeretek találhatók. 
 
 
-![](/autonomous_oktato_anyag/site/assets/images_common/overview16.svg)
+![](/autonomous_oktato_anyag/assets/images_common/overview16.svg)
 
 Linuxban (ebben a leírásban értsd  Ubuntu, Raspbian) a legtöbb munkamenetet lehetséges, vagy épp célszerű terminálból végrehajtani.
 Ez a tutorial segít a linux terminál alapjainak megismertetésében.
@@ -32,7 +32,7 @@ Számos program választható a szöveges parancssor elérésére. ROS/ROS2 eset
 
 Ahogy a neve is mutatja, ez a megoldás WSL esetén, Windows-on releváns. Előnye, hogy egy helyen használhatunk több Linux disztribúciót akár Windows parancssorral is. `Ctrl-Shift-P` billentyű kombinációkkal, majd a Split down, Split left parancsokkal oszhatjuk szét hasonló módon a terminált:
 
-![Alt text](/autonomous_oktato_anyag/site/assets/images_common/windows_terminal01.png)
+![Alt text](/autonomous_oktato_anyag/assets/images_common/windows_terminal01.png)
 
 A [Windows Terminal release](https://github.com/microsoft/terminal/releases) oldalon letölthető telepítőként vagy zip formátumban portable verzióban. A portable használathoz kitömörítés után egy üres `.portable` fájlt kell elhelyeznünk. Így akár USB pendriveon is a megszokott beállításokkal használhatjuk. Egy ilyen portable verzió található a géptermekben a `K:\` meghajtón is (`\\fs-kab.eik.sze.hu\C100\kozos\GKNB_AUTM078_Autonóm_robotok_és_járművek_programozása`)
 
@@ -47,14 +47,14 @@ sudo apt install terminator
 
 Terminator-ban `Ctrl-Shift-O`, `Ctrl-Shift-E` billentyű kombinációkkal oszthatjuk tovább az adott ablakot. `Ctrl-Shift-W` bezárja az aktív ablakot.
 
-![Alt text](/autonomous_oktato_anyag/site/assets/images_common/terminator01.png)
+![Alt text](/autonomous_oktato_anyag/assets/images_common/terminator01.png)
 
 
 ### VS code terminal
 
 A fejlesztőkörnyezet beépített terminálja, mind Windowson, mind Linuxon működik.
 
-![Alt text](/autonomous_oktato_anyag/site/assets/images_common/windows_vs_code_terminal01.png)
+![Alt text](/autonomous_oktato_anyag/assets/images_common/windows_vs_code_terminal01.png)
 
 ![](https://code.visualstudio.com/assets/updates/1_54/local-terminal-reconnection.gif)
 
@@ -68,14 +68,14 @@ A fejlesztőkörnyezet beépített terminálja, mind Windowson, mind Linuxon mű
 
 A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`shift`+`c` működik. A `ctr`+`c` pl. egy ROS node (program) befejezésére használható itt.
 
-![Alt text](/autonomous_oktato_anyag/site/assets/images_common/linux_recent01.gif)
+![Alt text](/autonomous_oktato_anyag/assets/images_common/linux_recent01.gif)
 
 ### Automatikus kiegészítés
 
 - `Tab` billenytűvel az elkezdett parancsok egészíthetőek ki
 - `Tab Tab` billenytűkombinációval az összes lehetséges parancsot fogja kilistázni
 
-![](https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images_common/terminalintro01.gif)
+![](https://szenergy.github.io/autonomous_oktato_anyag/assets/images_common/terminalintro01.gif)
 
 ### Képrnyőtörlés
 
@@ -147,7 +147,7 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
     A legtöbb művelet VS code-dal elvégezhető terminál nélkül is. [Erről bővebben itt lehet olvasni](https://sze-info.github.io/autonomous_oktato_anyag/docs/bevezetes/vscodegit).
 
 
-<center><img src="/autonomous_oktato_anyag/site/assets/images_common/gitworkflow01.gif" width="100%" /></center>
+<center><img src="/autonomous_oktato_anyag/assets/images_common/gitworkflow01.gif" width="100%" /></center>
 
 *Forrás*: [link](https://www.linkedin.com/posts/chaima-haj-taher-1093881ba_git-softwaredevelopment-workflow-activity-7177685446787751936-atW_)
 
@@ -197,7 +197,7 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
 #### Gyakran használt parancsok
 - Futó folyamatokról a `ps` ad tájékoztatást pl: `ps -A | grep ros` vagy `ps -eo pid,cmd | grep ros2`
 - A fájlrendszer állapotáról a `df -h` (disk filesystem, human readable) parancs ad tájékoztatást
-![](/autonomous_oktato_anyag/site/assets/images_common/df01.png)
+![](/autonomous_oktato_anyag/assets/images_common/df01.png)
 
 Az `ssh` alapvetően jelszót is kér, de ha megbízunk egy adott gépben, elmenthetjük a privát-publikus kulcspárt, és akkor erre nincs szükség, [például így](https://github.com/szenergy/szenergy-public-resources/wiki/H-SSH-no-password).
 
@@ -240,7 +240,7 @@ screen -m -d -S rviz1 bash -c 'rosrun rviz rviz'
 
 GNU Midnight Commander (`mc`), a Norton Commander inspirálta fájlkezelő:
 
-![](/autonomous_oktato_anyag/site/assets/images_common/mc01.png)
+![](/autonomous_oktato_anyag/assets/images_common/mc01.png)
 
 #### `nmtui`
 
@@ -251,14 +251,14 @@ Az `nmtui` (Network Manager Text User Interface) terminal-alapú Wifi / Ethernet
 #### `nano` szövegszerkesztő
 Terminal alapú szövegszerkesztő. Szerkesztés után `Ctrl+X` a kilépés, utána `Y`-t ütve menti a fájlt.
 
-![](/autonomous_oktato_anyag/site/assets/images_common/nano01.png)
+![](/autonomous_oktato_anyag/assets/images_common/nano01.png)
 
 
 #### `htop` / `top`
 
 Az htop egy interaktív folyamatfigyelő parancs (nagyjából a windows task manager funkcionalitása), amely megjeleníti és felügyeli a futó folyamatokat a rendszeren. Memória- és CPU-használat folymatonként részletezve is kilvasható, továbbá van lehetőség a `kill` használatára is.
 
-![](/autonomous_oktato_anyag/site/assets/images_common/htop01.png)
+![](/autonomous_oktato_anyag/assets/images_common/htop01.png)
 
 #### `~/.bashrc` fájl
 
@@ -383,7 +383,7 @@ fi
 
 Mentsünk, majd a `source ~/.bashrc`, illetve minden új terminálnyitás hatására git repository-t tartalmazó könyvtárban a következőhöz hasonló bash fogad majd minket:
 
-![bashrc](/autonomous_oktato_anyag/site/assets/images_common/bashrc01.png)
+![bashrc](/autonomous_oktato_anyag/assets/images_common/bashrc01.png)
 
 Forrás: 
 [Ubuntu magyar dokumentációs projekt `CC by-sa 2.5`](http://sugo.ubuntu.hu/community-doc/hardy/universe/basic/terminal_hasznalata.html), [Óbuda University `CC BY-NC-SA 4.0`](https://github.com/ABC-iRobotics/ros_course_materials_hu/blob/main/LICENSE.md)

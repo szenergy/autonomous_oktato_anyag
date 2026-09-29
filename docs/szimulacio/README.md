@@ -9,7 +9,7 @@ icon: material/math-integral-box # elméleti tananyag
 
 A szimuláció során számítógépes modellen tanulmányozzuk a rendszer várható viselkedésését.
 
-![](/autonomous_oktato_anyag/site/assets/images_common/overview12.svg)
+![](/autonomous_oktato_anyag/assets/images_common/overview12.svg)
 
 A szimuláció lényege tehát, hogy a kezdeti, akár komoly tesztelés nélküli programkódunkat **ne** a való világban az önvezető autónkon / robotunkon kezdjük el kipróbálni. Ennek ugyanis értelemszerű hátrányai lehetnek. Fontos azonban megjegyezni, hogy a szimulátor mindig a valóság egyszerűsített modelljét szimulálja csupán, így a szimulátorban jól működő kód nem mindig fog teljesen működni a való életben is.
 
@@ -17,7 +17,7 @@ Eddig egyedül a [Turtlesim](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI
 
 | 2D | 3D |
 |:---:|:---:|
-| <img src="https://docs.ros.org/en/foxy/_images/new_pen.png" width="80%"> | <img src="/autonomous_oktato_anyag/site/assets/images_common/ign_gazebo_03.gif" width="80%">  |
+| <img src="https://docs.ros.org/en/foxy/_images/new_pen.png" width="80%"> | <img src="/autonomous_oktato_anyag/assets/images_common/ign_gazebo_03.gif" width="80%">  |
 | Turtlesim  | Gazebo, Carla, SVL, AWSIM, MVsim |
 
 Az ROS-által leginkább támogatott szimulátor a Gazebo, de érdemes megemlíteni az [SVL](https://github.com/lgsvl/simulator)-t, ebből saját verziónk is van a [Nissan](https://github.com/szenergy/nissanleaf-lgsvl)-ra optimalizáva, a [Carla](https://github.com/carla-simulator)-t vagy a [CoppeliaSim](https://www.coppeliarobotics.com/)-et.

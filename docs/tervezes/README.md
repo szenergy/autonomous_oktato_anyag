@@ -7,7 +7,7 @@ icon: material/math-integral-box # elméleti tananyag
 
 Megkülönböztethetünk globális tervezés és lokális tervezést.
 
-![](/autonomous_oktato_anyag/site/assets/images_common/overview13.svg)
+![](/autonomous_oktato_anyag/assets/images_common/overview13.svg)
 
 A tervezés mint fogalom arra a kérdésre ad választ, hogy hogyan jutunk el A-ból B pontba a megfelelő kritériumok mellett. A tervezésnek két alrésze van a **pálya-** vagy **útvonaltervezés**, amely megmondja hogy az adott szakaszon merre kell menni illetve a **trajektóriatervezés**, amely azt mondja meg hogy az adott szakaszon milyen sebességel kell haladnia az adott járműnek. 
 
@@ -90,7 +90,7 @@ nav:
   - slides/hd/map.md
 ```
 
-![alt text](/autonomous_oktato_anyag/site/assets/images_common/common_road_scenario_gui01.png)
+![alt text](/autonomous_oktato_anyag/assets/images_common/common_road_scenario_gui01.png)
 
 További információ:
 
