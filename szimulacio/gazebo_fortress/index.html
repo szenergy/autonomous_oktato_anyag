@@ -2159,7 +2159,7 @@
 
 
 <h1 id="ignition-gazebo-fortress">Ignition Gazebo Fortress<a class="headerlink" href="#ignition-gazebo-fortress" title="Permanent link">&para;</a></h1>
-<p>Az Ignition Gazebo Fortress egy long-term support (LTS) release 2026 szeptemberéig támogatva. ROS 2 Humble kiadással kompatibilis, <a href="https://sze-info.github.io/szenergy-autonom/szimulacio/#gazebo-%C3%A9s-ros-kompatibilit%C3%A1s">lásd a kompatibiltási mátrixot</a>.</p>
+<p>Az Ignition Gazebo Fortress egy long-term support (LTS) release 2026 szeptemberéig támogatva. ROS 2 Humble kiadással kompatibilis, <a href="https://sze-info.github.io/autonomous_oktato_anyag/szimulacio/#gazebo-%C3%A9s-ros-kompatibilit%C3%A1s">lásd a kompatibiltási mátrixot</a>.</p>
 <p><a href="https://docs.ros.org/en/humble/"><img alt="Static Badge" src="https://img.shields.io/badge/ROS_2-Humble-34aec5" /></a></p>
 <h1 id="telepites">Telepítés<a class="headerlink" href="#telepites" title="Permanent link">&para;</a></h1>
 <p>Ajánlott az Ubuntu és a binary telepítés: <a href="https://gazebosim.org/docs/fortress/install_ubuntu">gazebosim.org/docs/fortress/install_ubuntu</a>. Természetesen az előző linken továbbkattintva elérhetőek a Windowsos illetve a forráskódból fordított verziók is.</p>
@@ -2185,15 +2185,15 @@
 <p>Indítsuk el a Gazebo-t:</p>
 <div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo
 </code></pre></div>
-<p><img alt="gazebo" src="/szenergy-autonom/assets/images_common/ign_gazebo_02.png" /></p>
+<p><img alt="gazebo" src="/autonomous_oktato_anyag/assets/images_common/ign_gazebo_02.png" /></p>
 <p>Nyissuk meg a <code>shapes.sdf</code> világot. Az SDF (Simulation Description Format) egy beépített  XML leírás. Akár egy parancsként is indítható: <code>ign gazebo shapes.sdf</code>.</p>
-<p><img alt="gazebo GIF" src="/szenergy-autonom/assets/images_common/ign_gazebo_03.gif" />
+<p><img alt="gazebo GIF" src="/autonomous_oktato_anyag/assets/images_common/ign_gazebo_03.gif" />
 Forrás: <a href="https://gazebosim.org/">gazebosim.org</a></p>
 <h1 id="pelda-ackermann-robot">Példa: Ackermann robot<a class="headerlink" href="#pelda-ackermann-robot" title="Permanent link">&para;</a></h1>
 <p>Ackermann robotnak a „személyautó-szerű”, hagyományos, elől két kormányzott, hátul pedig két nem kormányzott kerékkel rendelkező járművet / robotot nevezzük. Ebben a példában egy ilyen robotot szeretnénk mozgatni ROS 2-ből. Az <code>ign gazebo</code> parancsra a szimuláció-választó felület indul. Egy paranccsal indítható az Ackermann robotot tartalmazó szimuláció:</p>
 <div class="highlight"><pre><span></span><code>ign gazebo -v 4 -r ackermann_steering.sdf
 </code></pre></div>
-<p><img alt="Alt text" src="/szenergy-autonom/assets/images_common/ign_gazebo_01.png" /></p>
+<p><img alt="Alt text" src="/autonomous_oktato_anyag/assets/images_common/ign_gazebo_01.png" /></p>
 <p>Az Ignition Gazebo ROS 2-től független, de jól támogatott, így <code>ros_gz_bridge</code> package segítségével indítható az a bridge, amin a szimmulációs topic-ok ROS 2 topic-ként látszanak, pl:</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </code></pre></div>
