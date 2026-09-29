@@ -14,8 +14,8 @@ A gyakorlat során meg fogunk ismerkedni az önvezető járművek jellemző tula
 
 Bevezetésképpen nézzük egy önvezető jármű jellemző adatait. Példaképp célszerű az **egyetemünk** egyik ilyen járművével készült adatokat vizsgálni. [Foxglove Studio](https://foxglove.dev/download)-t fogunk használni, hiszen telepítés nélkül, vagy ~150MB méretű telepíthető állományként is hozzáférhető, valamint képes vizualizálni a számunkra fontos adatokat. A vizsgált adatok hasonló képet fognak mutatni:
 
-![foxglove_a](/autonomous_oktato_anyag/site/assets/images_common/foxglove04.png#only-light)
-![foxglove_a](/autonomous_oktato_anyag/site/assets/images_common/foxglove03.png#only-dark)
+![foxglove_a](/autonomous_oktato_anyag/assets/images_common/foxglove04.png#only-light)
+![foxglove_a](/autonomous_oktato_anyag/assets/images_common/foxglove03.png#only-dark)
 
 # FRISSÍTENI!!!!!
 
@@ -32,7 +32,7 @@ Amíg az `.mcap` töltődik, röviden bemutatjuk a Foxglove Studio programot. A 
 
 A natív robotikai eszközök (mint például az ROS ökoszisztéma részei) általában csak Linux rendszeren támogatottak, de a Studio asztali alkalmazás Linuxon, Windows-on és macOS-en is működik. Akár az ROS stack más operációs rendszeren fut, a Studio képes kommunikálni a robottal zökkenőmentesen.
 
-![foxglove_lichtblick_logo](/autonomous_oktato_anyag/site/assets/images_common/foxglove_lichtblick01.png)
+![foxglove_lichtblick_logo](/autonomous_oktato_anyag/assets/images_common/foxglove_lichtblick01.png)
 
 A Studio gazdag vizuális elemeket és hibakereső panelokat kínál - interaktív diagramoktól, 3D vizuális elemekig, kameraképektől, és diagnosztikai adatfolyamokig. Legyen szó valós idejű robotkövetésről, vagy `.bag` / `.mcap` fájlban történő hibakeresésről, ezek a panelok segítenek a különböző, általános robotikai feladatok megoldásában.
 

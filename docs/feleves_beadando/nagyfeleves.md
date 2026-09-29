@@ -104,13 +104,13 @@ C++ és Python nyelven is létrehoztunk egy úgynevezett template repo-t, amely 
 ### Meme
 
 <figure markdown="span">
-  ![Image title](/autonomous_oktato_anyag/site/assets/images_common/meme01.jpg){ width="60%" }
+  ![Image title](/autonomous_oktato_anyag/assets/images_common/meme01.jpg){ width="60%" }
   <figcaption></figcaption>
 </figure>
 Credit: [pycoders](https://www.instagram.com/pycoders/)
 
 <figure markdown="span">
-  ![Image title](/autonomous_oktato_anyag/site/assets/images_common/meme02.jpg){ width="60%" }
+  ![Image title](/autonomous_oktato_anyag/assets/images_common/meme02.jpg){ width="60%" }
   <figcaption></figcaption>
 </figure>
 Credit: [knowyourmeme](https://knowyourmeme.com/memes/but-its-honest-work)

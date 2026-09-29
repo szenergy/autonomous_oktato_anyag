@@ -287,14 +287,14 @@ A Foxglove Studio egy nyílt forráskódú, robotikai adatokat vizualizáló és
 
 A natív robotikai eszközök (mint például az ROS ökoszisztéma részei) általában csak Linux rendszeren támogatottak, de a Studio asztali alkalmazás Linuxon, Windows-on és macOS-en is működik. Akár az ROS stack más operációs rendszeren fut, a Studio képes kommunikálni a robottal zökkenőmentesen.
 
-![foxglove_a](/autonomous_oktato_anyag/site/assets/images_common/foxglove04.png#only-light)
-![foxglove_a](/autonomous_oktato_anyag/site/assets/images_common/foxglove03.png#only-dark)
+![foxglove_a](/autonomous_oktato_anyag/assets/images_common/foxglove04.png#only-light)
+![foxglove_a](/autonomous_oktato_anyag/assets/images_common/foxglove03.png#only-dark)
 
 A Studio gazdag vizuális elemeket és hibakereső panelokat kínál - interaktív diagramoktól, 3D vizuális elemekig, kameraképektől, és diagnosztikai adatfolyamokig. Legyen szó valós idejű robotkövetésről, vagy `.bag` / `.mcap` fájlban történő hibakeresésről, ezek a panelok segítenek a különböző, általános robotikai feladatok megoldásában.
 
 Ezek a panelok ezután egyedi elrendezésekben konfigurálhatók és összeállíthatók a projekt egyedi igényeinek és munkafolyamatainak megfelelően.
 
-![foxglove_lichtblick_logo](/autonomous_oktato_anyag/site/assets/images_common/foxglove_lichtblick01.png)
+![foxglove_lichtblick_logo](/autonomous_oktato_anyag/assets/images_common/foxglove_lichtblick01.png)
 
 <video width="100%" loop="" autoplay="" muted="" playsinline="" poster="https://cdn.prod.website-files.com/66a36245725199d12625c1d5/66dc638d81bf97e670aaf5fc_website-product-hero.webp">
   <source src="https://storage.googleapis.com/assets.foxglove.dev/website/website-product-hero.webm" type="video/mp4">
@@ -316,7 +316,7 @@ A Lichtblick Suite a Foxglove-hoz hasonló, egész pontosan a Foxglove `v1.87.0`
 
 ### Rerun
 
-![rerun](/autonomous_oktato_anyag/site/assets/images_common/rerun01.png){ align=right width="200" }
+![rerun](/autonomous_oktato_anyag/assets/images_common/rerun01.png){ align=right width="200" }
 A [Rerun.io](https://rerun.io) egy nyílt forráskódú, MIT / Apache-2.0 kettős licencű, Rust nyelven írt vizualizációs eszköz multimodális, időben változó adatokhoz. A Foxglove-hoz és az Rviz2-höz képest más filozófiát követ: nem a ROS üzenettípusaira épül, hanem saját, általános adatprimitíveket (ún. archetype-okat: pontfelhő, kép, transzformáció, idősor, tenzor stb.) definiál, és ezekbe kell „logolni" az adatokat. Emiatt bármilyen alkalmazásból használható (nem csak ROS-ból), viszont a ROS 2 támogatás nem natív.
 
 
@@ -338,7 +338,7 @@ Az `Rviz2` a `ROS 2` natív, nyílt forráskódú, robotikai adatokat vizualizá
 ros2 run rviz2 rviz2
 ```
 
-![rviz](/autonomous_oktato_anyag/site/assets/images_common/rviz01.png)
+![rviz](/autonomous_oktato_anyag/assets/images_common/rviz01.png)
 
 ```bash
 ros2 run rviz2 rviz2 --help
@@ -356,7 +356,7 @@ Az `rqt_graph` a node-ok és topic-ok vizualizációjára használható.
 ros2 run rqt_graph rqt_graph
 ```
 
-![rqt_reconfigure](/autonomous_oktato_anyag/site/assets/images_common/rqt_graph02.svg)
+![rqt_reconfigure](/autonomous_oktato_anyag/assets/images_common/rqt_graph02.svg)
 
 ### rqt_console
 

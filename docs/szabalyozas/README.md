@@ -14,7 +14,7 @@ icon: material/math-integral-box # elméleti tananyag
 
 A szabályozás célja a megtervezett trajektória kivitelezése.
 
-![](/autonomous_oktato_anyag/site/assets/images_common/overview14.svg)
+![](/autonomous_oktato_anyag/assets/images_common/overview14.svg)
 
 !!! question "Ellenőrző kérdések"
     - Mi a különbség az objektum detekció és a klasszifikáció között?
@@ -451,7 +451,7 @@ Ahol $L_w$ a jármű tengelytávja.
 
 Feltételezzük a modellben, hogy a jármű elsőkerék-kormányzású. A kapott szög az út-kerék szög, amely a kormánymű geometriájának függvényében átszámítható pl. szervó motor szöggé, és így közvetlenül megvalósítható.
 
-![](/autonomous_oktato_anyag/site/transzformaciok/vehicle_axes01.svg)
+![](/autonomous_oktato_anyag/transzformaciok/vehicle_axes01.svg)
 ![](szenergy-autonom_control_18.svg)
 *19. Ábra: a pure pursuit szabályzó geometriai összefüggései.*
 

@@ -84,7 +84,7 @@ Szabályzás: zárthurkú modellezett jármű, szabályzó építése (pl PID va
 - Technológiai ismeretek: ROS 2	használata, újdonságai ROS-hez képest				
 - Projektmunka:	Egyéni projektfeladat bemutatása				
 
-![](/autonomous_oktato_anyag/site/assets/images_common/technology01.svg)
+![](/autonomous_oktato_anyag/assets/images_common/technology01.svg)
 
 
 

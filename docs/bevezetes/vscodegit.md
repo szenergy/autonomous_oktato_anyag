@@ -21,7 +21,7 @@ Népszerű fejlesztőkörnyezet (pl. 2021-ben a Stack Overflow Developer Survey 
 
 A következőkben a fontosabb feleületeket mutatjuk be.
 
-![vs code alapok](/autonomous_oktato_anyag/site/assets/images_common/vscodebasics01.png)
+![vs code alapok](/autonomous_oktato_anyag/assets/images_common/vscodebasics01.png)
 
 Talán az egyik legfontosabb billentyűkombináció a `Ctrl-Shift-P`, mellyel a Command Palette jön elő, ahol beállítások, fájlok, parancsok között böngészhetünk.
 
@@ -37,7 +37,7 @@ A forráskezelő szoftvereket, mint például a Git, a következő okok miatt ha
 - Dokumentálás: A forráskezelő rendszerekben lehetőség van a módosításokhoz kapcsolódó üzenetek (commit message) rögzítésére, ami segíti a változtatások okainak és céljainak dokumentálását.
 - Integráció és folyamatos fejlesztés: Segítik az automatikus tesztelést és a folyamatos integrációs folyamatokat (CI/CD), mivel biztosítják, hogy minden változtatás könnyen kezelhető és nyomon követhető legyen.
 
-<center><img src="/autonomous_oktato_anyag/site/assets/images_common/gitworkflow01.gif" width="100%" /></center>
+<center><img src="/autonomous_oktato_anyag/assets/images_common/gitworkflow01.gif" width="100%" /></center>
 
 ## Git source control (forráskezelés) használata a VS Code-ban
 
@@ -103,7 +103,7 @@ Megjelenik a **Clone from GitHub** lehetőség is. Miután hitelesítette GitHub
 
 A fejlesztőkörnyezet beépített terminálja, mind Windowson, mind Linuxon működik.
 
-![Alt text](/autonomous_oktato_anyag/site/assets/images_common/windows_vs_code_terminal01.png)
+![Alt text](/autonomous_oktato_anyag/assets/images_common/windows_vs_code_terminal01.png)
 
 ![](https://code.visualstudio.com/assets/updates/1_54/local-terminal-reconnection.gif)
 
@@ -121,14 +121,14 @@ A fejlesztőkörnyezet beépített terminálja, mind Windowson, mind Linuxon mű
 ROS 2 C++ fejlesztésnél alapvetően a VS code nem ismeri fel az ROS header fájlokat, így az pl az [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) se működik megfelelően:
 
 <figure markdown="span">
-  ![](/autonomous_oktato_anyag/site/assets/images_common/includepath_settings01.png)
+  ![](/autonomous_oktato_anyag/assets/images_common/includepath_settings01.png)
   <figcaption>Includepath VS code-ban</figcaption>
 </figure>
 
 Erre egyszerű megoldás az `includePath settings`-re kattintva beállítani az `/opt/ros/humble/**` elérési utat. (Természetesen ugyanez működik nem `humble` verziónál is, ott a megfelelő elérési utat szükséges megadni). Ez a következőképp néz ki:
 
 <figure markdown="span">
-  ![](/autonomous_oktato_anyag/site/assets/images_common/includepath_settings02.png)
+  ![](/autonomous_oktato_anyag/assets/images_common/includepath_settings02.png)
   <figcaption>Includepath settings VS code-ban</figcaption>
 </figure>
 
