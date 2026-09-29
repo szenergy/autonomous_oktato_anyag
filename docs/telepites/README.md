@@ -12,8 +12,8 @@ permalink: /telepites/
 
 `ROS 1` alapvetően Linux rendszereken támogatott, bár voltak próbálkozások más operációs rendszerekre is. Ezzel szemben az `ROS 2` már támogatja a natív Windows, Mac OS vagy egyéb Real-Time operációs rendszen történő futtatást. Tehát alapvetően négy lehetőség adott:
 
-1. Dual boot, Windows mellé telepített natív Linux (leginkább Ubuntu) ✅ [leírás](https://sze-info.github.io/autonomous_oktato_anyag/telepites/ubuntu)
-2. Windows WSL2, könnyűsúlyú Linux virtuális gép ✅ [leírás](https://sze-info.github.io/autonomous_oktato_anyag/telepites/win10)
+1. Dual boot, Windows mellé telepített natív Linux (leginkább Ubuntu) ✅ [leírás](https://sze-info.github.io/autonomous_oktato_anyag/docs/telepites/ubuntu)
+2. Windows WSL2, könnyűsúlyú Linux virtuális gép ✅ [leírás](https://sze-info.github.io/autonomous_oktato_anyag/docs/telepites/win10)
 3. Virtuális gép Windowsra 🟠
 4. Windows build 🟠
 
@@ -21,7 +21,7 @@ Ebből a 4 lehetőségből az első kettőt ajánljuk, de telmészetesen a több
 
 Az első három opció szemléltetése:
 
-![wsl áttekintés](/autonomous_oktato_anyag/docs/assets/images_common/wsl_overview01.svg)
+![wsl áttekintés](/autonomous_oktato_anyag/site/assets/images_common/wsl_overview01.svg)
 
 # Támogatott operációs rendszerek és `ROS` disztibúciók 
 

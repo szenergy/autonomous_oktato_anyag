@@ -11,7 +11,7 @@ icon: material/code-braces-box # gyakorlati tananyag
 
 # Gyakorlat
 
-A gyakorlaton a [robotverseny szimulációt](https://sze-info.github.io/autonomous_oktato_anyag/szimulacio/gazebo_robotverseny.html) fogjuk használni. A szimulátor linkenlt leírás alapján telepíthető.
+A gyakorlaton a [robotverseny szimulációt](https://sze-info.github.io/autonomous_oktato_anyag/docs/szimulacio/gazebo_robotverseny.html) fogjuk használni. A szimulátor linkenlt leírás alapján telepíthető.
 
 Melodic
 {: .label .label-green }

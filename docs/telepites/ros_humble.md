@@ -14,8 +14,8 @@ icon: material/code-block-tags # kiegészítő tananyag
 
 Ahogy abevezetőben írtuk, alapvetően négy lehetőség adott `ROS 2 Humble` telepítésére:
 
-1. Dual boot, Windows mellé telepített natív Linux (leginkább Ubuntu) ✅ [leírás](https://sze-info.github.io/autonomous_oktato_anyag/telepites/ubuntu)
-2. Windows WSL2, könnyűsúlyú Linux virtuális gép ✅ [leírás](https://sze-info.github.io/autonomous_oktato_anyag/telepites/win10)
+1. Dual boot, Windows mellé telepített natív Linux (leginkább Ubuntu) ✅ [leírás](https://sze-info.github.io/autonomous_oktato_anyag/docs/telepites/ubuntu)
+2. Windows WSL2, könnyűsúlyú Linux virtuális gép ✅ [leírás](https://sze-info.github.io/autonomous_oktato_anyag/docs/telepites/win10)
 3. Virtuális gép Windowsra 🟠
 4. Windows build 🟠
 
@@ -23,7 +23,7 @@ Ebből a 4 lehetőségből az első kettőt ajánljuk, de telmészetesen a több
 
 Az első három opció szemléltetése:
 
-![wsl áttekintés](/autonomous_oktato_anyag/assets/images_common/wsl_overview01.svg)
+![wsl áttekintés](/autonomous_oktato_anyag/site/assets/images_common/wsl_overview01.svg)
 
 ## Telepítés
 
@@ -142,10 +142,10 @@ Részletek: [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-T
 
 # Otthoni / géptermi telepítés
 
-Gépteremben a [következő `install_humble.sh`](https://github.com/sze-info/autonomous_oktato_anyag/blob/main/docs/telepites/install_humble.sh) fájlt (shell scriptet) futtatuk minden gépen.
+Gépteremben a [következő `install_humble.sh`](https://github.com/sze-info/autonomous_oktato_anyag/docs/blob/main/docs/telepites/install_humble.sh) fájlt (shell scriptet) futtatuk minden gépen.
 
 ``` bash
-wget https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/main/docs/telepites/install_humble.sh
+wget https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/docs/main/docs/telepites/install_humble.sh
 ```
 ``` bash
 sudo chmod +x install_humble.sh
@@ -165,6 +165,6 @@ Gépteremben:
 Ha szeretnénk a teljes `ros2_ws`-t törölni, majd újra klónozni és buildelni (~5 percig eltart), akkor a következő egyetlen hoszú paranccsal megtehetjük:
 
 ``` bash
-cd ~ ; rm ws_reset.sh; wget https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/main/docs/telepites/ws_reset.sh; sudo chmod +x ws_reset.sh; ./ws_reset.sh
+cd ~ ; rm ws_reset.sh; wget https://raw.githubusercontent.com/sze-info/autonomous_oktato_anyag/docs/main/docs/telepites/ws_reset.sh; sudo chmod +x ws_reset.sh; ./ws_reset.sh
 ```
 

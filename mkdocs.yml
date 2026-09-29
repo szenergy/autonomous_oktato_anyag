@@ -1,7 +1,7 @@
 site_name: Autonóm tananyag
 site_description: 'A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga.'
 site_author: 'szenergy_team'
-site_url: 'https://szenergy.github.io/autonomous_oktato_anyag/' # Uncomment to set a canonical URL
+site_url: 'https://szenergy.github.io/autonomous_oktato_anyag/site/' # Uncomment to set a canonical URL
 copyright: |
   &copy; SZEnergy Team, 2024. Minden jog fenntartva.
 docs_dir: docs

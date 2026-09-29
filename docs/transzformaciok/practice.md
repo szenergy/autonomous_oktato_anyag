@@ -258,7 +258,7 @@ Tehát indítható legyen az önálló feladat végén a következő paranccsal:
 ros2 launch my_launch_pkg run_transforms_and_markers.launch.py
 ```
 
-Megoldás: [elérhető az önálló feladatok között](https://sze-info.github.io/autonomous_oktato_anyag/onallo/ros2launchmarker/)
+Megoldás: [elérhető az önálló feladatok között](https://sze-info.github.io/autonomous_oktato_anyag/docs/onallo/ros2launchmarker/)
 
 ### Segítség az önálló feladathoz
 
@@ -332,10 +332,10 @@ def generate_launch_description():
 [Python notebook transform](https://github.com/horverno/sze-academic-python/blob/master/eload/ealeshtranszfromaciok.ipynb){: .md-button .md-button-blue .mr-4 }
 
 
-[Python notebook quaternion](https://github.com/sze-info/autonomous_oktato_anyag/blob/main/docs/transzformaciok/gps_utm.ipynb){: .md-button .md-button-purple .mr-4 }
+[Python notebook quaternion](https://github.com/sze-info/autonomous_oktato_anyag/docs/blob/main/docs/transzformaciok/gps_utm.ipynb){: .md-button .md-button-purple .mr-4 }
 
 
-[gps_utm.ipynb](https://github.com/sze-info/autonomous_oktato_anyag/blob/main/docs/transzformaciok/quaternion.ipynb){: .md-button .md-button-purple .mr-4 } 
+[gps_utm.ipynb](https://github.com/sze-info/autonomous_oktato_anyag/docs/blob/main/docs/transzformaciok/quaternion.ipynb){: .md-button .md-button-purple .mr-4 } 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kYB8IZa5AuE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

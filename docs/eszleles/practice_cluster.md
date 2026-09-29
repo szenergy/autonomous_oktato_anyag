@@ -58,7 +58,7 @@ Tanteremben futtassuk ezt a parancsot:
 /mnt/kozos/script/update_ros2_key.sh
 ```
 
-További olvasnivaló a [Troubleshooting](/autonomous_oktato_anyag/onallo/troubleshoot/) fejezetben.
+További olvasnivaló a [Troubleshooting](/autonomous_oktato_anyag/docs/onallo/troubleshoot/) fejezetben.
 
 ## `1. lépés.` - Ha még nincs meg korábbról, töltsük le a nyers adatokat
 

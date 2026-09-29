@@ -12,7 +12,7 @@
         <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/szimulacio/gyakorlat/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/site/szimulacio/gyakorlat/">
       
       
         <link rel="prev" href="../f1tenth_sim_a/">
@@ -69,7 +69,7 @@
       
         <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/szimulacio/gyakorlat.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/szimulacio/gyakorlat.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -77,7 +77,7 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/szimulacio/gyakorlat/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/szimulacio/gyakorlat/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
@@ -85,7 +85,7 @@
       
         <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/szimulacio/gyakorlat.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/szimulacio/gyakorlat.png" >
       
     
     
@@ -2457,7 +2457,7 @@ A fenti kódrészlet üres környezetet definiál, mindössze egy sík (talaj), 
 <div class="highlight"><pre><span></span><code>ign gazebo building_robot.sdf
 </code></pre></div></p>
 <p>Indítást követően a leírtaknak megfelelő üres környezetet kell látnunk:</p>
-<p><img alt="Alt text" src="/autonomous_oktato_anyag/assets/images_common/empty_world.png" /></p>
+<p><img alt="Alt text" src="/autonomous_oktato_anyag/site/assets/images_common/empty_world.png" /></p>
 <h2 id="robot-modell-letrehozasa">Robot modell létrehozása<a class="headerlink" href="#robot-modell-letrehozasa" title="Permanent link">&para;</a></h2>
 <p>Folytassuk a <code>building_robot.sdf</code> szerkesztését, a <code>&lt;/model&gt;</code> címkét követően. Észrevehető, hogy a talajt, vagyis a <code>ground_plane</code> elemet is modellként adtuk meg, hasonló módon adjuk hozzá a járművet is.</p>
 <p><div class="highlight"><pre><span></span><code><span class="nt">&lt;model</span><span class="w"> </span><span class="na">name=</span><span class="s">'vehicle_blue'</span><span class="w"> </span><span class="na">canonical_link=</span><span class="s">'chassis'</span><span class="nt">&gt;</span>
@@ -2527,7 +2527,7 @@ A robot modell megnevezése ebben az esetben <code>vehicle_blue</code> . A megne
 <div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo<span class="w"> </span>building_robot.sdf
 </code></pre></div></p>
 <p>Ezt követően a szimulátorban a robot karosszériáját kell látnunk:</p>
-<p><img alt="Alt text" src="/autonomous_oktato_anyag/assets/images_common/chassis.png" /></p>
+<p><img alt="Alt text" src="/autonomous_oktato_anyag/site/assets/images_common/chassis.png" /></p>
 <ul>
 <li>Jobb és bal kerék</li>
 </ul>
@@ -2708,7 +2708,7 @@ Végül meg kell adnunk a linkek közötti kényszerek definícióját. Ezek a d
 <div class="highlight"><pre><span></span><code>ign gazebo building_robot.sdf
 </code></pre></div></p>
 <p>Ezt követően a szimulátorban a robotot kell látnunk:</p>
-<p><img alt="Alt text" src="/autonomous_oktato_anyag/assets/images_common/robot_gazebo01.png" /></p>
+<p><img alt="Alt text" src="/autonomous_oktato_anyag/site/assets/images_common/robot_gazebo01.png" /></p>
 <p>Az eddig bemutatottakat tartalmazó XML leíró fájl tartalma:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version="1.0" ?&gt;</span>
 <span class="nt">&lt;sdf</span><span class="w"> </span><span class="na">version=</span><span class="s">"1.8"</span><span class="nt">&gt;</span>

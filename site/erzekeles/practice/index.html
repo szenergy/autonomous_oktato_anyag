@@ -12,7 +12,7 @@
         <meta name="author" content="szenergy_team">
       
       
-        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/erzekeles/practice/">
+        <link rel="canonical" href="https://szenergy.github.io/autonomous_oktato_anyag/site/erzekeles/practice/">
       
       
         <link rel="prev" href="../">
@@ -69,7 +69,7 @@
       
         <meta  property="og:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/erzekeles/practice.png" >
+        <meta  property="og:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/erzekeles/practice.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -77,7 +77,7 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/erzekeles/practice/" >
+        <meta  property="og:url"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/erzekeles/practice/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
@@ -85,7 +85,7 @@
       
         <meta  name="twitter:description"  content="A Széchenyi Egyetem SZEnergy Team hallgatói csapatának autonóm járművekhez kapcsolódó oktató anyaga." >
       
-        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/assets/images/social/erzekeles/practice.png" >
+        <meta  name="twitter:image"  content="https://szenergy.github.io/autonomous_oktato_anyag/site/assets/images/social/erzekeles/practice.png" >
       
     
     
@@ -2529,7 +2529,7 @@
 
 
 <h1 id="gyakorlat">Gyakorlat<a class="headerlink" href="#gyakorlat" title="Permanent link">&para;</a></h1>
-<p>A gyakorlat Ubuntu 22.04 <code>ROS humble</code>, Windows 10/11 WSL <code>humble</code> mellett működik. A különböző verziók telepítésének leírása <a href="https://sze-info.github.io/autonomous_oktato_anyag/telepites/">itt található</a>.</p>
+<p>A gyakorlat Ubuntu 22.04 <code>ROS humble</code>, Windows 10/11 WSL <code>humble</code> mellett működik. A különböző verziók telepítésének leírása <a href="https://sze-info.github.io/autonomous_oktato_anyag/site/telepites/">itt található</a>.</p>
 <div class="admonition success">
 <p class="admonition-title">Előzetes ellenőrzés</p>
 <p>Otthoni gépen a gyakorlat előtt érdemes ellenőrizni, hogy a megfelelő <code>ROS 2</code> szoftvercsomagok telepítve vannak-e.</p>
@@ -2545,7 +2545,7 @@
 </code></pre></div>
 <h2 id="elokeszuletek">Előkészületek<a class="headerlink" href="#elokeszuletek" title="Permanent link">&para;</a></h2>
 <p>Az előző gyakorlaton megismerkedtünk a következő rosbag-gel (ROS 2-ben a formátum már <code>.mcap</code>):</p>
-<p><img alt="foxglove01" src="/autonomous_oktato_anyag/assets/images_common/foxglove01.png" /></p>
+<p><img alt="foxglove01" src="/autonomous_oktato_anyag/site/assets/images_common/foxglove01.png" /></p>
 <p>Előkészületként nézzük meg, hogy létezik-e a <code>C:\temp</code> könyvtár</p>
 <p><div class="highlight"><pre><span></span><code><span class="n">test</span><span class="w"> </span><span class="o">-</span><span class="n">d</span><span class="w"> </span><span class="s">"/mnt/c/temp"</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Letezik</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">echo</span><span class="w"> </span><span class="n">Nem</span><span class="w"> </span><span class="n">letezik</span>
 </code></pre></div>
@@ -2662,9 +2662,9 @@ Az eredmény valami hasonló lesz:
 </code></pre></div></p>
 <h2 id="ros-2-idokezeles"><code>ROS 2</code> időkezelés<a class="headerlink" href="#ros-2-idokezeles" title="Permanent link">&para;</a></h2>
 <p>Az <code>ROS</code> idő kezelésre a Unix-időt, vagy a POSIX-időt használja. Ez a UTC (greenwichi idő) szerinti 1970. január 1. 00:00:00 óta eltelt másodpercek és nanoszekundumok számát jelenti (<code>int32 sec</code>, <code>int32 nsec</code>). Ez egyrészt relatív kis helyet foglal a memóriában, másrészt könnyen számolható két időpont között eltelt idő, mégpedig egy egyszerű kivonással. </p>
-<p><a class="md-button md-button-purple mr-4" href="https://github.com/sze-info/autonomous_oktato_anyag/blob/main/docs/erzekeles/ros2time.ipynb">ros2time.ipynb</a> </p>
+<p><a class="md-button md-button-purple mr-4" href="https://github.com/sze-info/autonomous_oktato_anyag/site/blob/main/docs/erzekeles/ros2time.ipynb">ros2time.ipynb</a> </p>
 <p>Hátránya, hogy nem túl intuitív, nem olvasható az ember számára. Pl. a Foxglove Studio / Lichtblick Suite ezért is gyakran átalakítja olvashatóbb formátumra. </p>
-<p><img alt="foxglove_a" src="/autonomous_oktato_anyag/assets/images_common/foxglove05.png" /></p>
+<p><img alt="foxglove_a" src="/autonomous_oktato_anyag/site/assets/images_common/foxglove05.png" /></p>
 <p>A másodpercek és nanoszekundumok a következőképp képzelhetők el:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">rclpy</span>
 <span class="n">current_time</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">get_clock</span><span class="p">()</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
@@ -2834,13 +2834,13 @@ Az eredmény valami hasonló lesz:</p>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">rviz2</span><span class="w"> </span><span class="n">rviz2</span>
 </code></pre></div>
 <p>Alakítsunk ki hasonló elrendezést:</p>
-<p><img alt="" src="/autonomous_oktato_anyag/assets/images_common/rviz01.png" /></p>
+<p><img alt="" src="/autonomous_oktato_anyag/site/assets/images_common/rviz01.png" /></p>
 <h3 id="foxglove-studio">Foxglove studio<a class="headerlink" href="#foxglove-studio" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">foxglove_bridge</span><span class="w"> </span><span class="n">foxglove_bridge_launch.xml</span><span class="w"> </span><span class="n">port</span><span class="o">:=</span><span class="m">8765</span>
 </code></pre></div>
 <p><img alt="" src="https://foxglove.dev/images/blog/introducing-foxglove-studios-new-navigation/breakdown.jpeg" /></p>
 <p>Alakítsunk ki hasonló elrendezést:</p>
-<p><img alt="" src="/autonomous_oktato_anyag/assets/images_common/foxglove06.png" /></p>
+<p><img alt="" src="/autonomous_oktato_anyag/site/assets/images_common/foxglove06.png" /></p>
 <p>Forrás: <a href="https://foxglove.dev/blog/introducing-foxglove-studios-new-navigation">foxglove.dev/blog/introducing-foxglove-studios-new-navigation</a></p>
 <h2 id="hozzuk-letre-a-simple_sub_cpp-package-t">Hozzuk létre a <code>simple_sub_cpp</code> package-t<a class="headerlink" href="#hozzuk-letre-a-simple_sub_cpp-package-t" title="Permanent link">&para;</a></h2>
 <p>A következőkben egy egyszerű subscriber node fog feliratkozni <code>geometry_msgs/PoseStamped</code> üzenetekre, majd kiírni az X és az Y koordinátákat. A gyakorlat a <a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">hivatalos ROS 2 tutorialokon alapszik</a> felépítését tekintve.</p>
@@ -2864,7 +2864,7 @@ ros2 pkg create --build-type ament_cmake simple_sub_cpp
 Nyissuk meg pl. VS code segítségével a mappát: <code>code .</code> parancs. Itt a <code>.</code> a <code>code</code> után az aktuális mappát jelenti. <strong>Tipp</strong>: ha nem a könyvtárban állnánk, akkor is lehetséges teljes könyvtárat megnyitni, ami később pár dolgot egyszerűsít:</p>
 <div class="highlight"><pre><span></span><code><span class="n">code</span><span class="w"> </span><span class="o">~/</span><span class="n">ros2_ws</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">simple_sub_cpp</span><span class="o">/</span>
 </code></pre></div>
-<p><img alt="" src="/autonomous_oktato_anyag/assets/images_common/vscode05.png" /></p>
+<p><img alt="" src="/autonomous_oktato_anyag/site/assets/images_common/vscode05.png" /></p>
 <div class="highlight"><pre><span></span><code><span class="c1">// ros2 topic type /lexus3/gps/duro/current_pose</span>
 <span class="c1">// geometry_msgs/msg/PoseStamped</span>
 <span class="c1">// ros2 interface show geometry_msgs/msg/PoseStamped</span>
@@ -2956,8 +2956,8 @@ A meglévő <code>find_package(ament_cmake REQUIRED)</code> függőség alá adj
 <span class="nb">ament_package</span><span class="p">()</span>
 </code></pre></div>
 <p>Összefoglalásképp, a következő módosításokat hajtottuk végre:</p>
-<p><img alt="" src="/autonomous_oktato_anyag/assets/images_common/package_xml01.png" /></p>
-<p><img alt="" src="/autonomous_oktato_anyag/assets/images_common/cmakelists01.png" /></p>
+<p><img alt="" src="/autonomous_oktato_anyag/site/assets/images_common/package_xml01.png" /></p>
+<p><img alt="" src="/autonomous_oktato_anyag/site/assets/images_common/cmakelists01.png" /></p>
 <h3 id="build-es-futtatas">Build és futtatás<a class="headerlink" href="#build-es-futtatas" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
