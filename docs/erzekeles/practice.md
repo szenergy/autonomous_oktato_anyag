@@ -15,19 +15,6 @@ A gyakorlat Ubuntu 22.04 `ROS humble`, Windows 10/11 WSL `humble` mellett műkö
 sudo apt install ros-humble-rosbag2 ros-humble-rosbag2-storage-mcap
 ```
 
-Gépteremben is ellenőrizzük a `check_all.sh` segítségével:
-``` r
-cd /mnt/kozos/script
-```
-
-``` r 
-./check_all.sh
-```
-
-``` r 
-./bag_mcap.sh
-```
-
 ## Előkészületek
 
 Az előző gyakorlaton megismerkedtünk a következő rosbag-gel (ROS 2-ben a formátum már `.mcap`):
@@ -60,11 +47,6 @@ Az eredmény valami hasonló lesz:
 -rwxrwxrwx 1 he he 541M Apr 11 17:01 lexus3-2024-04-05-gyor.mcap
 ```
 
-Tanteremben a másolás a következő parancs segítségével:
-
-``` r 
-rsync -avzh --progress /mnt/kozos/measurement_files/lexus3-2024-04-05-gyor.mcap  /mnt/c/temp/
-```
 
 !!! warning "Figyelem"
     A fájl mérete miatt a másolás néhány percig is eltarthat.
