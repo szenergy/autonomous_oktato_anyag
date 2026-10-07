@@ -1058,15 +1058,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#matrix-szorzas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mátrix szorzás
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#homogen-koordinatak" class="md-nav__link">
     <span class="md-ellipsis">
       Homogén koordináták
@@ -2277,15 +2268,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#matrix-szorzas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mátrix szorzás
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#homogen-koordinatak" class="md-nav__link">
     <span class="md-ellipsis">
       Homogén koordináták
@@ -2395,74 +2377,11 @@
 <p>Például a Nissan Leaf <code>base_link</code> framejéhez képest a következő fontosabb framek találhatóak meg:</p>
 <p><img alt="img" src="leaf_tf01.png" />
 <em>Frame-k a járművön</em></p>
-<p>Például a járműves és mobil robotos környezetben gyakran szeretnénk tartani magunkat ahhoz a konvencióhoz, hogy a globális térképet <code>map</code> frame-nek, a jármű / robot hátsó tengelyét <code>base_link</code>-nek hívjuk. A <code>map</code> és a <code>base_link</code> közötti megfeleltetés történehet GPS, NDT matching, Kálmán filter, odometria és számos további módon. Ezt a követező példa szemlélteti:</p>
-<pre class="mermaid"><code>
-graph TD
-    %% Define first column
-        direction TB
-        map1([  /map]):::light
-        gps([ /gps]):::light
-        base_link1([ /base_link]):::light
-        velodyne_left([ /velodyne_left]):::light
-        zed_front([ /zed_front]):::light
-        laser([ /laser]):::light
-
-        %% Connections for the first column
-        map1 -.-&gt;|dynamic| gps
-        gps --&gt;|static| base_link1
-        base_link1 --&gt;|static| velodyne_left
-        base_link1 --&gt;|static| zed_front
-        base_link1 --&gt;|static| laser
-
-    %% Define second column
-        direction TB
-        map2([ /map]):::light
-        ndt_map([ ndt_map]):::light
-        base_link2([ base_link]):::light
-        sensor_a([ sensor_a]):::light
-        sensor_b([ sensor_b]):::light
-
-        %% Additional sensors can be represented by dots
-        dots2([ ...]):::light
-
-        %% Connections for the second column
-        map2 -.-&gt;|dynamic| ndt_map
-        ndt_map --&gt; base_link2
-        base_link2 --&gt; sensor_a
-        base_link2 --&gt; sensor_b
-        base_link2 --&gt; dots2
-
-    %% Define third column
-        direction TB
-        map3([ lexus3/map]):::light
-        kalman_f([ lexus3/kalman_f]):::light
-        base_link3([ lexus3/base_link]):::light
-
-        %% Representing additional connections with dots
-        dots3a([ lexus3/...]):::light
-        dots3b([ lexus3/...]):::light
-        dots3c([ lexus3/...]):::light
-        dots3d([ lexus3/...]):::light
-
-        %% Connections for the third column
-        map3 -.-&gt;|dynamic| kalman_f
-        kalman_f --&gt; base_link3
-        base_link3 --&gt; dots3a
-        base_link3 --&gt; dots3b
-        base_link3 --&gt; dots3c
-        dots3c --&gt; dots3d
-
-classDef light fill:#34aec5,stroke:#152742,stroke-width:2px,color:#152742  
-classDef dark fill:#152742,stroke:#34aec5,stroke-width:2px,color:#34aec5
-classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
-classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff</code></pre>
-<p><img alt="img" src="tf_examples01.svg" />
-<em>Példa TF tree</em></p>
+<p>Például a járműves és mobil robotos környezetben gyakran szeretnénk tartani magunkat ahhoz a konvencióhoz, hogy a globális térképet <code>map</code> frame-nek, a jármű / robot hátsó tengelyét <code>base_link</code>-nek hívjuk.</p>
 <p>GPS használata esetén nagyvonalakban a következő példa alapján kell elképzelni a frameket. A <code>map</code> a globális térkép, viszont a <code>gps</code> helyzetét is tudjuk ehhez képest. (<strong>Megjegyzés</strong>: <em>a <code>2020.A</code> senzor összeállításban 2 GPS is van, ezek kölönböző helyen találhatóak, mérni tudnak párhuzamosan, de csak egy transzform határozhatja meg a <code>base_link</code> helyzetét. Ezt az 1. ábrán a szaggatott nyilak jelzik.</em>) Innen már egy további (statikus) transzformációval kapható a <code>base_link</code> (a hátsó tengely). További statikus transzformációkkal kaphatók a szenzorok a példában a <code>left_os1/os1_sensor</code> látható.</p>
 <p><img alt="img" src="tf_examples02.svg" />
 <em>A TF tree 2d koordinátarendszerben, vizuális példa</em></p>
-<p>A transformok a <code>tf</code> topicaban hirdetődnek, azonban például az MPC szabályzó egy <code>current_pose</code> nevű topicot használ a szabályzás megvalósításához. Ezt úgy oldottuk meg, hogy a <code>base_link</code> frame értékeit <code>current_pose</code> topic-ként is hirdetjük. A frame transzlációja a topic pozícója, illetve a frame rotációja a topic orientációja.</p>
-<p>Nagy transzformoknál az RVIZ megjelenítője nem működik pontosan (https://github.com/ros-visualization/rviz/issues/502). Mivel az ROS SI mértékegységeket használ, így métert is, a GPS esetén célszerű az UTM (<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system">wikipedia-utm</a>) koordinátarendszer használata. Ez értelemszerűen nagy értékű koorinátákkal számol. Ahhoz, hogy ezt az ellentmondást feloldjuk célszerű kisebb traszformokat megjeleníteni. Így például Győrhöz (<code>map_gyor_0</code>) és Zalához (<code>map_zala_0</code>) egy fix statikus transformot, hirdetni, amihez képest már szépen működik az RVIZ megjelenítője. A következő ábra ezt szemlélteti, illetve egy kicsit részletesebb szenzorrendszert mutat be.</p>
+<p>Nagy transzformoknál az RVIZ megjelenítője nem működik pontosan (https://github.com/ros-visualization/rviz/issues/502). Mivel az ROS SI mértékegységeket használ, így métert is, a GPS esetén célszerű az UTM (<a href="https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system">wikipedia-utm</a>) koordinátarendszer használata. Ez értelemszerűen nagy értékű koordinátákkal számol. Ahhoz, hogy ezt az ellentmondást feloldjuk célszerű kisebb traszformokat megjeleníteni. Így például Győrhöz (<code>map_gyor_0</code>) és Zalához (<code>map_zala_0</code>) egy fix statikus transformot hirdeti, amihez képest már szépen működik az RVIZ megjelenítője. A következő ábra ezt szemlélteti, illetve egy kicsit részletesebb szenzorrendszert mutat be.</p>
 <pre class="mermaid"><code>graph TB
     %% Define main components
     map([ map]):::red
@@ -2472,52 +2391,27 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff</code></pre
     base_link([ base_link]):::red
 
     %% Define sensors and other components
-    velodyne_left([ velodyne_left]):::light
-    velodyne_right([ velodyne_right]):::light
-    laser([ laser]):::light
-    zed_camera_front([ zed_camera_front]):::light
-    duro_gps_imu([ duro_gps_imu]):::light
-
-    %% OS1 sensors and their subcomponents
-    left_os1_sensor([ left_os1/os1_sensor]):::light
-    left_os1_lidar([ left_os1/os1_lidar]):::light
-    left_os1_imu([ left_os1/os1_imu]):::light
-
-    right_os1_sensor([ right_os1/os1_sensor]):::light
-    right_os1_lidar([ ...]):::light
-    right_os1_imu([ ...]):::light
+    szenzorok([ szenzorok]):::light
+    talaj([ talaj]):::light
 
     %% Connections among main components
     map --&gt; map_gyor_0
     map --&gt; map_zala_0
-    map ---&gt; gps
+    map_gyor_0 --&gt; gps
+    map_zala_0 --&gt; gps
     gps --&gt; base_link
 
     %% Connections from base_link to sensors
-    base_link ---&gt; velodyne_left
-    base_link ---&gt; velodyne_right
-    base_link ---&gt; laser
-    base_link --&gt; zed_camera_front
-    base_link --&gt; duro_gps_imu
-    base_link ----&gt; left_os1_sensor
-    base_link ----&gt; right_os1_sensor
-
-    %% Connections for OS1 sensors
-    left_os1_sensor --&gt; left_os1_lidar
-    left_os1_sensor --&gt; left_os1_imu
-
-    right_os1_sensor --&gt; right_os1_lidar
-    right_os1_sensor --&gt; right_os1_imu
+    base_link ---&gt; szenzorok
+    base_link ---&gt; talaj
 
 
 classDef light fill:#34aec5,stroke:#152742,stroke-width:2px,color:#152742  
 classDef dark fill:#152742,stroke:#34aec5,stroke-width:2px,color:#34aec5
 classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
 classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff</code></pre>
-<p><img alt="img" src="tf_examples03.svg" />
-<em>Az <code>rqt_tf_tree</code> által megjelenített TF fa</em></p>
-<p>Az ábrán csak a <code>map</code> <code>gps</code> transzform változó, a többi statikus. Statikus transzformot hirdetni launch fájlban például a <code>/base_link</code> és a <code>left_os1/os1_sensor</code> következőképp lehet (lásd 3. ábra)</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2</label><label for="__tabbed_1_2">ROS 1</label></div>
+<p>Az ábrán csak a <code>map</code> <code>gps</code> transzform változó, a többi statikus. Statikus transzformot hirdetni launch fájlban például a <code>/base_link</code> és egy szenzorpl.: LiDAR szenzor(<code>left_os1/os1_sensor</code>) következőképp lehet</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ROS 2</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="n">Node</span><span class="p">(</span>
@@ -2538,19 +2432,10 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff</code></pre
 <span class="p">),</span>
 </code></pre></div>
 </div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;node</span><span class="w"> </span>
-<span class="w">  </span><span class="na">args=</span><span class="s">"1.769 0.58 1.278 3.1415926535 0.0 0.0 /base_link left_os1/os1_sensor 50"</span>
-<span class="w">  </span><span class="na">name=</span><span class="s">"ouster_left_tf_publisher"</span><span class="w"> </span>
-<span class="w">  </span><span class="na">pkg=</span><span class="s">"tf"</span><span class="w"> </span>
-<span class="w">  </span><span class="na">type=</span><span class="s">"static_transform_publisher"</span>
-<span class="nt">/&gt;</span><span class="w"> </span>
-</code></pre></div>
-</div>
 </div>
 </div>
 <p>Ugyanezek parancsként kiadva terminálból:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS 2</label><label for="__tabbed_2_2">ROS 1</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">ROS 2</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span> <span class="n">run</span> <span class="n">tf2_ros</span> <span class="n">static_transform_publisher</span> \
@@ -2559,26 +2444,9 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff</code></pre
 <span class="o">--</span><span class="n">frame</span><span class="o">-</span><span class="nb">id</span> <span class="n">left_os1</span><span class="o">/</span><span class="n">os1_sensor</span> <span class="o">--</span><span class="n">child</span><span class="o">-</span><span class="n">frame</span><span class="o">-</span><span class="nb">id</span> <span class="n">base_link</span>
 </code></pre></div>
 </div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="n">rosrun</span><span class="w"> </span><span class="n">tf</span><span class="w"> </span><span class="n">static_transform_publisher</span><span class="w"> </span>\
-<span class="mf">1.769</span><span class="w"> </span><span class="mf">0.58</span><span class="w"> </span><span class="mf">1.278</span><span class="w"> </span>\
-<span class="mf">3.1415926535</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span>\
-<span class="o">/</span><span class="n">base_link</span><span class="w"> </span><span class="n">left_os1</span><span class="o">/</span><span class="n">os1_sensor</span><span class="w"> </span><span class="mi">50</span><span class="w">  </span>
-</code></pre></div>
 </div>
 </div>
-</div>
-<p>Itt az utolsó argumentum <code>ROS 1</code>-nél 50 ms, tehát 20 Hz-en hirdette a ugyanazt a transzformációt. Ez nem a legszerencsésebb, az <code>ROS 2</code> ebben is fejlődött, ott elég egyszer hirdetni ugyanezt.</p>
 <p>Példa a statikus transzform launch fájlra: <a href="https://github.com/jkk-research/lexus_bringup/blob/main/launch/tf_static.launch.py">tf_static.launch</a></p>
-<h2 id="matrix-szorzas">Mátrix szorzás<a class="headerlink" href="#matrix-szorzas" title="Permanent link">&para;</a></h2>
-<p>A 3D  transzformáció (de természetesen a 2D is) egy mátrix segítségével, egész pontosan mátrisx szorzással írható le. Például, ha egy objektumot elmozdítunk egy adott távolságra, akkor azt egy forgatómátrix segítségével írhatjuk le. A forgatómátrix 3 dimenzióban egy 3x3-as mátrix, amely a forgatás irányát és mértékét határozza meg. </p>
-<p>Forrás: <a href="http://motion.cs.illinois.edu/RoboticSystems/CoordinateTransformations.html">Robotic Systems, University of Illinois</a></p>
-<p><a class="md-button md-button-blue mr-4" href="http://matrixmultiplication.xyz/">matrixmultiplication.xyz</a></p>
-<p><a class="md-button md-button-blue mr-4" href="https://github.com/horverno/sze-academic-python/blob/master/eload/ealeshtranszfromaciok.ipynb">Python notebook</a></p>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>A python notebook-ot és a mátrixszozás vizualizációt oktatási céllal linkeltük. ROS 2-ben rengeteg funkciót ad a <code>tf2</code> és kapcsolódó megoldásai, így nem kell "kézzel" transzlációt és rotációt írni. Transzformációkat például le lehet kérdezni 2 frame között anélkül is, hogy tudnánk pontosan hány frame-n kereszül kapcsolódnak. Az ROS 2 ezt kényelmesen biztosítja. <a href="https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Tf2-Main.html">Erről bővebben itt lehet olvasni</a></p>
-</div>
 <h2 id="homogen-koordinatak">Homogén koordináták<a class="headerlink" href="#homogen-koordinatak" title="Permanent link">&para;</a></h2>
 <p>A homogén koordináták kényelmes reprezentációt nyújtanak a merevtest transzformációkhoz, mint a lineáris transzformációk egy kibővítéseként a térben. Ráadásul kompaktan reprezentálják a helyzetfüggő és irányfüggő mennyiségek közötti különbséget. Az ötlet az, hogy minden pontot kiegészítünk egy további homogén koordinátával, amely 1, ha helyzetfüggő, és 0, ha irányfüggő. Ezt az műveletet a "hat" (kalap) operátorral (<code>^</code>) jelöljük.</p>
 <h2 id="quaternion-kvaterniok">Quaternion (kvaterniók)<a class="headerlink" href="#quaternion-kvaterniok" title="Permanent link">&para;</a></h2>
@@ -2588,7 +2456,7 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff</code></pre
 <p><a class="md-button md-button-blue mr-4" href="https://beta.articulatedrobotics.xyz/tools/rotation-calculator/">beta.articulatedrobotics.xyz/tools/rotation-calculator</a></p>
 <p>Előnyei:</p>
 <ul>
-<li><strong>Numerikus stabilitás</strong>:  A lebegőpontos reprezentációból adódó kis numerikus hibák sokszor ismétlődve egyre nagyobb hibákhoz vezethetnek Euler szögek esetén. Például egy forgatás pár század fokos pontatlansága ezrez vagy tízezres ismétléssel komoly hibává adódhat össze. Quaternion-oknál ez a komlex reprezentáció és a normált alak miatt sokkal kisebb.</li>
+<li><strong>Numerikus stabilitás</strong>:  A lebegőpontos reprezentációból adódó kis numerikus hibák sokszor ismétlődve egyre nagyobb hibákhoz vezethetnek Euler szögek esetén. Például egy forgatás pár század fokos pontatlansága ezres vagy tízezres ismétléssel komoly hibává adódhat össze. Quaternion-oknál ez a komplex reprezentáció és a normál alak miatt sokkal kisebb.</li>
 <li><strong>Gyors számítás</strong>: A kvaterniók hatékonyan reprezentálják a 3D térbeli forgatásokat, és sokszor gyorsabbak és stabilabbak lehetnek, mint más reprezentációs módszerek, például Euler-szögek.</li>
 <li>
 <p><strong>Pontosság</strong>:</p>
@@ -2615,8 +2483,8 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff</code></pre
 <p><img alt="rh" src="right_hand_rule01.svg" />
 <img alt="va" src="vehicle_axes01.svg" /></p>
 <h2 id="koordinatarendszerek-gpsgnss">Koordinátarendszerek (GPS/GNSS)<a class="headerlink" href="#koordinatarendszerek-gpsgnss" title="Permanent link">&para;</a></h2>
-<p>A <code>WGS84</code> vagy World Geodetic System 1984 egy globális referencia rendszer a térképészetben, geolokációban, navigációban és a GPS (Global Positioning System) rendszerben történő használatra. Ez egy szabványos koordináta rendszer, amelyet a földrajzi szélesség, hosszúság és tengerszint feletti magasság megadására használnak. A földrajzi szélességi (latitude) körök vízszintesen futnak, és fokokban adják meg egy pont helyét a Föld felszínén az egyenlítőtől (0 fok szélesség) északra vagy délre. A hosszúsági körök (longitude) függőlegesen futnak, és fokokban adják meg egy pont helyét a Föld felszínén a keleti vagy nyugati nullameridiántól (0 fok hosszúság). A nullameridián a 0 fok hosszúságánál található, és Londonon Greenwich városrészén keresztül halad. A hosszúsági értékek -180 foktól +180 fokig terjednek, az 180 foknál pedig az Északi és Dél-Keleti hosszúságok összekapcsolódnak. A mérésadat fájl navsatfix topicja (sensor_msgs/msg/NavSatFix) ebben a formátumban került mentésre.
-Ennek alternatívája az <code>UTM</code> vetületi rendszer, amely nem fokokban, hanem méterekben számol. Az <code>UTM</code>, vagyis az Egyesített Térképi Projekció (Universal Transverse Mercator), egy térképi projekciós rendszer, amelyet a térképek készítésére és a navigációhoz használnak. A világ különböző zónáit egy sor speciális hengertérképen ábrázolják, ahol a hosszúsági és szélességi vonalak egyenesek. Ahogy lejjebb látható, Magyarország 4 <code>UTM</code> zónába esik: <code>33U</code>, <code>34U</code>, <code>33T</code> és <code>34T</code>. Az UTM zónák 6 fokos szélességi sávokra oszlanak szét, ahol minden sávban az ábrázolás egy transzverzális Merkátor-projekción alapuló hengertérképen történik. Az UTM rendszer előnye, hogy egyszerű koordináta-rendszert biztosít, ami kis torzulással rendelkezik a zónákon belül. Ezért sokszor használják katonai térképek, topográfiai térképek, navigációs rendszerek és más térképkészítési alkalmazásoknál. Például a mérésadatoknál a jellemzően current_pose végződésű topicja (<code>geometry_msgs/msg/PoseStamped</code>) ebben a formátumban érkező adat.</p>
+<p>A <code>WGS84</code> vagy World Geodetic System 1984 egy globális referencia rendszer a térképészetben, geolokációban, navigációban és a GPS (Global Positioning System) rendszerben történő használatra. Ez egy szabványos koordináta rendszer, amelyet a földrajzi szélesség, hosszúság és tengerszint feletti magasság megadására használnak. A földrajzi szélességi (latitude) körök vízszintesen futnak, és fokokban adják meg egy pont helyét a Föld felszínén az egyenlítőtől (0 fok szélesség) északra vagy délre. A hosszúsági körök (longitude) függőlegesen futnak, és fokokban adják meg egy pont helyét a Föld felszínén a keleti vagy nyugati nullameridiántól (0 fok hosszúság). A nullameridián a 0 fok hosszúságánál található, és Londonon Greenwich városrészén keresztül halad. A hosszúsági értékek -180 foktól +180 fokig terjednek, a 180 foknál pedig az Északi és Dél-Keleti hosszúságok összekapcsolódnak.</p>
+<p>Ennek alternatívája az <code>UTM</code> vetületi rendszer, amely nem fokokban, hanem méterekben számol. Az <code>UTM</code>, vagyis az Egyesített Térképi Projekció (Universal Transverse Mercator), egy térképi projekciós rendszer, amelyet a térképek készítésére és a navigációhoz használnak. A világ különböző zónáit egy sor speciális hengertérképen ábrázolják, ahol a hosszúsági és szélességi vonalak egyenesek. Ahogy lejjebb látható, Magyarország 4 <code>UTM</code> zónába esik: <code>33U</code>, <code>34U</code>, <code>33T</code> és <code>34T</code>. Az UTM zónák 6 fokos szélességi sávokra oszlanak szét, ahol minden sávban az ábrázolás egy transzverzális Merkátor-projekción alapuló hengertérképen történik. Az UTM rendszer előnye, hogy egyszerű koordináta-rendszert biztosít, ami kis torzulással rendelkezik a zónákon belül. Ezért sokszor használják katonai térképek, topográfiai térképek, navigációs rendszerek és más térképkészítési alkalmazásoknál. Például a mérésadatoknál a jellemzően current_pose végződésű topicja (<code>geometry_msgs/msg/PoseStamped</code>) ebben a formátumban érkező adat.</p>
 <p><img alt="utm" src="utm01.svg" /></p>
 <p>Például a következő online eszközzel konvertálhatók a koordináták:</p>
 <p><a href="https://coordinates-converter.com/en/decimal/47.694064,17.628915?karte=OpenStreetMap&amp;zoom=17">coordinates-converter.com</a></p>
