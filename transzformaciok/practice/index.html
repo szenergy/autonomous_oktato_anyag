@@ -1068,6 +1068,16 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#frissiteni" class="md-nav__link">
+    <span class="md-ellipsis">
+      !!!!! FRISSÍTENI !!!!!
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="!!!!! FRISSÍTENI !!!!!">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#onallo-feladat" class="md-nav__link">
     <span class="md-ellipsis">
       Önálló feladat
@@ -1090,8 +1100,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#hazi-feladat" class="md-nav__link">
     <span class="md-ellipsis">
       Házi feladat
@@ -1099,8 +1109,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#tovabbi" class="md-nav__link">
     <span class="md-ellipsis">
       További
@@ -1108,13 +1118,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#olvasnivalo" class="md-nav__link">
     <span class="md-ellipsis">
       Olvasnivaló
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2244,6 +2259,16 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#frissiteni" class="md-nav__link">
+    <span class="md-ellipsis">
+      !!!!! FRISSÍTENI !!!!!
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="!!!!! FRISSÍTENI !!!!!">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#onallo-feladat" class="md-nav__link">
     <span class="md-ellipsis">
       Önálló feladat
@@ -2266,8 +2291,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#hazi-feladat" class="md-nav__link">
     <span class="md-ellipsis">
       Házi feladat
@@ -2275,8 +2300,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#tovabbi" class="md-nav__link">
     <span class="md-ellipsis">
       További
@@ -2284,13 +2309,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#olvasnivalo" class="md-nav__link">
     <span class="md-ellipsis">
       Olvasnivaló
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2312,24 +2342,14 @@
   
 
 
-  <h1>Gyakorlat - Transzformációk</h1>
-
 <h2 id="gyakorlat">Gyakorlat<a class="headerlink" href="#gyakorlat" title="Permanent link">&para;</a></h2>
 <p>A következő gyakorlat a transzformációk ROS2-ben történő kezelését szemlélteti, C++-ban.</p>
 <div class="admonition danger">
 <p class="admonition-title">Python megfelelője</p>
 <p>A C++ kód python verziója szintén elérhető a <a href="https://github.com/sze-info/szenergy-autonom_packages/tree/main/szenergy-autonom_transforms_py">github.com/sze-info/szenergy-autonom_packages</a> címen. Érdemes összehasonlítani a C++ és a python kódokat.</p>
 </div>
-<p>Frissítsük a legújabb verzióra az <code>szenergy-autonom_packages</code> repo-t. Ha frissül, vagy <code>Already up to date.</code> üzenetet kapunk, akkor nem kell klónoznunk. Ha a <code>cd ~/ros2_ws/src/szenergy-autonom_packages</code> parancs után a <code>~/ros2_ws/src/szenergy-autonom_packages: No such file or directory</code> üzenetetet kaptuk, akkor klónozzuk a repo-t.</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/szenergy-autonom_packages
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull
-</code></pre></div></p>
-<p>Amennyiben a <code>No such file or directory</code> üzenetetet kaptuk, klónozzuk a következő parancsokkal:</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>A következő két parancs csak nem létező <code>szenergy-autonom_packages</code> esetén kell:</p>
-</div>
+<p>Klónozzuk le a <code>szenergy-autonom_packages</code> github repo-t és ezzel kapcsolatban lesznek feladatok.</p>
+<h1 id="frissiteni">!!!!! FRISSÍTENI !!!!!<a class="headerlink" href="#frissiteni" title="Permanent link">&para;</a></h1>
 <p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/sze-info/szenergy-autonom_packages
@@ -2394,15 +2414,14 @@ A <code>git checkout -- .</code>: Minden nem staged (unstaged) változás elvet�
 <span class="w">      </span><span class="n">z</span><span class="o">:</span><span class="w"> </span><span class="m">-0.46381551598382736</span>
 <span class="w">      </span><span class="n">w</span><span class="o">:</span><span class="w"> </span><span class="m">0.8859318072699817</span>
 </code></pre></div>
-Ahogy láthatjuk a <code>map</code> frame <code>child_frame_id</code>-ja <code>orbit1</code>. Az <code>orbit1</code> frame <code>child_frame_id</code>-ja pedig az <code>orbit2</code>. Tehát, ha a <code>map</code>-et naygszülőnek tekintjük, akkor az <code>orbit2</code> az unoka. Szemléletesebb ezt az <code>rqt_tf_tree</code> segítségével megvizsgálni.</p>
+Ahogy láthatjuk a <code>map</code> frame <code>child_frame_id</code>-ja <code>orbit1</code>. Az <code>orbit1</code> frame <code>child_frame_id</code>-ja pedig az <code>orbit2</code>. Tehát, ha a <code>map</code>-et nagyszülőnek tekintjük, akkor az <code>orbit2</code> az unoka. Szemléletesebb ezt az <code>rqt_tf_tree</code> segítségével megvizsgálni.</p>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">rqt_tf_tree</span><span class="w"> </span><span class="n">rqt_tf_tree</span>
 </code></pre></div>
 <p><img alt="frames01" src="../frames01.svg" /></p>
 <p>Ha esetleg nem működne a fenti parancs, akkor telepíthető a <code>sudo apt install ros-humble-rqt-tf-tree</code> segítségével. Géptermi gépeken erre elvileg nincs szükség.</p>
-<p>Nézzük meg RVIZ2 segítségével, így fog kinézni:</p>
+<p>Nézzük meg RVIZ2 segítségével:</p>
 <div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">szenergy</span><span class="o">-</span><span class="n">autonom_transforms_cpp</span><span class="w"> </span><span class="n">rviz1.launch.py</span>
 </code></pre></div>
-<p><img alt="transforms01" src="https://raw.githubusercontent.com/sze-info/szenergy-autonom_packages/main/szenergy-autonom_transforms_cpp/img/transforms01.gif" /></p>
 <p>Vizsgáljuk meg a <code>pub_transforms.cpp</code> fájlt. (Python esetén a <code>_py</code> package-ben a <code>transforms.py</code> fájlt.)</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/szenergy-autonom_packages/szenergy-autonom_transforms_cpp
 </code></pre></div>
