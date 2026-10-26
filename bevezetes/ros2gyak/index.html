@@ -2620,6 +2620,9 @@
 </ul>
 <h2 id="0-feladat-gazebo-3d-szimulacio"><code>0.</code> feladat - Gazebo 3D szimuláció<a class="headerlink" href="#0-feladat-gazebo-3d-szimulacio" title="Permanent link">&para;</a></h2>
 <p>Próbáljuk, ki, hogy a parancsok működnek-e. (<em>Később részletes telepítést is bemutatunk, egyelőre ez szemléltetés.</em>)</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-humble-ros-gz
+</code></pre></div>
 <div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>ign<span class="w"> </span>gazebo<span class="w"> </span>-v<span class="w"> </span><span class="m">4</span><span class="w"> </span>-r<span class="w"> </span>ackermann_steering.sdf
@@ -2633,6 +2636,8 @@
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
 </code></pre></div>
 <p>Klónozzuk a szükséges package-t.</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/jkk-research/jkk_utils.git
+</code></pre></div>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/robotverseny/robotverseny_gazebo24
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/robotverseny/megoldas_sim24
@@ -2640,7 +2645,7 @@
 <h4 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--packages-select<span class="w"> </span>robotverseny_application<span class="w"> </span>robotverseny_description<span class="w"> </span>robotverseny_bringup<span class="w"> </span>robotverseny_gazebo<span class="w"> </span>megoldas_sim24<span class="w"> </span>
+<div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--packages-select<span class="w"> </span>robotverseny_application<span class="w"> </span>robotverseny_description<span class="w"> </span>robotverseny_bringup<span class="w"> </span>robotverseny_gazebo<span class="w"> </span>megoldas_sim24<span class="w"> </span>time_utils
 </code></pre></div>
 <h4 id="futtatas">Futtatás<a class="headerlink" href="#futtatas" title="Permanent link">&para;</a></h4>
 <details>
