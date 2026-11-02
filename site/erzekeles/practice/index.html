@@ -2536,13 +2536,6 @@
 </div>
 <div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">apt</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">ros</span><span class="o">-</span><span class="n">humble</span><span class="o">-</span><span class="n">rosbag2</span><span class="w"> </span><span class="n">ros</span><span class="o">-</span><span class="n">humble</span><span class="o">-</span><span class="n">rosbag2</span><span class="o">-</span><span class="n">storage</span><span class="o">-</span><span class="n">mcap</span>
 </code></pre></div>
-<p>Gépteremben is ellenőrizzük a <code>check_all.sh</code> segítségével:
-<div class="highlight"><pre><span></span><code><span class="n">cd</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">script</span>
-</code></pre></div></p>
-<div class="highlight"><pre><span></span><code><span class="n">.</span><span class="o">/</span><span class="n">check_all.sh</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="n">.</span><span class="o">/</span><span class="n">bag_mcap.sh</span>
-</code></pre></div>
 <h2 id="elokeszuletek">Előkészületek<a class="headerlink" href="#elokeszuletek" title="Permanent link">&para;</a></h2>
 <p>Az előző gyakorlaton megismerkedtünk a következő rosbag-gel (ROS 2-ben a formátum már <code>.mcap</code>):</p>
 <p><img alt="foxglove01" src="/autonomous_oktato_anyag/assets/images_common/foxglove01.png" /></p>
@@ -2565,9 +2558,6 @@ Az eredmény valami hasonló lesz:
 <span class="o">-</span><span class="n">rwxrwxrwx</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="m">2.7</span><span class="n">G</span><span class="w"> </span><span class="n">Jun</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">09</span><span class="o">:</span><span class="m">17</span><span class="w"> </span><span class="n">lexus</span><span class="m">-2023-07-18</span><span class="o">-</span><span class="n">campus.mcap</span>
 <span class="o">-</span><span class="n">rwxrwxrwx</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="n">he</span><span class="w"> </span><span class="m">541</span><span class="n">M</span><span class="w"> </span><span class="n">Apr</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">17</span><span class="o">:</span><span class="m">01</span><span class="w"> </span><span class="n">lexus3</span><span class="m">-2024-04-05</span><span class="o">-</span><span class="n">gyor.mcap</span>
 </code></pre></div></p>
-<p>Tanteremben a másolás a következő parancs segítségével:</p>
-<div class="highlight"><pre><span></span><code><span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">avzh</span><span class="w"> </span><span class="o">--</span><span class="n">progress</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">kozos</span><span class="o">/</span><span class="n">measurement_files</span><span class="o">/</span><span class="n">lexus3</span><span class="m">-2024-04-05</span><span class="o">-</span><span class="n">gyor.mcap</span><span class="w">  </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">temp</span><span class="o">/</span>
-</code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Figyelem</p>
 <p>A fájl mérete miatt a másolás néhány percig is eltarthat.</p>
